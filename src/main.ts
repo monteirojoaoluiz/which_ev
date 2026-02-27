@@ -2,10 +2,16 @@ import './style.css'
 import { EV_DATABASE } from './data/evs'
 import { rankVehicles, type Recommendation } from './lib/recommendations'
 
-const PRICE_MIN = 25_000
-const PRICE_MAX = 60_000
 const PRICE_STEP = 500
-const DEFAULT_PRICE = 35_000
+const DEFAULT_TARGET_PRICE_EUR = 45_000
+
+const priceValues = EV_DATABASE.map((vehicle) => vehicle.priceEur)
+const minListedPrice = Math.min(...priceValues)
+const maxListedPrice = Math.max(...priceValues)
+
+const PRICE_MIN = Math.floor(minListedPrice / PRICE_STEP) * PRICE_STEP
+const PRICE_MAX = Math.ceil(maxListedPrice / PRICE_STEP) * PRICE_STEP
+const DEFAULT_PRICE = Math.min(Math.max(DEFAULT_TARGET_PRICE_EUR, PRICE_MIN), PRICE_MAX)
 
 const app = document.querySelector<HTMLDivElement>('#app')
 
@@ -13,13 +19,13 @@ if (!app) {
   throw new Error('App root not found')
 }
 
-const money = new Intl.NumberFormat('en-US', {
+const money = new Intl.NumberFormat('nl-NL', {
   style: 'currency',
-  currency: 'USD',
+  currency: 'EUR',
   maximumFractionDigits: 0,
 })
 
-const decimal = new Intl.NumberFormat('en-US', {
+const decimal = new Intl.NumberFormat('nl-NL', {
   maximumFractionDigits: 2,
 })
 
@@ -34,28 +40,31 @@ const renderVehicleCard = (recommendation: Recommendation, rank: number): string
       </header>
       <dl>
         <div>
-          <dt>MSRP</dt>
-          <dd>${money.format(vehicle.msrpUsd)}</dd>
+          <dt>NL prijs</dt>
+          <dd>${money.format(vehicle.priceEur)}</dd>
         </div>
         <div>
-          <dt>One-stop range</dt>
-          <dd>${vehicle.oneStopRangeMiles} mi</dd>
+          <dt>1-stop range</dt>
+          <dd>${vehicle.oneStopRangeKm} km</dd>
         </div>
         <div>
-          <dt>Cargo</dt>
-          <dd>${decimal.format(vehicle.cargoCuFt)} cu ft</dd>
+          <dt>Bagageruimte</dt>
+          <dd>${decimal.format(vehicle.cargoLiters)} L</dd>
         </div>
         <div>
-          <dt>Charge (15m)</dt>
-          <dd>+${vehicle.chargeMilesIn15Min} mi</dd>
+          <dt>Snelladen</dt>
+          <dd>${decimal.format(vehicle.fastChargeKw)} kW</dd>
         </div>
       </dl>
       <div class="vehicle-card__scores">
-        <p>Cost per one-stop mile: <strong>${money.format(metrics.costPerOneStopMile)}</strong></p>
+        <p>Cost per 1-stop km: <strong>${money.format(metrics.costPerOneStopKm)}/km</strong></p>
         <p>Cargo + range score: <strong>${decimal.format(metrics.cargoRangeScore)}</strong></p>
-        <p>Road-trip balance score: <strong>${decimal.format(metrics.roadTripBalanceScore)}</strong></p>
+        <p>Road-trip score: <strong>${decimal.format(metrics.roadTripBalanceScore)}</strong></p>
         <p>Overall score: <strong>${decimal.format(metrics.overallScore)}</strong></p>
       </div>
+      <p class="vehicle-card__source">
+        Source: <a href="${vehicle.sourceUrl}" target="_blank" rel="noreferrer">EV Database</a>
+      </p>
     </article>
   `
 }
@@ -64,16 +73,16 @@ app.innerHTML = `
   <main class="page-shell">
     <section class="hero">
       <p class="hero__eyebrow">EV shortlist engine</p>
-      <h1>Pick a price, get the best 3 EVs in that window.</h1>
+      <h1>Netherlands EV picks from EV Database.</h1>
       <p>
-        Drag the slider to choose your target MSRP. We automatically search
-        <strong>$5,000 below and $5,000 above</strong>, then rank by value, utility,
-        and road-trip balance.
+        Drag the target price and we filter around it with
+        <strong>€5.000 below and €5.000 above</strong>, then rank top options
+        by value, cargo+range, and road-trip balance.
       </p>
     </section>
 
     <section class="controls">
-      <label for="price-range" class="controls__label">Target MSRP</label>
+      <label for="price-range" class="controls__label">Target NL price</label>
       <div class="controls__numbers">
         <p id="target-price" class="target-price"></p>
         <p id="price-window" class="price-window"></p>
@@ -93,17 +102,17 @@ app.innerHTML = `
     <section class="leaders" aria-live="polite">
       <article>
         <h2>Metric 1: Value</h2>
-        <p>Lowest cost per one-stop mile.</p>
+        <p>Lowest euro cost per 1-stop km.</p>
         <p id="leader-value" class="leaders__name"></p>
       </article>
       <article>
         <h2>Metric 2: Utility</h2>
-        <p>Blend of cargo space and one-stop range.</p>
+        <p>Blend of cargo liters and 1-stop range in km.</p>
         <p id="leader-cargo-range" class="leaders__name"></p>
       </article>
       <article>
         <h2>Metric 3: Road Trip</h2>
-        <p>Blend of one-stop range, charge speed, and price value.</p>
+        <p>Blend of 1-stop range, fast-charge kW, and price value.</p>
         <p id="leader-road-trip" class="leaders__name"></p>
       </article>
     </section>
@@ -143,10 +152,10 @@ const updateView = (): void => {
 
   targetPriceEl.textContent = money.format(selectedPrice)
   priceWindowEl.textContent = `${money.format(results.priceFloor)} to ${money.format(results.priceCeiling)}`
-  matchCountEl.textContent = `${results.eligibleVehicles.length} vehicles in range`
+  matchCountEl.textContent = `${results.eligibleVehicles.length} voertuigen in range`
 
   valueLeaderEl.textContent = results.metricLeaders.valueLeader
-    ? `${results.metricLeaders.valueLeader.vehicle.name} · ${money.format(results.metricLeaders.valueLeader.metrics.costPerOneStopMile)}/mi`
+    ? `${results.metricLeaders.valueLeader.vehicle.name} · ${money.format(results.metricLeaders.valueLeader.metrics.costPerOneStopKm)}/km`
     : 'No match in this band'
 
   cargoRangeLeaderEl.textContent = results.metricLeaders.cargoRangeLeader
@@ -161,7 +170,7 @@ const updateView = (): void => {
     resultsEl.innerHTML = `
       <article class="vehicle-card vehicle-card--empty">
         <h3>No vehicles in this price window</h3>
-        <p>Try a higher or lower target MSRP to expand the shortlist.</p>
+        <p>Try a higher or lower target price.</p>
       </article>
     `
     return

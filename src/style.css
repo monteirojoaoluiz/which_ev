@@ -250,6 +250,17 @@ input[type='range']::-moz-range-thumb {
   color: #102534;
 }
 
+.vehicle-card__source {
+  margin: 0.7rem 0 0;
+  font-size: 0.78rem;
+  color: #547086;
+}
+
+.vehicle-card__source a {
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
 .vehicle-card--empty {
   grid-column: 1 / -1;
 }

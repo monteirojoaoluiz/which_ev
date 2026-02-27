@@ -5,35 +5,43 @@
 - `uv` and `brew` are available in this environment.
 
 ## Product behavior
-- A single MSRP slider sets the target price.
-- Filtering uses a fixed `+/- $5,000` band around that target.
+- A single price slider sets the target EV price.
+- Filtering uses a fixed `+/- €5.000` band around that target.
 - Output is the top 3 EVs inside the filtered band.
+- Display units are metric (`km`, `L`, `kW`) and currency is `EUR`.
+
+## Data source
+- Primary source: `https://ev-database.org/nl/` (Netherlands locale).
+- Only vehicles with `availability current` are included in the local dataset.
+- Dataset file: `src/data/evs.ts`.
+- Refresh command: `bun run sync:evdb-nl`.
 
 ## EV data shape
-Each EV record should include:
-- `id`: string
+Each EV record includes:
+- `id`: string (EV Database id)
 - `name`: string
-- `msrpUsd`: number
-- `rangeMiles`: number
-- `oneStopRangeMiles`: number (trip distance with one charging stop)
-- `cargoCuFt`: number
-- `chargeMilesIn15Min`: number
-- `driveType`: `FWD` | `RWD` | `AWD`
+- `priceEur`: number
+- `rangeKm`: number
+- `oneStopRangeKm`: number
+- `cargoLiters`: number
+- `fastChargeKw`: number
+- `driveType`: `FWD` | `RWD` | `AWD` | `Unknown`
+- `sourceUrl`: string
 
 ## Ranking formulas
-1. Metric 1 (Value): `costPerOneStopMile = msrpUsd / oneStopRangeMiles` (lower is better).
-2. Metric 2 (Utility): weighted blend of normalized one-stop range and normalized cargo.
-3. Metric 3 (Road Trip): weighted blend of normalized one-stop range, normalized charge speed, and inverse-normalized price.
+1. Metric 1 (Value): `costPerOneStopKm = priceEur / oneStopRangeKm` (lower is better).
+2. Metric 2 (Utility): weighted blend of normalized one-stop range and normalized cargo liters.
+3. Metric 3 (Road Trip): weighted blend of normalized one-stop range, normalized fast-charge kW, and inverse-normalized price.
 4. Overall score for top 3: weighted blend of Metric 1 value signal, Metric 2, and Metric 3.
 
 ## Deployment
 - Static hosting target: GitHub Pages.
-- Vite config uses `base: './'` to support Pages project URLs.
+- Vite config uses `base: './'` to support project URLs.
 - CI workflow file: `.github/workflows/deploy-pages.yml`.
-- Pages deploys from `main` via GitHub Actions (build artifact from `dist/`).
 
 ## Current source map
-- `src/data/evs.ts`: EV seed dataset + type definition.
+- `scripts/sync-evdb-nl.ts`: scrape/transform script for EV Database NL source.
+- `src/data/evs.ts`: generated Netherlands EV dataset.
 - `src/lib/recommendations.ts`: price-band filter + scoring/ranking logic.
 - `src/main.ts`: slider UI and rendering logic.
 - `src/style.css`: visual styling.

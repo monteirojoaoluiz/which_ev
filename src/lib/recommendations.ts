@@ -1,9 +1,9 @@
 import type { ElectricVehicle } from '../data/evs'
 
-export const PRICE_WINDOW_USD = 5_000
+export const PRICE_WINDOW_EUR = 5_000
 
 export interface VehicleMetrics {
-  costPerOneStopMile: number
+  costPerOneStopKm: number
   cargoRangeScore: number
   roadTripBalanceScore: number
   overallScore: number
@@ -45,8 +45,8 @@ const normalizeInverse = (value: number, min: number, max: number): number => {
 const clampPct = (value: number): number => Math.max(0, Math.min(100, value * 100))
 
 export const getPriceBand = (targetPrice: number): { priceFloor: number; priceCeiling: number } => ({
-  priceFloor: Math.max(0, targetPrice - PRICE_WINDOW_USD),
-  priceCeiling: targetPrice + PRICE_WINDOW_USD,
+  priceFloor: Math.max(0, targetPrice - PRICE_WINDOW_EUR),
+  priceCeiling: targetPrice + PRICE_WINDOW_EUR,
 })
 
 export const filterByPriceBand = (
@@ -56,7 +56,7 @@ export const filterByPriceBand = (
   const { priceFloor, priceCeiling } = getPriceBand(targetPrice)
 
   return vehicles.filter(
-    (vehicle) => vehicle.msrpUsd >= priceFloor && vehicle.msrpUsd <= priceCeiling,
+    (vehicle) => vehicle.priceEur >= priceFloor && vehicle.priceEur <= priceCeiling,
   )
 }
 
@@ -82,12 +82,12 @@ export const rankVehicles = (
   }
 
   const costPerRangeValues = eligibleVehicles.map((vehicle) =>
-    vehicle.msrpUsd / vehicle.oneStopRangeMiles,
+    vehicle.priceEur / vehicle.oneStopRangeKm,
   )
-  const cargoValues = eligibleVehicles.map((vehicle) => vehicle.cargoCuFt)
-  const oneStopRangeValues = eligibleVehicles.map((vehicle) => vehicle.oneStopRangeMiles)
-  const chargeSpeedValues = eligibleVehicles.map((vehicle) => vehicle.chargeMilesIn15Min)
-  const priceValues = eligibleVehicles.map((vehicle) => vehicle.msrpUsd)
+  const cargoValues = eligibleVehicles.map((vehicle) => vehicle.cargoLiters)
+  const oneStopRangeValues = eligibleVehicles.map((vehicle) => vehicle.oneStopRangeKm)
+  const chargeSpeedValues = eligibleVehicles.map((vehicle) => vehicle.fastChargeKw)
+  const priceValues = eligibleVehicles.map((vehicle) => vehicle.priceEur)
 
   const costMin = Math.min(...costPerRangeValues)
   const costMax = Math.max(...costPerRangeValues)
@@ -101,29 +101,23 @@ export const rankVehicles = (
   const priceMax = Math.max(...priceValues)
 
   const scoredVehicles = eligibleVehicles.map((vehicle): Recommendation => {
-    const costPerOneStopMile = vehicle.msrpUsd / vehicle.oneStopRangeMiles
-    const normalizedCost = normalizeInverse(costPerOneStopMile, costMin, costMax)
-    const normalizedCargo = normalize(vehicle.cargoCuFt, cargoMin, cargoMax)
-    const normalizedRange = normalize(vehicle.oneStopRangeMiles, oneStopRangeMin, oneStopRangeMax)
-    const normalizedChargeSpeed = normalize(
-      vehicle.chargeMilesIn15Min,
-      chargeSpeedMin,
-      chargeSpeedMax,
-    )
-    const normalizedPriceValue = normalizeInverse(vehicle.msrpUsd, priceMin, priceMax)
+    const costPerOneStopKm = vehicle.priceEur / vehicle.oneStopRangeKm
+    const normalizedCost = normalizeInverse(costPerOneStopKm, costMin, costMax)
+    const normalizedCargo = normalize(vehicle.cargoLiters, cargoMin, cargoMax)
+    const normalizedRange = normalize(vehicle.oneStopRangeKm, oneStopRangeMin, oneStopRangeMax)
+    const normalizedChargeSpeed = normalize(vehicle.fastChargeKw, chargeSpeedMin, chargeSpeedMax)
+    const normalizedPriceValue = normalizeInverse(vehicle.priceEur, priceMin, priceMax)
 
-    const cargoRangeScore =
-      (normalizedRange * 0.55 + normalizedCargo * 0.45)
+    const cargoRangeScore = normalizedRange * 0.55 + normalizedCargo * 0.45
     const roadTripBalanceScore =
       normalizedRange * 0.45 + normalizedChargeSpeed * 0.35 + normalizedPriceValue * 0.2
 
-    const overallScore =
-      normalizedCost * 0.5 + cargoRangeScore * 0.3 + roadTripBalanceScore * 0.2
+    const overallScore = normalizedCost * 0.5 + cargoRangeScore * 0.3 + roadTripBalanceScore * 0.2
 
     return {
       vehicle,
       metrics: {
-        costPerOneStopMile,
+        costPerOneStopKm,
         cargoRangeScore: clampPct(cargoRangeScore),
         roadTripBalanceScore: clampPct(roadTripBalanceScore),
         overallScore: clampPct(overallScore),
@@ -136,7 +130,7 @@ export const rankVehicles = (
     .slice(0, 3)
 
   const valueLeader = [...scoredVehicles].sort(
-    (first, second) => first.metrics.costPerOneStopMile - second.metrics.costPerOneStopMile,
+    (first, second) => first.metrics.costPerOneStopKm - second.metrics.costPerOneStopKm,
   )[0]
 
   const cargoRangeLeader = [...scoredVehicles].sort(
