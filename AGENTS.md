@@ -26,6 +26,12 @@ Each EV record should include:
 3. Metric 3 (Road Trip): weighted blend of normalized one-stop range, normalized charge speed, and inverse-normalized price.
 4. Overall score for top 3: weighted blend of Metric 1 value signal, Metric 2, and Metric 3.
 
+## Deployment
+- Static hosting target: GitHub Pages.
+- Vite config uses `base: './'` to support Pages project URLs.
+- CI workflow file: `.github/workflows/deploy-pages.yml`.
+- Pages deploys from `main` via GitHub Actions (build artifact from `dist/`).
+
 ## Current source map
 - `src/data/evs.ts`: EV seed dataset + type definition.
 - `src/lib/recommendations.ts`: price-band filter + scoring/ranking logic.
