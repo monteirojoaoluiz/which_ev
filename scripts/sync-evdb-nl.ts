@@ -9,6 +9,7 @@ type DriveType = 'FWD' | 'RWD' | 'AWD' | 'Unknown'
 interface ScrapedVehicle {
   id: string
   name: string
+  imageUrl: string
   priceEur: number
   rangeKm: number
   oneStopRangeKm: number
@@ -66,13 +67,24 @@ const parseVehicles = (html: string): ScrapedVehicle[] => {
       /class="title">[\s\S]*?<span class="hidden">([^<]+)<\/span><\/a>/,
     )
     const hrefPath = getMatch(block, /<a href="(\/nl\/auto\/\d+\/[^"]+)" class="title">/)
+    const imagePath = getMatch(block, /<img src="([^"]+)"/)
     const priceText = getMatch(block, /<span class="pricefilter hidden">([^<]+)<\/span>/)
     const rangeText = getMatch(block, /<span class="erange_real">([^<]+)<\/span>/)
     const oneStopText = getMatch(block, /<span class="long_distance_total_sort hidden">([^<]+)<\/span>/)
     const cargoText = getMatch(block, /<span class="cargosort hidden">([^<]+)<\/span>/)
     const fastChargeText = getMatch(block, /<span class="fastcharge_speed hidden">([^<]+)<\/span>/)
 
-    if (!id || !name || !hrefPath || !priceText || !rangeText || !oneStopText || !cargoText || !fastChargeText) {
+    if (
+      !id ||
+      !name ||
+      !hrefPath ||
+      !imagePath ||
+      !priceText ||
+      !rangeText ||
+      !oneStopText ||
+      !cargoText ||
+      !fastChargeText
+    ) {
       continue
     }
 
@@ -95,6 +107,7 @@ const parseVehicles = (html: string): ScrapedVehicle[] => {
     parsed.push({
       id,
       name,
+      imageUrl: `https://ev-database.org${imagePath}`,
       priceEur,
       rangeKm,
       oneStopRangeKm,
@@ -117,7 +130,7 @@ const parseVehicles = (html: string): ScrapedVehicle[] => {
 const toTsFile = (vehicles: ScrapedVehicle[]): string => {
   const generatedAt = new Date().toISOString()
 
-  return `export type DriveType = 'FWD' | 'RWD' | 'AWD' | 'Unknown'\n\nexport interface ElectricVehicle {\n  id: string\n  name: string\n  priceEur: number\n  rangeKm: number\n  oneStopRangeKm: number\n  cargoLiters: number\n  fastChargeKw: number\n  driveType: DriveType\n  sourceUrl: string\n}\n\n// Data source: ${SOURCE_URL}\n// Locale: Netherlands (nl), current availability only\n// Generated at: ${generatedAt}\nexport const EV_DATABASE: ElectricVehicle[] = ${JSON.stringify(vehicles, null, 2)}\n`
+  return `export type DriveType = 'FWD' | 'RWD' | 'AWD' | 'Unknown'\n\nexport interface ElectricVehicle {\n  id: string\n  name: string\n  imageUrl: string\n  priceEur: number\n  rangeKm: number\n  oneStopRangeKm: number\n  cargoLiters: number\n  fastChargeKw: number\n  driveType: DriveType\n  sourceUrl: string\n}\n\n// Data source: ${SOURCE_URL}\n// Locale: Netherlands (nl), current availability only\n// Generated at: ${generatedAt}\nexport const EV_DATABASE: ElectricVehicle[] = ${JSON.stringify(vehicles, null, 2)}\n`
 }
 
 const response = await fetch(SOURCE_URL)

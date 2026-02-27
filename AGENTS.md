@@ -10,6 +10,8 @@
 - Output is the top 3 EVs inside the filtered band.
 - Display units are metric (`km`, `L`, `kW`) and currency is `EUR`.
 - UI copy is English.
+- Top 3 cards show EV images from EV Database.
+- Price slider includes a violin-style distribution backdrop that visualizes option density by price.
 
 ## Data source
 - Primary source: `https://ev-database.org/nl/` (Netherlands locale).
@@ -21,6 +23,7 @@
 Each EV record includes:
 - `id`: string (EV Database id)
 - `name`: string
+- `imageUrl`: string
 - `priceEur`: number
 - `rangeKm`: number
 - `oneStopRangeKm`: number

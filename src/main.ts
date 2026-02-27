@@ -5,13 +5,71 @@ import { rankVehicles, type Recommendation } from './lib/recommendations'
 const PRICE_STEP = 500
 const DEFAULT_TARGET_PRICE_EUR = 45_000
 
+const DENSITY_VIEWBOX_WIDTH = 100
+const DENSITY_VIEWBOX_HEIGHT = 44
+const DENSITY_CENTER_Y = DENSITY_VIEWBOX_HEIGHT / 2
+const DENSITY_POINT_COUNT = 96
+const DENSITY_BANDWIDTH_EUR = 6_000
+const DENSITY_MAX_AMPLITUDE = 15
+
+const clamp = (value: number, min: number, max: number): number => Math.min(Math.max(value, min), max)
+
 const priceValues = EV_DATABASE.map((vehicle) => vehicle.priceEur)
 const minListedPrice = Math.min(...priceValues)
 const maxListedPrice = Math.max(...priceValues)
 
 const PRICE_MIN = Math.floor(minListedPrice / PRICE_STEP) * PRICE_STEP
 const PRICE_MAX = Math.ceil(maxListedPrice / PRICE_STEP) * PRICE_STEP
+const PRICE_SPAN = Math.max(1, PRICE_MAX - PRICE_MIN)
 const DEFAULT_PRICE = Math.min(Math.max(DEFAULT_TARGET_PRICE_EUR, PRICE_MIN), PRICE_MAX)
+
+const gaussian = (distance: number, bandwidth: number): number =>
+  Math.exp(-0.5 * (distance / bandwidth) ** 2)
+
+const densitySamples = Array.from({ length: DENSITY_POINT_COUNT + 1 }, (_, index) => {
+  const ratio = index / DENSITY_POINT_COUNT
+  const samplePrice = PRICE_MIN + ratio * PRICE_SPAN
+
+  const density = priceValues.reduce((sum, listedPrice) => {
+    return sum + gaussian(samplePrice - listedPrice, DENSITY_BANDWIDTH_EUR)
+  }, 0)
+
+  return {
+    ratio,
+    density,
+  }
+})
+
+const maxDensity = Math.max(...densitySamples.map((sample) => sample.density))
+
+const toChartX = (price: number): number => {
+  const ratio = clamp((price - PRICE_MIN) / PRICE_SPAN, 0, 1)
+  return ratio * DENSITY_VIEWBOX_WIDTH
+}
+
+const toPoint = (x: number, y: number): string => `${x.toFixed(2)} ${y.toFixed(2)}`
+
+const violinPath = (() => {
+  const topPoints = densitySamples.map((sample) => {
+    const x = sample.ratio * DENSITY_VIEWBOX_WIDTH
+    const normalizedDensity = maxDensity === 0 ? 0 : sample.density / maxDensity
+    const y = DENSITY_CENTER_Y - normalizedDensity * DENSITY_MAX_AMPLITUDE
+
+    return toPoint(x, y)
+  })
+
+  const bottomPoints = [...densitySamples]
+    .reverse()
+    .map((sample) => {
+      const x = sample.ratio * DENSITY_VIEWBOX_WIDTH
+      const normalizedDensity = maxDensity === 0 ? 0 : sample.density / maxDensity
+      const y = DENSITY_CENTER_Y + normalizedDensity * DENSITY_MAX_AMPLITUDE
+
+      return toPoint(x, y)
+    })
+
+  return `M ${topPoints.join(' L ')} L ${bottomPoints.join(' L ')} Z`
+})()
 
 const app = document.querySelector<HTMLDivElement>('#app')
 
@@ -38,6 +96,15 @@ const renderVehicleCard = (recommendation: Recommendation, rank: number): string
         <p class="vehicle-card__rank">#${rank + 1}</p>
         <h3>${vehicle.name}</h3>
       </header>
+      <div class="vehicle-card__image-wrap">
+        <img
+          src="${vehicle.imageUrl}"
+          alt="${vehicle.name}"
+          loading="lazy"
+          decoding="async"
+          class="vehicle-card__image"
+        />
+      </div>
       <dl>
         <div>
           <dt>NL price</dt>
@@ -87,15 +154,27 @@ app.innerHTML = `
         <p id="target-price" class="target-price"></p>
         <p id="price-window" class="price-window"></p>
       </div>
-      <input
-        id="price-range"
-        name="price-range"
-        type="range"
-        min="${PRICE_MIN}"
-        max="${PRICE_MAX}"
-        step="${PRICE_STEP}"
-        value="${DEFAULT_PRICE}"
-      />
+      <div class="slider-stage">
+        <svg
+          class="slider-stage__chart"
+          viewBox="0 0 ${DENSITY_VIEWBOX_WIDTH} ${DENSITY_VIEWBOX_HEIGHT}"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path d="${violinPath}" class="slider-stage__violin" />
+          <rect id="price-band-highlight" x="0" y="0" width="0" height="${DENSITY_VIEWBOX_HEIGHT}" class="slider-stage__band" />
+          <line id="price-marker" x1="0" x2="0" y1="2" y2="${DENSITY_VIEWBOX_HEIGHT - 2}" class="slider-stage__marker" />
+        </svg>
+        <input
+          id="price-range"
+          name="price-range"
+          type="range"
+          min="${PRICE_MIN}"
+          max="${PRICE_MAX}"
+          step="${PRICE_STEP}"
+          value="${DEFAULT_PRICE}"
+        />
+      </div>
       <p id="match-count" class="match-count"></p>
     </section>
 
@@ -132,6 +211,8 @@ const valueLeaderEl = document.querySelector<HTMLParagraphElement>('#leader-valu
 const cargoRangeLeaderEl = document.querySelector<HTMLParagraphElement>('#leader-cargo-range')
 const roadTripLeaderEl = document.querySelector<HTMLParagraphElement>('#leader-road-trip')
 const resultsEl = document.querySelector<HTMLDivElement>('#vehicle-results')
+const priceBandHighlight = document.querySelector<SVGRectElement>('#price-band-highlight')
+const priceMarker = document.querySelector<SVGLineElement>('#price-marker')
 
 if (
   !priceRangeInput ||
@@ -141,7 +222,9 @@ if (
   !valueLeaderEl ||
   !cargoRangeLeaderEl ||
   !roadTripLeaderEl ||
-  !resultsEl
+  !resultsEl ||
+  !priceBandHighlight ||
+  !priceMarker
 ) {
   throw new Error('Missing one or more required DOM nodes')
 }
@@ -165,6 +248,15 @@ const updateView = (): void => {
   roadTripLeaderEl.textContent = results.metricLeaders.roadTripLeader
     ? `${results.metricLeaders.roadTripLeader.vehicle.name} · ${decimal.format(results.metricLeaders.roadTripLeader.metrics.roadTripBalanceScore)} score`
     : 'No match in this band'
+
+  const bandStartX = toChartX(results.priceFloor)
+  const bandEndX = toChartX(results.priceCeiling)
+  const markerX = toChartX(selectedPrice)
+
+  priceBandHighlight.setAttribute('x', bandStartX.toFixed(2))
+  priceBandHighlight.setAttribute('width', Math.max(bandEndX - bandStartX, 0).toFixed(2))
+  priceMarker.setAttribute('x1', markerX.toFixed(2))
+  priceMarker.setAttribute('x2', markerX.toFixed(2))
 
   if (results.topThree.length === 0) {
     resultsEl.innerHTML = `

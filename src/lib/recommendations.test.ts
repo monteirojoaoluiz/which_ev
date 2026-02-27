@@ -6,6 +6,7 @@ const TEST_DATA: ElectricVehicle[] = [
   {
     id: 'a',
     name: 'A',
+    imageUrl: 'https://example.com/a.jpg',
     priceEur: 30_000,
     rangeKm: 360,
     oneStopRangeKm: 640,
@@ -17,6 +18,7 @@ const TEST_DATA: ElectricVehicle[] = [
   {
     id: 'b',
     name: 'B',
+    imageUrl: 'https://example.com/b.jpg',
     priceEur: 35_000,
     rangeKm: 430,
     oneStopRangeKm: 760,
@@ -28,6 +30,7 @@ const TEST_DATA: ElectricVehicle[] = [
   {
     id: 'c',
     name: 'C',
+    imageUrl: 'https://example.com/c.jpg',
     priceEur: 40_000,
     rangeKm: 450,
     oneStopRangeKm: 790,
@@ -39,6 +42,7 @@ const TEST_DATA: ElectricVehicle[] = [
   {
     id: 'd',
     name: 'D',
+    imageUrl: 'https://example.com/d.jpg',
     priceEur: 46_000,
     rangeKm: 500,
     oneStopRangeKm: 840,

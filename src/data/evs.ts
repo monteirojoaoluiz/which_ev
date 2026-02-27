@@ -3,6 +3,7 @@ export type DriveType = 'FWD' | 'RWD' | 'AWD' | 'Unknown'
 export interface ElectricVehicle {
   id: string
   name: string
+  imageUrl: string
   priceEur: number
   rangeKm: number
   oneStopRangeKm: number
@@ -14,11 +15,12 @@ export interface ElectricVehicle {
 
 // Data source: https://ev-database.org/nl/
 // Locale: Netherlands (nl), current availability only
-// Generated at: 2026-02-27T12:42:35.415Z
+// Generated at: 2026-02-27T12:54:56.086Z
 export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3408",
     "name": "Dacia Spring Electric 70",
+    "imageUrl": "https://ev-database.org/img/auto/Dacia_Spring_Electric_2026/Dacia_Spring_Electric_2026-01-thumb.jpg",
     "priceEur": 18000,
     "rangeKm": 165,
     "oneStopRangeKm": 166,
@@ -30,6 +32,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3039",
     "name": "Leapmotor T03",
+    "imageUrl": "https://ev-database.org/img/auto/Leapmotor_T03/Leapmotor_T03-01-thumb.jpg",
     "priceEur": 19950,
     "rangeKm": 225,
     "oneStopRangeKm": 212,
@@ -41,6 +44,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3409",
     "name": "Dacia Spring Electric 100",
+    "imageUrl": "https://ev-database.org/img/auto/Dacia_Spring_Electric_2026/Dacia_Spring_Electric_2026-01-thumb.jpg",
     "priceEur": 20800,
     "rangeKm": 160,
     "oneStopRangeKm": 160,
@@ -52,6 +56,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3280",
     "name": "Citroen e-C3 Urban Range 30 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Citroen_e-C3/Citroen_e-C3-01-thumb.jpg",
     "priceEur": 20990,
     "rangeKm": 175,
     "oneStopRangeKm": 156,
@@ -63,6 +68,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3392",
     "name": "Renault Twingo E-Tech 80 pk Urban Range",
+    "imageUrl": "https://ev-database.org/img/auto/Renault_Twingo_2026/Renault_Twingo_2026-01-thumb.jpg",
     "priceEur": 22590,
     "rangeKm": 185,
     "oneStopRangeKm": 193,
@@ -74,6 +80,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3193",
     "name": "BYD DOLPHIN SURF 30 kWh Active",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_DOLPHIN_SURF/BYD_DOLPHIN_SURF-01-thumb.jpg",
     "priceEur": 22990,
     "rangeKm": 190,
     "oneStopRangeKm": 199,
@@ -85,6 +92,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3035",
     "name": "Dongfeng Box 31.4 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Dongfeng_Box/Dongfeng_Box-01-thumb.jpg",
     "priceEur": 23499,
     "rangeKm": 190,
     "oneStopRangeKm": 205,
@@ -96,6 +104,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2230",
     "name": "Hyundai INSTER Standard Range",
+    "imageUrl": "https://ev-database.org/img/auto/Hyundai_Inster_2025/Hyundai_Inster_2025-01-thumb.jpg",
     "priceEur": 24295,
     "rangeKm": 255,
     "oneStopRangeKm": 266,
@@ -107,6 +116,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3036",
     "name": "Dongfeng Box 42.3 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Dongfeng_Box/Dongfeng_Box-01-thumb.jpg",
     "priceEur": 24499,
     "rangeKm": 255,
     "oneStopRangeKm": 254,
@@ -118,6 +128,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2039",
     "name": "Citroen e-C3 Comfort Range 44 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Citroen_e-C3/Citroen_e-C3-01-thumb.jpg",
     "priceEur": 24700,
     "rangeKm": 255,
     "oneStopRangeKm": 271,
@@ -129,6 +140,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2133",
     "name": "Renault 5 E-Tech 40kWh 95hp",
+    "imageUrl": "https://ev-database.org/img/auto/Renault_5_ETech/Renault_5_ETech-01-thumb.jpg",
     "priceEur": 24990,
     "rangeKm": 260,
     "oneStopRangeKm": 188,
@@ -140,6 +152,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3194",
     "name": "BYD DOLPHIN SURF 43.2 kWh Boost",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_DOLPHIN_SURF/BYD_DOLPHIN_SURF-01-thumb.jpg",
     "priceEur": 24990,
     "rangeKm": 270,
     "oneStopRangeKm": 283,
@@ -151,6 +164,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2251",
     "name": "Fiat Grande Panda",
+    "imageUrl": "https://ev-database.org/img/auto/Fiat_Grande_Panda_2024/Fiat_Grande_Panda_2024-01-thumb.jpg",
     "priceEur": 24999,
     "rangeKm": 260,
     "oneStopRangeKm": 271,
@@ -162,6 +176,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1327",
     "name": "Fiat 500e Hatchback 24 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Fiat_500e_Hatchback_2020/Fiat_500e_Hatchback_2020-01-thumb.jpg",
     "priceEur": 24999,
     "rangeKm": 135,
     "oneStopRangeKm": 153,
@@ -173,6 +188,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2231",
     "name": "Hyundai INSTER Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/Hyundai_Inster_2025/Hyundai_Inster_2025-01-thumb.jpg",
     "priceEur": 25995,
     "rangeKm": 300,
     "oneStopRangeKm": 311,
@@ -184,6 +200,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3195",
     "name": "BYD DOLPHIN SURF 43.2 kWh Comfort",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_DOLPHIN_SURF/BYD_DOLPHIN_SURF-01-thumb.jpg",
     "priceEur": 26690,
     "rangeKm": 265,
     "oneStopRangeKm": 275,
@@ -195,6 +212,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2224",
     "name": "Citroen e-C3 Aircross Comfort Range 44 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Citroen_e-C3_Aircross/Citroen_e-C3_Aircross-01-thumb.jpg",
     "priceEur": 27800,
     "rangeKm": 240,
     "oneStopRangeKm": 254,
@@ -206,6 +224,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2134",
     "name": "Renault 5 E-Tech 40kWh 120hp",
+    "imageUrl": "https://ev-database.org/img/auto/Renault_5_ETech/Renault_5_ETech-01-thumb.jpg",
     "priceEur": 27990,
     "rangeKm": 260,
     "oneStopRangeKm": 269,
@@ -217,6 +236,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3232",
     "name": "Leapmotor B10 56.2 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Leapmotor_B10/Leapmotor_B10-01-thumb.jpg",
     "priceEur": 27995,
     "rangeKm": 305,
     "oneStopRangeKm": 350,
@@ -228,6 +248,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1285",
     "name": "Fiat 500e Hatchback 42 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Fiat_500e_Hatchback_2020/Fiat_500e_Hatchback_2020-01-thumb.jpg",
     "priceEur": 27999,
     "rangeKm": 235,
     "oneStopRangeKm": 260,
@@ -239,6 +260,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1945",
     "name": "Fiat 600e",
+    "imageUrl": "https://ev-database.org/img/auto/Fiat_600e/Fiat_600e-01-thumb.jpg",
     "priceEur": 28999,
     "rangeKm": 310,
     "oneStopRangeKm": 336,
@@ -250,6 +272,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3220",
     "name": "Opel Corsa Electric 50 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Corsa_Electric_2023/Opel_Corsa_Electric_2023-01-thumb.jpg",
     "priceEur": 28999,
     "rangeKm": 290,
     "oneStopRangeKm": 315,
@@ -261,6 +284,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3202",
     "name": "Nissan Micra Standard Range 40 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Nissan_Micra_2025/Nissan_Micra_2025-01-thumb.jpg",
     "priceEur": 29590,
     "rangeKm": 260,
     "oneStopRangeKm": 269,
@@ -272,6 +296,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3228",
     "name": "Citroen e-C3 Aircross Extended Range 54 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Citroen_e-C3_Aircross/Citroen_e-C3_Aircross-01-thumb.jpg",
     "priceEur": 29800,
     "rangeKm": 290,
     "oneStopRangeKm": 298,
@@ -283,6 +308,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3178",
     "name": "firefly firefly",
+    "imageUrl": "https://ev-database.org/img/auto/Firefly_2025/Firefly_2025-01-thumb.jpg",
     "priceEur": 29900,
     "rangeKm": 240,
     "oneStopRangeKm": 256,
@@ -294,6 +320,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2214",
     "name": "Volkswagen ID.3 Pure",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID3_2024/Volkswagen_ID3_2024-01-thumb.jpg",
     "priceEur": 29990,
     "rangeKm": 325,
     "oneStopRangeKm": 376,
@@ -305,6 +332,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3046",
     "name": "Omoda 5 EV",
+    "imageUrl": "https://ev-database.org/img/auto/Omoda_E5_2024/Omoda_E5_2024-01-thumb.jpg",
     "priceEur": 29990,
     "rangeKm": 330,
     "oneStopRangeKm": 350,
@@ -316,6 +344,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3126",
     "name": "Renault 4 E-Tech 40kWh 120hp",
+    "imageUrl": "https://ev-database.org/img/auto/Renault_4_ETech/Renault_4_ETech-01-thumb.jpg",
     "priceEur": 29990,
     "rangeKm": 245,
     "oneStopRangeKm": 253,
@@ -327,6 +356,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3221",
     "name": "Opel Corsa Electric 54 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Corsa_Electric_2023/Opel_Corsa_Electric_2023-01-thumb.jpg",
     "priceEur": 29999,
     "rangeKm": 335,
     "oneStopRangeKm": 359,
@@ -338,6 +368,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2238",
     "name": "Opel Frontera Electric 44 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Frontera_2024/Opel_Frontera_2024-01-thumb.jpg",
     "priceEur": 29999,
     "rangeKm": 240,
     "oneStopRangeKm": 254,
@@ -349,6 +380,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3336",
     "name": "Jaecoo 5 EV",
+    "imageUrl": "https://ev-database.org/img/auto/Jaecoo_5_BEV/Jaecoo_5_BEV-01-thumb.jpg",
     "priceEur": 30890,
     "rangeKm": 325,
     "oneStopRangeKm": 341,
@@ -360,6 +392,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2135",
     "name": "Renault 5 E-Tech 52kWh 150hp",
+    "imageUrl": "https://ev-database.org/img/auto/Renault_5_ETech/Renault_5_ETech-01-thumb.jpg",
     "priceEur": 30990,
     "rangeKm": 335,
     "oneStopRangeKm": 352,
@@ -371,6 +404,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3233",
     "name": "Leapmotor B10 67.1 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Leapmotor_B10/Leapmotor_B10-01-thumb.jpg",
     "priceEur": 31495,
     "rangeKm": 360,
     "oneStopRangeKm": 403,
@@ -382,6 +416,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1328",
     "name": "Fiat 500e 3+1 42 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Fiat_500e_3plus1_2020/Fiat_500e_3plus1_2020-01-thumb.jpg",
     "priceEur": 31499,
     "rangeKm": 235,
     "oneStopRangeKm": 257,
@@ -393,6 +428,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3125",
     "name": "BYD ATTO 2",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_ATTO_2/BYD_ATTO_2-01-thumb.jpg",
     "priceEur": 31690,
     "rangeKm": 245,
     "oneStopRangeKm": 235,
@@ -404,6 +440,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3262",
     "name": "CUPRA Born 150 kW - 59 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Cupra_el-Born/Cupra_el-Born-01-thumb.jpg",
     "priceEur": 31990,
     "rangeKm": 360,
     "oneStopRangeKm": 416,
@@ -415,6 +452,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3211",
     "name": "Suzuki e VITARA 49 kWh 2WD",
+    "imageUrl": "https://ev-database.org/img/auto/Suzuki_e_VITARA/Suzuki_e_VITARA-01-thumb.jpg",
     "priceEur": 31995,
     "rangeKm": 270,
     "oneStopRangeKm": 248,
@@ -426,6 +464,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2217",
     "name": "Smart #1 Pure",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_1_2023/Smart_1_2023-01-thumb.jpg",
     "priceEur": 32000,
     "rangeKm": 250,
     "oneStopRangeKm": 280,
@@ -437,6 +476,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3229",
     "name": "Opel Frontera Electric 54 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Frontera_2024/Opel_Frontera_2024-01-thumb.jpg",
     "priceEur": 32499,
     "rangeKm": 290,
     "oneStopRangeKm": 298,
@@ -448,6 +488,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3222",
     "name": "Peugeot e-208 50 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-208_2024/Peugeot_e-208_2024-01-thumb.jpg",
     "priceEur": 32700,
     "rangeKm": 295,
     "oneStopRangeKm": 318,
@@ -459,6 +500,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3127",
     "name": "Renault 4 E-Tech 52kWh 150hp",
+    "imageUrl": "https://ev-database.org/img/auto/Renault_4_ETech/Renault_4_ETech-01-thumb.jpg",
     "priceEur": 32990,
     "rangeKm": 315,
     "oneStopRangeKm": 330,
@@ -470,6 +512,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3208",
     "name": "Toyota Urban Cruiser 48.8 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Toyota_Urban_Cruiser/Toyota_Urban_Cruiser-01-thumb.jpg",
     "priceEur": 32995,
     "rangeKm": 270,
     "oneStopRangeKm": 248,
@@ -481,6 +524,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3477",
     "name": "Volvo EX30 P3",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX30_2024/Volvo_EX30_2024-01-thumb.jpg",
     "priceEur": 32995,
     "rangeKm": 275,
     "oneStopRangeKm": 306,
@@ -492,6 +536,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1275",
     "name": "Fiat 500e Cabrio 42 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Fiat_500e_Convertible_2020/Fiat_500e_Convertible_2020-01-thumb.jpg",
     "priceEur": 32999,
     "rangeKm": 230,
     "oneStopRangeKm": 250,
@@ -503,6 +548,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3223",
     "name": "Peugeot e-208 54 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-208_2024/Peugeot_e-208_2024-01-thumb.jpg",
     "priceEur": 33700,
     "rangeKm": 335,
     "oneStopRangeKm": 362,
@@ -514,6 +560,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3224",
     "name": "Lancia Ypsilon 54 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Lancia_Ypsilon/Lancia_Ypsilon-01-thumb.jpg",
     "priceEur": 33700,
     "rangeKm": 325,
     "oneStopRangeKm": 353,
@@ -525,6 +572,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3146",
     "name": "MG MGS5  EV Standard Range",
+    "imageUrl": "https://ev-database.org/img/auto/MG_MGS5_EV_Electric_2025/MG_MGS5_EV_Electric_2025-01-thumb.jpg",
     "priceEur": 33850,
     "rangeKm": 275,
     "oneStopRangeKm": 309,
@@ -536,6 +584,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1707",
     "name": "MG MG4 Electric 51 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/MG_MG4_Electric_2022/MG_MG4_Electric_2022-01-thumb.jpg",
     "priceEur": 33970,
     "rangeKm": 300,
     "oneStopRangeKm": 304,
@@ -547,6 +596,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3045",
     "name": "Lynk&Co 02",
+    "imageUrl": "https://ev-database.org/img/auto/LynkCo_02_2024/LynkCo_02_2024-01-thumb.jpg",
     "priceEur": 33995,
     "rangeKm": 355,
     "oneStopRangeKm": 383,
@@ -558,6 +608,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3051",
     "name": "Opel Mokka Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Mokka_Electric_2024/Opel_Mokka_Electric_2024-01-thumb.jpg",
     "priceEur": 33999,
     "rangeKm": 285,
     "oneStopRangeKm": 306,
@@ -569,6 +620,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2041",
     "name": "Smart #1 Pro",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_1_2023/Smart_1_2023-01-thumb.jpg",
     "priceEur": 34500,
     "rangeKm": 250,
     "oneStopRangeKm": 280,
@@ -580,6 +632,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3203",
     "name": "Nissan Micra Extended Range 52 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Nissan_Micra_2025/Nissan_Micra_2025-01-thumb.jpg",
     "priceEur": 34590,
     "rangeKm": 330,
     "oneStopRangeKm": 345,
@@ -591,6 +644,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3031",
     "name": "Skoda Elroq 50",
+    "imageUrl": "https://ev-database.org/img/auto/Skoda_Elroq_2024/Skoda_Elroq_2024-01-thumb.jpg",
     "priceEur": 34990,
     "rangeKm": 310,
     "oneStopRangeKm": 351,
@@ -602,6 +656,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2233",
     "name": "CUPRA Born 170 kW - 59 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Cupra_el-Born/Cupra_el-Born-01-thumb.jpg",
     "priceEur": 34990,
     "rangeKm": 360,
     "oneStopRangeKm": 416,
@@ -613,6 +668,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1816",
     "name": "Jeep Avenger Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Jeep_Avenger/Jeep_Avenger-01-thumb.jpg",
     "priceEur": 34995,
     "rangeKm": 310,
     "oneStopRangeKm": 330,
@@ -624,6 +680,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3047",
     "name": "Citroen e-C4",
+    "imageUrl": "https://ev-database.org/img/auto/Citroen_e-C4_2024/Citroen_e-C4_2024-01-thumb.jpg",
     "priceEur": 35215,
     "rangeKm": 285,
     "oneStopRangeKm": 308,
@@ -635,6 +692,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3212",
     "name": "Suzuki e VITARA 61 kWh 2WD",
+    "imageUrl": "https://ev-database.org/img/auto/Suzuki_e_VITARA/Suzuki_e_VITARA-01-thumb.jpg",
     "priceEur": 35295,
     "rangeKm": 330,
     "oneStopRangeKm": 307,
@@ -646,6 +704,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3073",
     "name": "Ford Puma Gen-E",
+    "imageUrl": "https://ev-database.org/img/auto/Ford_Puma_Gen-E/Ford_Puma_Gen-E-01-thumb.jpg",
     "priceEur": 35495,
     "rangeKm": 275,
     "oneStopRangeKm": 312,
@@ -657,6 +716,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2052",
     "name": "Smart #3 Pro",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_3_2024/Smart_3_2024-01-thumb.jpg",
     "priceEur": 35495,
     "rangeKm": 265,
     "oneStopRangeKm": 297,
@@ -668,6 +728,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3209",
     "name": "Toyota Urban Cruiser 61.1 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Toyota_Urban_Cruiser/Toyota_Urban_Cruiser-01-thumb.jpg",
     "priceEur": 35795,
     "rangeKm": 330,
     "oneStopRangeKm": 307,
@@ -679,6 +740,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3049",
     "name": "Citroen e-C4 X",
+    "imageUrl": "https://ev-database.org/img/auto/Citroen_e-C4_X_2024/Citroen_e-C4_X_2024-01-thumb.jpg",
     "priceEur": 35915,
     "rangeKm": 290,
     "oneStopRangeKm": 315,
@@ -690,6 +752,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1997",
     "name": "Mini Cooper E",
+    "imageUrl": "https://ev-database.org/img/auto/Mini_Cooper_Electric_2024/Mini_Cooper_Electric_2024-01-thumb.jpg",
     "priceEur": 35990,
     "rangeKm": 250,
     "oneStopRangeKm": 267,
@@ -701,6 +764,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3281",
     "name": "VinFast VF 6 Eco",
+    "imageUrl": "https://ev-database.org/img/auto/VinFast_VF_6/VinFast_VF_6-01-thumb.jpg",
     "priceEur": 36020,
     "rangeKm": 315,
     "oneStopRangeKm": 322,
@@ -712,6 +776,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3131",
     "name": "Renault Megane E-Tech EV60 130hp",
+    "imageUrl": "https://ev-database.org/img/auto/Renault_Megane_ETech/Renault_Megane_ETech-01-thumb.jpg",
     "priceEur": 36490,
     "rangeKm": 380,
     "oneStopRangeKm": 404,
@@ -723,6 +788,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1903",
     "name": "Abarth 500e Hatchback",
+    "imageUrl": "https://ev-database.org/img/auto/Abarth_500e_Hatchback/Abarth_500e_Hatchback-01-thumb.jpg",
     "priceEur": 36490,
     "rangeKm": 225,
     "oneStopRangeKm": 246,
@@ -734,6 +800,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3450",
     "name": "Opel Astra Electric 58 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Astra_Electric_2026/Opel_Astra_Electric_2026-01-thumb.jpg",
     "priceEur": 36499,
     "rangeKm": 345,
     "oneStopRangeKm": 361,
@@ -745,6 +812,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3268",
     "name": "BYD ATTO 2 64.8 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_ATTO_2/BYD_ATTO_2-01-thumb.jpg",
     "priceEur": 36690,
     "rangeKm": 305,
     "oneStopRangeKm": 340,
@@ -756,6 +824,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1947",
     "name": "Peugeot e-2008 54 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-2008_2024/Peugeot_e-2008_2024-01-thumb.jpg",
     "priceEur": 36700,
     "rangeKm": 300,
     "oneStopRangeKm": 327,
@@ -767,6 +836,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3478",
     "name": "Volvo EX30 P5",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX30_2024/Volvo_EX30_2024-01-thumb.jpg",
     "priceEur": 36795,
     "rangeKm": 275,
     "oneStopRangeKm": 306,
@@ -778,6 +848,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3147",
     "name": "MG MGS5  EV Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/MG_MGS5_EV_Electric_2025/MG_MGS5_EV_Electric_2025-01-thumb.jpg",
     "priceEur": 36850,
     "rangeKm": 365,
     "oneStopRangeKm": 387,
@@ -789,6 +860,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3321",
     "name": "Peugeot e-308 Berline 58 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-308_2026/Peugeot_e-308_2026-01-thumb.jpg",
     "priceEur": 36950,
     "rangeKm": 345,
     "oneStopRangeKm": 358,
@@ -800,6 +872,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3403",
     "name": "Tesla Model 3 Standard RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Tesla_Model_3_Standard_2026/Tesla_Model_3_Standard_2026-01-thumb.jpg",
     "priceEur": 36990,
     "rangeKm": 445,
     "oneStopRangeKm": 523,
@@ -811,6 +884,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2211",
     "name": "Kia EV3 Standard Range",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV3_2025/Kia_EV3_2025-01-thumb.jpg",
     "priceEur": 36995,
     "rangeKm": 325,
     "oneStopRangeKm": 341,
@@ -822,6 +896,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3462",
     "name": "Hyundai Kona Electric 48.6 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Hyundai_Kona_Electric_2024/Hyundai_Kona_Electric_2024-01-thumb.jpg",
     "priceEur": 36995,
     "rangeKm": 295,
     "oneStopRangeKm": 291,
@@ -833,6 +908,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3213",
     "name": "Suzuki e VITARA 61 kWh 4WD AllGrip",
+    "imageUrl": "https://ev-database.org/img/auto/Suzuki_e_VITARA/Suzuki_e_VITARA-01-thumb.jpg",
     "priceEur": 36995,
     "rangeKm": 310,
     "oneStopRangeKm": 286,
@@ -844,6 +920,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2218",
     "name": "Smart #1 Pure+",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_1_2023/Smart_1_2023-01-thumb.jpg",
     "priceEur": 37000,
     "rangeKm": 335,
     "oneStopRangeKm": 357,
@@ -855,6 +932,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3297",
     "name": "BYD DOLPHIN 60.4 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_DOLPHIN_2025/BYD_DOLPHIN_2025-01-thumb.jpg",
     "priceEur": 37190,
     "rangeKm": 350,
     "oneStopRangeKm": 354,
@@ -866,6 +944,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3048",
     "name": "Citroen e-C4 54 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Citroen_e-C4_2024/Citroen_e-C4_2024-01-thumb.jpg",
     "priceEur": 37465,
     "rangeKm": 325,
     "oneStopRangeKm": 353,
@@ -877,6 +956,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3451",
     "name": "Opel Astra Sports Tourer Electric 58 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Astra_Sports_Tourer_Electric_2026/Opel_Astra_Sports_Tourer_Electric_2026-01-thumb.jpg",
     "priceEur": 37499,
     "rangeKm": 335,
     "oneStopRangeKm": 351,
@@ -888,6 +968,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1708",
     "name": "MG MG4 Electric 64 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/MG_MG4_Electric_2022/MG_MG4_Electric_2022-01-thumb.jpg",
     "priceEur": 37570,
     "rangeKm": 360,
     "oneStopRangeKm": 401,
@@ -899,6 +980,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3123",
     "name": "Kia EV4 Hatchback 58.3 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV4_hatchback_2025/Kia_EV4_hatchback_2025-01-thumb.jpg",
     "priceEur": 37695,
     "rangeKm": 340,
     "oneStopRangeKm": 364,
@@ -910,6 +992,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3435",
     "name": "Subaru Uncharted 57.7 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Subaru_Uncharted_2026/Subaru_Uncharted_2026-01-thumb.jpg",
     "priceEur": 37900,
     "rangeKm": 320,
     "oneStopRangeKm": 353,
@@ -921,6 +1004,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3032",
     "name": "Skoda Elroq 60",
+    "imageUrl": "https://ev-database.org/img/auto/Skoda_Elroq_2024/Skoda_Elroq_2024-01-thumb.jpg",
     "priceEur": 37990,
     "rangeKm": 350,
     "oneStopRangeKm": 405,
@@ -932,6 +1016,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3132",
     "name": "Renault Megane E-Tech EV60 220hp",
+    "imageUrl": "https://ev-database.org/img/auto/Renault_Megane_ETech/Renault_Megane_ETech-01-thumb.jpg",
     "priceEur": 37990,
     "rangeKm": 380,
     "oneStopRangeKm": 404,
@@ -943,6 +1028,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2213",
     "name": "Volkswagen ID.3 Pro",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID3_2024/Volkswagen_ID3_2024-01-thumb.jpg",
     "priceEur": 37990,
     "rangeKm": 365,
     "oneStopRangeKm": 422,
@@ -954,6 +1040,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3393",
     "name": "Toyota C-HR+ 57.7 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Toyota_C-HR-Plus_2026/Toyota_C-HR-Plus_2026-01-thumb.jpg",
     "priceEur": 37995,
     "rangeKm": 330,
     "oneStopRangeKm": 369,
@@ -965,6 +1052,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3479",
     "name": "Volvo EX30 P3 Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX30_2024/Volvo_EX30_2024-01-thumb.jpg",
     "priceEur": 37995,
     "rangeKm": 365,
     "oneStopRangeKm": 402,
@@ -976,6 +1064,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3050",
     "name": "Citroen e-C4 X 54 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Citroen_e-C4_X_2024/Citroen_e-C4_X_2024-01-thumb.jpg",
     "priceEur": 38165,
     "rangeKm": 335,
     "oneStopRangeKm": 362,
@@ -987,6 +1076,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3322",
     "name": "Peugeot e-308 SW 58 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-308_SW_2026/Peugeot_e-308_SW_2026-01-thumb.jpg",
     "priceEur": 38250,
     "rangeKm": 340,
     "oneStopRangeKm": 354,
@@ -998,6 +1088,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2268",
     "name": "Alpine A290 Electric 180 pk",
+    "imageUrl": "https://ev-database.org/img/auto/Alpine_A290_2024/Alpine_A290_2024-01-thumb.jpg",
     "priceEur": 38800,
     "rangeKm": 310,
     "oneStopRangeKm": 326,
@@ -1009,6 +1100,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3446",
     "name": "Ford Explorer Standard Range RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Ford_Explorer_2024/Ford_Explorer_2024-01-thumb.jpg",
     "priceEur": 38950,
     "rangeKm": 335,
     "oneStopRangeKm": 353,
@@ -1020,6 +1112,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1998",
     "name": "Mini Cooper SE",
+    "imageUrl": "https://ev-database.org/img/auto/Mini_Cooper_Electric_2024/Mini_Cooper_Electric_2024-01-thumb.jpg",
     "priceEur": 38990,
     "rangeKm": 330,
     "oneStopRangeKm": 356,
@@ -1031,6 +1124,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3367",
     "name": "Changan Deepal S05 RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Changan_Deepal_S05/Changan_Deepal_S05-01-thumb.jpg",
     "priceEur": 38990,
     "rangeKm": 385,
     "oneStopRangeKm": 448,
@@ -1042,6 +1136,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3197",
     "name": "Zeekr X Core RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Zeekr_X_2023/Zeekr_X_2023-01-thumb.jpg",
     "priceEur": 38990,
     "rangeKm": 270,
     "oneStopRangeKm": 299,
@@ -1053,6 +1148,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2190",
     "name": "Mini Aceman E",
+    "imageUrl": "https://ev-database.org/img/auto/Mini_Aceman_Electric_2024/Mini_Aceman_Electric_2024-01-thumb.jpg",
     "priceEur": 38990,
     "rangeKm": 230,
     "oneStopRangeKm": 243,
@@ -1064,6 +1160,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1904",
     "name": "Abarth 500e Cabriolet",
+    "imageUrl": "https://ev-database.org/img/auto/Abarth_500e_Convertible/Abarth_500e_Convertible-01-thumb.jpg",
     "priceEur": 38990,
     "rangeKm": 225,
     "oneStopRangeKm": 243,
@@ -1075,6 +1172,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2184",
     "name": "Alfa Romeo Junior Elettrica 54 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Alfa_Romeo_Junior/Alfa_Romeo_Junior-01-thumb.jpg",
     "priceEur": 39000,
     "rangeKm": 320,
     "oneStopRangeKm": 343,
@@ -1086,6 +1184,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3040",
     "name": "Leapmotor C10 RWD 69.9 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Leapmotor_C10/Leapmotor_C10-01-thumb.jpg",
     "priceEur": 39050,
     "rangeKm": 355,
     "oneStopRangeKm": 329,
@@ -1097,6 +1196,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3230",
     "name": "Citroen C5 Aircross Comfort Range",
+    "imageUrl": "https://ev-database.org/img/auto/Citroen_C5_Aircross/Citroen_C5_Aircross-01-thumb.jpg",
     "priceEur": 39490,
     "rangeKm": 375,
     "oneStopRangeKm": 389,
@@ -1108,6 +1208,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3218",
     "name": "Renault Scenic E-Tech EV60 170pk Comfort Range",
+    "imageUrl": "https://ev-database.org/img/auto/Renault_Scenic_ETech/Renault_Scenic_ETech-01-thumb.jpg",
     "priceEur": 39490,
     "rangeKm": 340,
     "oneStopRangeKm": 357,
@@ -1119,6 +1220,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1667",
     "name": "Smart #1 Pro+",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_1_2023/Smart_1_2023-01-thumb.jpg",
     "priceEur": 39500,
     "rangeKm": 335,
     "oneStopRangeKm": 357,
@@ -1130,6 +1232,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3210",
     "name": "Toyota Urban Cruiser 61.1 kWh AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Toyota_Urban_Cruiser/Toyota_Urban_Cruiser-01-thumb.jpg",
     "priceEur": 39795,
     "rangeKm": 310,
     "oneStopRangeKm": 286,
@@ -1141,6 +1244,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1791",
     "name": "DS Automobiles DS 3 E-Tense",
+    "imageUrl": "https://ev-database.org/img/auto/DS_3_2023/DS_3_2023-01-thumb.jpg",
     "priceEur": 39840,
     "rangeKm": 300,
     "oneStopRangeKm": 322,
@@ -1152,6 +1256,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3362",
     "name": "Tesla Model Y RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Tesla_Model_Y_Standard_2026/Tesla_Model_Y_Standard_2026-01-thumb.jpg",
     "priceEur": 39990,
     "rangeKm": 380,
     "oneStopRangeKm": 440,
@@ -1163,6 +1268,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3334",
     "name": "Volkswagen ID.3 Pro S",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID3_2024/Volkswagen_ID3_2024-01-thumb.jpg",
     "priceEur": 39990,
     "rangeKm": 475,
     "oneStopRangeKm": 536,
@@ -1174,6 +1280,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3249",
     "name": "Volkswagen ID.4 Pure",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID4_2024/Volkswagen_ID4_2024-01-thumb.jpg",
     "priceEur": 39990,
     "rangeKm": 285,
     "oneStopRangeKm": 318,
@@ -1185,6 +1292,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1910",
     "name": "Volvo EX30 Single Motor ER",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX30_2024/Volvo_EX30_2024-01-thumb.jpg",
     "priceEur": 39995,
     "rangeKm": 365,
     "oneStopRangeKm": 402,
@@ -1196,6 +1304,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3463",
     "name": "Hyundai Kona Electric 64.8 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Hyundai_Kona_Electric_2024/Hyundai_Kona_Electric_2024-01-thumb.jpg",
     "priceEur": 39995,
     "rangeKm": 385,
     "oneStopRangeKm": 379,
@@ -1207,6 +1316,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3133",
     "name": "Toyota bZ4X FWD 57.7 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Toyota_bZ4X_2025/Toyota_bZ4X_2025-01-thumb.jpg",
     "priceEur": 39995,
     "rangeKm": 305,
     "oneStopRangeKm": 343,
@@ -1218,6 +1328,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3288",
     "name": "Kia PV5 Passenger 51.5 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_PV5_Passenger/Kia_PV5_Passenger-01-thumb.jpg",
     "priceEur": 39995,
     "rangeKm": 230,
     "oneStopRangeKm": 257,
@@ -1229,6 +1340,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3480",
     "name": "Volvo EX30 P5 Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX30_2024/Volvo_EX30_2024-01-thumb.jpg",
     "priceEur": 39995,
     "rangeKm": 365,
     "oneStopRangeKm": 402,
@@ -1240,6 +1352,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1999",
     "name": "Smart #3 Pro+",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_3_2024/Smart_3_2024-01-thumb.jpg",
     "priceEur": 40495,
     "rangeKm": 355,
     "oneStopRangeKm": 383,
@@ -1251,6 +1364,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3282",
     "name": "VinFast VF 6 Plus",
+    "imageUrl": "https://ev-database.org/img/auto/VinFast_VF_6/VinFast_VF_6-01-thumb.jpg",
     "priceEur": 40520,
     "rangeKm": 310,
     "oneStopRangeKm": 318,
@@ -1262,6 +1376,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3192",
     "name": "BYD ATTO 3",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_ATTO_3_2025/BYD_ATTO_3_2025-01-thumb.jpg",
     "priceEur": 40690,
     "rangeKm": 340,
     "oneStopRangeKm": 348,
@@ -1273,6 +1388,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3445",
     "name": "Ford Capri Standard Range RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Ford_Capri_2024/Ford_Capri_2024-01-thumb.jpg",
     "priceEur": 40850,
     "rangeKm": 350,
     "oneStopRangeKm": 377,
@@ -1284,6 +1400,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3225",
     "name": "Lancia Ypsilon 54 kWh HF",
+    "imageUrl": "https://ev-database.org/img/auto/Lancia_Ypsilon_HF/Lancia_Ypsilon_HF-01-thumb.jpg",
     "priceEur": 40950,
     "rangeKm": 305,
     "oneStopRangeKm": 330,
@@ -1295,6 +1412,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3465",
     "name": "Peugeot e-408 58 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-408_2026/Peugeot_e-408_2026-01-thumb.jpg",
     "priceEur": 40990,
     "rangeKm": 355,
     "oneStopRangeKm": 380,
@@ -1306,6 +1424,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3456",
     "name": "Mini Countryman E",
+    "imageUrl": "https://ev-database.org/img/auto/Mini_Countryman_2024/Mini_Countryman_2024-01-thumb.jpg",
     "priceEur": 40990,
     "rangeKm": 400,
     "oneStopRangeKm": 421,
@@ -1317,6 +1436,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2191",
     "name": "Mini Aceman SE",
+    "imageUrl": "https://ev-database.org/img/auto/Mini_Aceman_Electric_2024/Mini_Aceman_Electric_2024-01-thumb.jpg",
     "priceEur": 40990,
     "rangeKm": 290,
     "oneStopRangeKm": 308,
@@ -1328,6 +1448,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3200",
     "name": "DS Automobiles N°4 E-Tense",
+    "imageUrl": "https://ev-database.org/img/auto/DS_No4_2024/DS_No4_2024-01-thumb.jpg",
     "priceEur": 41090,
     "rangeKm": 350,
     "oneStopRangeKm": 372,
@@ -1339,6 +1460,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3124",
     "name": "Kia EV4 Hatchback 81.4 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV4_hatchback_2025/Kia_EV4_hatchback_2025-01-thumb.jpg",
     "priceEur": 41195,
     "rangeKm": 475,
     "oneStopRangeKm": 498,
@@ -1350,6 +1472,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3389",
     "name": "KGM Torres EVX 80.6 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/KGM_Torres_EVX/KGM_Torres_EVX-01-thumb.jpg",
     "priceEur": 41250,
     "rangeKm": 400,
     "oneStopRangeKm": 403,
@@ -1361,6 +1484,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2159",
     "name": "Citroen e-Berlingo Standaard 50 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Citroen_e-Berlingo-2024/Citroen_e-Berlingo-2024-01-thumb.jpg",
     "priceEur": 41358,
     "rangeKm": 235,
     "oneStopRangeKm": 246,
@@ -1372,6 +1496,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2212",
     "name": "Kia EV3 Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV3_2025/Kia_EV3_2025-01-thumb.jpg",
     "priceEur": 41495,
     "rangeKm": 455,
     "oneStopRangeKm": 472,
@@ -1383,6 +1508,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3102",
     "name": "BYD SEAL 61.4 kWh RWD Comfort",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_SEAL/BYD_SEAL-01-thumb.jpg",
     "priceEur": 41690,
     "rangeKm": 365,
     "oneStopRangeKm": 384,
@@ -1394,6 +1520,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2269",
     "name": "Alpine A290 Electric 220 pk",
+    "imageUrl": "https://ev-database.org/img/auto/Alpine_A290_2024/Alpine_A290_2024-01-thumb.jpg",
     "priceEur": 41800,
     "rangeKm": 305,
     "oneStopRangeKm": 320,
@@ -1405,6 +1532,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3263",
     "name": "CUPRA Born 170 kW - 79 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Cupra_el-Born/Cupra_el-Born-01-thumb.jpg",
     "priceEur": 41990,
     "rangeKm": 470,
     "oneStopRangeKm": 526,
@@ -1416,6 +1544,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2053",
     "name": "Smart #1 Premium",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_1_2023/Smart_1_2023-01-thumb.jpg",
     "priceEur": 42500,
     "rangeKm": 335,
     "oneStopRangeKm": 357,
@@ -1427,6 +1556,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1920",
     "name": "Smart #1 Pulse",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_1_2023/Smart_1_2023-01-thumb.jpg",
     "priceEur": 42500,
     "rangeKm": 325,
     "oneStopRangeKm": 350,
@@ -1438,6 +1568,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3387",
     "name": "Leapmotor C10 RWD 81.9 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Leapmotor_C10/Leapmotor_C10-01-thumb.jpg",
     "priceEur": 42550,
     "rangeKm": 410,
     "oneStopRangeKm": 439,
@@ -1449,6 +1580,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1301",
     "name": "Nissan Ariya 63kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Nissan_Ariya/Nissan_Ariya-01-thumb.jpg",
     "priceEur": 42690,
     "rangeKm": 335,
     "oneStopRangeKm": 340,
@@ -1460,6 +1592,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2161",
     "name": "Opel Combo Electric L1 50 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Combo-e_Life_2024/Opel_Combo-e_Life_2024-01-thumb.jpg",
     "priceEur": 42764,
     "rangeKm": 235,
     "oneStopRangeKm": 246,
@@ -1471,6 +1604,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3084",
     "name": "Nissan Townstar Evalia L2",
+    "imageUrl": "https://ev-database.org/img/auto/Nissan_Townstar_2023/Nissan_Townstar_2023-01-thumb.jpg",
     "priceEur": 42790,
     "rangeKm": 220,
     "oneStopRangeKm": 218,
@@ -1482,6 +1616,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3436",
     "name": "Subaru Uncharted 77 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Subaru_Uncharted_2026/Subaru_Uncharted_2026-01-thumb.jpg",
     "priceEur": 42900,
     "rangeKm": 420,
     "oneStopRangeKm": 455,
@@ -1493,6 +1628,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2163",
     "name": "Peugeot e-Rifter L1 50 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-Rifter_2024/Peugeot_e-Rifter_2024-01-thumb.jpg",
     "priceEur": 42918,
     "rangeKm": 235,
     "oneStopRangeKm": 246,
@@ -1504,6 +1640,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1973",
     "name": "MG MG4 Electric 77 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/MG_MG4_Electric_2022/MG_MG4_Electric_2022-01-thumb.jpg",
     "priceEur": 42970,
     "rangeKm": 425,
     "oneStopRangeKm": 454,
@@ -1515,6 +1652,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3096",
     "name": "Skoda Enyaq 60",
+    "imageUrl": "https://ev-database.org/img/auto/Skoda_Enyaq_2025/Skoda_Enyaq_2025-01-thumb.jpg",
     "priceEur": 42990,
     "rangeKm": 360,
     "oneStopRangeKm": 416,
@@ -1526,6 +1664,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2094",
     "name": "BYD SEAL U 71.8 kWh Comfort",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_SEAL_U/BYD_SEAL_U-01-thumb.jpg",
     "priceEur": 42990,
     "rangeKm": 360,
     "oneStopRangeKm": 352,
@@ -1537,6 +1676,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3158",
     "name": "Volvo EX40 Single Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX40_2025/Volvo_EX40_2025-01-thumb.jpg",
     "priceEur": 42995,
     "rangeKm": 345,
     "oneStopRangeKm": 378,
@@ -1548,6 +1688,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2235",
     "name": "Hyundai IONIQ 5 63 kWh RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Hyundai_IONIQ5_2024/Hyundai_IONIQ5_2024-01-thumb.jpg",
     "priceEur": 42995,
     "rangeKm": 345,
     "oneStopRangeKm": 423,
@@ -1559,6 +1700,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2054",
     "name": "Smart #3 Premium",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_3_2024/Smart_3_2024-01-thumb.jpg",
     "priceEur": 43155,
     "rangeKm": 355,
     "oneStopRangeKm": 380,
@@ -1570,6 +1712,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2160",
     "name": "Citroen e-Berlingo XL 50 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Citroen_e-Berlingo-2024/Citroen_e-Berlingo-2024-01-thumb.jpg",
     "priceEur": 43178,
     "rangeKm": 230,
     "oneStopRangeKm": 242,
@@ -1581,6 +1724,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3198",
     "name": "Zeekr X Long Range RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Zeekr_X_2023/Zeekr_X_2023-01-thumb.jpg",
     "priceEur": 43490,
     "rangeKm": 360,
     "oneStopRangeKm": 392,
@@ -1592,6 +1736,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3454",
     "name": "Ford Explorer Extended Range RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Ford_Explorer_2024/Ford_Explorer_2024-01-thumb.jpg",
     "priceEur": 43850,
     "rangeKm": 450,
     "oneStopRangeKm": 500,
@@ -1603,6 +1748,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1944",
     "name": "MG MG4 Electric XPOWER",
+    "imageUrl": "https://ev-database.org/img/auto/MG_MG4_Electric_XPOWER_2023/MG_MG4_Electric_XPOWER_2023-01-thumb.jpg",
     "priceEur": 43970,
     "rangeKm": 320,
     "oneStopRangeKm": 357,
@@ -1614,6 +1760,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3033",
     "name": "Skoda Elroq 85",
+    "imageUrl": "https://ev-database.org/img/auto/Skoda_Elroq_2024/Skoda_Elroq_2024-01-thumb.jpg",
     "priceEur": 43990,
     "rangeKm": 450,
     "oneStopRangeKm": 493,
@@ -1625,6 +1772,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3402",
     "name": "XPENG G6 RWD Standard Range",
+    "imageUrl": "https://ev-database.org/img/auto/XPENG_G6_2025/XPENG_G6_2025-01-thumb.jpg",
     "priceEur": 43990,
     "rangeKm": 380,
     "oneStopRangeKm": 488,
@@ -1636,6 +1784,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3394",
     "name": "Toyota C-HR+ 77 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Toyota_C-HR-Plus_2026/Toyota_C-HR-Plus_2026-01-thumb.jpg",
     "priceEur": 43995,
     "rangeKm": 430,
     "oneStopRangeKm": 471,
@@ -1647,6 +1796,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3289",
     "name": "Kia PV5 Passenger 71.2 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_PV5_Passenger/Kia_PV5_Passenger-01-thumb.jpg",
     "priceEur": 43995,
     "rangeKm": 315,
     "oneStopRangeKm": 328,
@@ -1658,6 +1808,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3307",
     "name": "Opel Mokka Electric GSE",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Mokka_Electric_GSE/Opel_Mokka_Electric_GSE-01-thumb.jpg",
     "priceEur": 43999,
     "rangeKm": 280,
     "oneStopRangeKm": 297,
@@ -1669,6 +1820,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3447",
     "name": "KGM Musso EV 2WD",
+    "imageUrl": "https://ev-database.org/img/auto/KGM_Musso_EV/KGM_Musso_EV-01-thumb.jpg",
     "priceEur": 44059,
     "rangeKm": 365,
     "oneStopRangeKm": 357,
@@ -1680,6 +1832,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3482",
     "name": "Volvo EX30 Cross Country P5 Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX30_CrossCountry/Volvo_EX30_CrossCountry-01-thumb.jpg",
     "priceEur": 44195,
     "rangeKm": 350,
     "oneStopRangeKm": 379,
@@ -1691,6 +1844,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3300",
     "name": "Kia EV5 81.4 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV5_2026/Kia_EV5_2026-01-thumb.jpg",
     "priceEur": 44495,
     "rangeKm": 400,
     "oneStopRangeKm": 421,
@@ -1702,6 +1856,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2162",
     "name": "Opel Combo Electric L2 50 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Combo-e_Life_2024/Opel_Combo-e_Life_2024-01-thumb.jpg",
     "priceEur": 44584,
     "rangeKm": 230,
     "oneStopRangeKm": 242,
@@ -1713,6 +1868,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3122",
     "name": "Kia EV4 Fastback 81.4 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV4_sedan_2025/Kia_EV4_sedan_2025-01-thumb.jpg",
     "priceEur": 44595,
     "rangeKm": 495,
     "oneStopRangeKm": 518,
@@ -1724,6 +1880,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2164",
     "name": "Peugeot e-Rifter L2 50 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-Rifter_2024/Peugeot_e-Rifter_2024-01-thumb.jpg",
     "priceEur": 44739,
     "rangeKm": 230,
     "oneStopRangeKm": 239,
@@ -1735,6 +1892,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3066",
     "name": "Peugeot e-408 58 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-408_2024/Peugeot_e-408_2024-01-thumb.jpg",
     "priceEur": 44780,
     "rangeKm": 350,
     "oneStopRangeKm": 372,
@@ -1746,6 +1904,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3107",
     "name": "Mazda 6e 68.8 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Mazda_6e/Mazda_6e-01-thumb.jpg",
     "priceEur": 44900,
     "rangeKm": 400,
     "oneStopRangeKm": 467,
@@ -1757,6 +1916,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3150",
     "name": "Polestar 2 Standard Range Single Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Polestar_2_2024/Polestar_2_2024-01-thumb.jpg",
     "priceEur": 44950,
     "rangeKm": 405,
     "oneStopRangeKm": 454,
@@ -1768,6 +1928,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3250",
     "name": "Volkswagen ID.4 Pro",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID4_2024/Volkswagen_ID4_2024-01-thumb.jpg",
     "priceEur": 44990,
     "rangeKm": 445,
     "oneStopRangeKm": 490,
@@ -1779,6 +1940,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3148",
     "name": "Audi Q4 e-tron 40",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-01-thumb.jpg",
     "priceEur": 44990,
     "rangeKm": 325,
     "oneStopRangeKm": 378,
@@ -1790,6 +1952,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3136",
     "name": "Voyah Courage 80 kWh RWD Business",
+    "imageUrl": "https://ev-database.org/img/auto/Voyah_Courage/Voyah_Courage-01-thumb.jpg",
     "priceEur": 44990,
     "rangeKm": 395,
     "oneStopRangeKm": 434,
@@ -1801,6 +1964,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3368",
     "name": "Changan Deepal S05 4WD Max",
+    "imageUrl": "https://ev-database.org/img/auto/Changan_Deepal_S05/Changan_Deepal_S05-01-thumb.jpg",
     "priceEur": 44990,
     "rangeKm": 365,
     "oneStopRangeKm": 428,
@@ -1812,6 +1976,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3099",
     "name": "Skoda Enyaq Coupe 60",
+    "imageUrl": "https://ev-database.org/img/auto/Skoda_Enyaq_Coupe_2025/Skoda_Enyaq_Coupe_2025-01-thumb.jpg",
     "priceEur": 44990,
     "rangeKm": 370,
     "oneStopRangeKm": 429,
@@ -1823,6 +1988,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3181",
     "name": "Jeep Compass Electric 74 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Jeep_Compass_2025/Jeep_Compass_2025-01-thumb.jpg",
     "priceEur": 44995,
     "rangeKm": 370,
     "oneStopRangeKm": 387,
@@ -1834,6 +2000,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3030",
     "name": "Kia EV6 Standard Range 2WD",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV6_2024/Kia_EV6_2024-01-thumb.jpg",
     "priceEur": 44995,
     "rangeKm": 345,
     "oneStopRangeKm": 425,
@@ -1845,6 +2012,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2003",
     "name": "Peugeot e-3008 73 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-3008_2024/Peugeot_e-3008_2024-01-thumb.jpg",
     "priceEur": 45015,
     "rangeKm": 380,
     "oneStopRangeKm": 397,
@@ -1856,6 +2024,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3388",
     "name": "Leapmotor C10 AWD 81.9 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Leapmotor_C10/Leapmotor_C10-01-thumb.jpg",
     "priceEur": 45050,
     "rangeKm": 380,
     "oneStopRangeKm": 405,
@@ -1867,6 +2036,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3219",
     "name": "Renault Scenic E-Tech EV87 220pk Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/Renault_Scenic_ETech/Renault_Scenic_ETech-01-thumb.jpg",
     "priceEur": 45290,
     "rangeKm": 480,
     "oneStopRangeKm": 481,
@@ -1878,6 +2048,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3457",
     "name": "Mini Countryman SE ALL4",
+    "imageUrl": "https://ev-database.org/img/auto/Mini_Countryman_2024/Mini_Countryman_2024-01-thumb.jpg",
     "priceEur": 45490,
     "rangeKm": 385,
     "oneStopRangeKm": 405,
@@ -1889,6 +2060,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3335",
     "name": "Mitsubishi Eclipse Cross 87 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Mitsubishi_Eclipse_Cross_2026/Mitsubishi_Eclipse_Cross_2026-01-thumb.jpg",
     "priceEur": 45690,
     "rangeKm": 480,
     "oneStopRangeKm": 479,
@@ -1900,6 +2072,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1302",
     "name": "Nissan Ariya 87kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Nissan_Ariya/Nissan_Ariya-01-thumb.jpg",
     "priceEur": 45690,
     "rangeKm": 450,
     "oneStopRangeKm": 435,
@@ -1911,6 +2084,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3418",
     "name": "MG MGS6 EV Long Range 77 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/MG_MGS6_EV_2026/MG_MGS6_EV_2026-01-thumb.jpg",
     "priceEur": 45750,
     "rangeKm": 405,
     "oneStopRangeKm": 419,
@@ -1922,6 +2096,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3452",
     "name": "Ford Capri Extended Range RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Ford_Capri_2024/Ford_Capri_2024-01-thumb.jpg",
     "priceEur": 45750,
     "rangeKm": 470,
     "oneStopRangeKm": 526,
@@ -1933,6 +2108,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1717",
     "name": "Hyundai IONIQ 6 Standard Range 2WD",
+    "imageUrl": "https://ev-database.org/img/auto/Hyundai_IONIQ6_2022/Hyundai_IONIQ6_2022-01-thumb.jpg",
     "priceEur": 45895,
     "rangeKm": 335,
     "oneStopRangeKm": 418,
@@ -1944,6 +2120,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3097",
     "name": "Skoda Enyaq 85",
+    "imageUrl": "https://ev-database.org/img/auto/Skoda_Enyaq_2025/Skoda_Enyaq_2025-01-thumb.jpg",
     "priceEur": 45990,
     "rangeKm": 455,
     "oneStopRangeKm": 477,
@@ -1955,6 +2132,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3404",
     "name": "Tesla Model 3 Premium RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Tesla_Model_3_2024/Tesla_Model_3_2024-01-thumb.jpg",
     "priceEur": 45990,
     "rangeKm": 580,
     "oneStopRangeKm": 688,
@@ -1966,6 +2144,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2067",
     "name": "BYD SEAL U 87 kWh Design",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_SEAL_U/BYD_SEAL_U-01-thumb.jpg",
     "priceEur": 45990,
     "rangeKm": 425,
     "oneStopRangeKm": 418,
@@ -1977,6 +2156,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3056",
     "name": "Abarth 600e Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Abarth_600e/Abarth_600e-01-thumb.jpg",
     "priceEur": 45990,
     "rangeKm": 280,
     "oneStopRangeKm": 297,
@@ -1988,6 +2168,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3369",
     "name": "Changan Deepal S07",
+    "imageUrl": "https://ev-database.org/img/auto/Changan_Deepal_S07/Changan_Deepal_S07-01-thumb.jpg",
     "priceEur": 45990,
     "rangeKm": 410,
     "oneStopRangeKm": 386,
@@ -1999,6 +2180,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3134",
     "name": "Toyota bZ4X FWD 73.1 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Toyota_bZ4X_2025/Toyota_bZ4X_2025-01-thumb.jpg",
     "priceEur": 45995,
     "rangeKm": 385,
     "oneStopRangeKm": 423,
@@ -2010,6 +2192,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3037",
     "name": "Opel Grandland Electric 73 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Grandland_2024/Opel_Grandland_2024-01-thumb.jpg",
     "priceEur": 45999,
     "rangeKm": 370,
     "oneStopRangeKm": 388,
@@ -2021,6 +2204,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1940",
     "name": "Honda e:Ny1",
+    "imageUrl": "https://ev-database.org/img/auto/Honda_e:Ny1/Honda_e:Ny1-01-thumb.jpg",
     "priceEur": 46149,
     "rangeKm": 335,
     "oneStopRangeKm": 318,
@@ -2032,6 +2216,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3458",
     "name": "BMW iX1 eDrive20",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_iX1_2022/BMW_iX1_2022-01-thumb.jpg",
     "priceEur": 46405,
     "rangeKm": 400,
     "oneStopRangeKm": 429,
@@ -2043,6 +2228,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3108",
     "name": "Mazda 6e Long Range 80 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Mazda_6e/Mazda_6e-01-thumb.jpg",
     "priceEur": 46590,
     "rangeKm": 460,
     "oneStopRangeKm": 437,
@@ -2054,6 +2240,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3187",
     "name": "Ford Mustang Mach-E SR RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Ford_Mustang_Mach-E/Ford_Mustang_Mach-E-01-thumb.jpg",
     "priceEur": 46970,
     "rangeKm": 380,
     "oneStopRangeKm": 408,
@@ -2065,6 +2252,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3417",
     "name": "Tesla Model Y Long Range RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Tesla_Model_Y_Standard_2026/Tesla_Model_Y_Standard_2026-01-thumb.jpg",
     "priceEur": 46990,
     "rangeKm": 490,
     "oneStopRangeKm": 574,
@@ -2076,6 +2264,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3428",
     "name": "Zeekr 7GT Core RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Zeekr_7GT_2026/Zeekr_7GT_2026-01-thumb.jpg",
     "priceEur": 46990,
     "rangeKm": 410,
     "oneStopRangeKm": 542,
@@ -2087,6 +2276,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3149",
     "name": "Audi Q4 Sportback e-tron 40",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_Q4_e-tron_Sportback_2021/Audi_Q4_e-tron_Sportback_2021-01-thumb.jpg",
     "priceEur": 46990,
     "rangeKm": 340,
     "oneStopRangeKm": 395,
@@ -2098,6 +2288,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2236",
     "name": "Hyundai IONIQ 5 84 kWh RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Hyundai_IONIQ5_2024/Hyundai_IONIQ5_2024-01-thumb.jpg",
     "priceEur": 46995,
     "rangeKm": 450,
     "oneStopRangeKm": 554,
@@ -2109,6 +2300,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3154",
     "name": "Volvo EC40 Single Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EC40_2025/Volvo_EC40_2025-01-thumb.jpg",
     "priceEur": 47495,
     "rangeKm": 360,
     "oneStopRangeKm": 394,
@@ -2120,6 +2312,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1748",
     "name": "Smart #1 Brabus",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_1_Brabus_2023/Smart_1_Brabus_2023-01-thumb.jpg",
     "priceEur": 47500,
     "rangeKm": 325,
     "oneStopRangeKm": 350,
@@ -2131,6 +2324,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1911",
     "name": "Volvo EX30 Twin Motor Performance",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX30_2024/Volvo_EX30_2024-01-thumb.jpg",
     "priceEur": 47795,
     "rangeKm": 340,
     "oneStopRangeKm": 376,
@@ -2142,6 +2336,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3481",
     "name": "Volvo EX30 P8 AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX30_2024/Volvo_EX30_2024-01-thumb.jpg",
     "priceEur": 47795,
     "rangeKm": 340,
     "oneStopRangeKm": 376,
@@ -2153,6 +2348,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3100",
     "name": "Skoda Enyaq Coupe 85",
+    "imageUrl": "https://ev-database.org/img/auto/Skoda_Enyaq_Coupe_2025/Skoda_Enyaq_Coupe_2025-01-thumb.jpg",
     "priceEur": 47990,
     "rangeKm": 470,
     "oneStopRangeKm": 493,
@@ -2164,6 +2360,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2153",
     "name": "Volkswagen ID.3  GTX Performance",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID3_GTX_Performance_2024/Volkswagen_ID3_GTX_Performance_2024-01-thumb.jpg",
     "priceEur": 47990,
     "rangeKm": 465,
     "oneStopRangeKm": 526,
@@ -2175,6 +2372,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3253",
     "name": "Volkswagen ID.5 Pure",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID5_2024/Volkswagen_ID5_2024-01-thumb.jpg",
     "priceEur": 47990,
     "rangeKm": 320,
     "oneStopRangeKm": 359,
@@ -2186,6 +2384,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3135",
     "name": "Toyota bZ4X AWD 73.1 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Toyota_bZ4X_2025/Toyota_bZ4X_2025-01-thumb.jpg",
     "priceEur": 47995,
     "rangeKm": 375,
     "oneStopRangeKm": 413,
@@ -2197,6 +2396,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2000",
     "name": "Smart #3 Brabus",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_3_Brabus_2024/Smart_3_Brabus_2024-01-thumb.jpg",
     "priceEur": 47995,
     "rangeKm": 350,
     "oneStopRangeKm": 365,
@@ -2208,6 +2408,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2185",
     "name": "Alfa Romeo Junior Elettrica 54 kWh Veloce",
+    "imageUrl": "https://ev-database.org/img/auto/Alfa_Romeo_Junior/Alfa_Romeo_Junior-01-thumb.jpg",
     "priceEur": 48000,
     "rangeKm": 310,
     "oneStopRangeKm": 330,
@@ -2219,6 +2420,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3370",
     "name": "Mercedes-Benz CLA 200",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_CLA/Mercedes_CLA-01-thumb.jpg",
     "priceEur": 48109,
     "rangeKm": 400,
     "oneStopRangeKm": 493,
@@ -2230,6 +2432,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3448",
     "name": "KGM Musso EV 4WD",
+    "imageUrl": "https://ev-database.org/img/auto/KGM_Musso_EV/KGM_Musso_EV-01-thumb.jpg",
     "priceEur": 48294,
     "rangeKm": 360,
     "oneStopRangeKm": 351,
@@ -2241,6 +2444,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2149",
     "name": "Peugeot e-5008 73 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-5008_2024/Peugeot_e-5008_2024-01-thumb.jpg",
     "priceEur": 48415,
     "rangeKm": 370,
     "oneStopRangeKm": 388,
@@ -2252,6 +2456,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3141",
     "name": "Smart #5 Pro",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_5_2025/Smart_5_2025-01-thumb.jpg",
     "priceEur": 48440,
     "rangeKm": 370,
     "oneStopRangeKm": 395,
@@ -2263,6 +2468,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3199",
     "name": "Zeekr X Privilege AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Zeekr_X_2023/Zeekr_X_2023-01-thumb.jpg",
     "priceEur": 48490,
     "rangeKm": 350,
     "oneStopRangeKm": 386,
@@ -2274,6 +2480,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2001",
     "name": "BYD SEAL 82.5 kWh RWD Design",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_SEAL/BYD_SEAL-01-thumb.jpg",
     "priceEur": 48690,
     "rangeKm": 480,
     "oneStopRangeKm": 507,
@@ -2285,6 +2492,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3419",
     "name": "MG MGS6 EV Dual Motor 77 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/MG_MGS6_EV_2026/MG_MGS6_EV_2026-01-thumb.jpg",
     "priceEur": 48750,
     "rangeKm": 390,
     "oneStopRangeKm": 400,
@@ -2296,6 +2504,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2260",
     "name": "Opel Zafira Electric L2H1 50 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Zafira-e_Life_2024/Opel_Zafira-e_Life_2024-01-thumb.jpg",
     "priceEur": 48753,
     "rangeKm": 180,
     "oneStopRangeKm": 189,
@@ -2307,6 +2516,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3455",
     "name": "Ford Explorer Extended Range AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Ford_Explorer_2024/Ford_Explorer_2024-01-thumb.jpg",
     "priceEur": 48850,
     "rangeKm": 430,
     "oneStopRangeKm": 471,
@@ -2318,6 +2528,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3434",
     "name": "Subaru Solterra AWD 73.1 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Subaru_Solterra_2026/Subaru_Solterra_2026-01-thumb.jpg",
     "priceEur": 48900,
     "rangeKm": 370,
     "oneStopRangeKm": 404,
@@ -2329,6 +2540,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3437",
     "name": "Subaru Uncharted 77 kWh AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Subaru_Uncharted_2026/Subaru_Uncharted_2026-01-thumb.jpg",
     "priceEur": 48900,
     "rangeKm": 375,
     "oneStopRangeKm": 405,
@@ -2340,6 +2552,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1985",
     "name": "Mercedes-Benz EQA 250+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQA_2024/Mercedes_EQA_2024-01-thumb.jpg",
     "priceEur": 48936,
     "rangeKm": 420,
     "oneStopRangeKm": 414,
@@ -2351,6 +2564,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3432",
     "name": "XPENG P7+ RWD Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/XPENG_P7_Plus_2026/XPENG_P7_Plus_2026-01-thumb.jpg",
     "priceEur": 48990,
     "rangeKm": 445,
     "oneStopRangeKm": 588,
@@ -2362,6 +2576,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3275",
     "name": "XPENG G6 RWD Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/XPENG_G6_2025/XPENG_G6_2025-01-thumb.jpg",
     "priceEur": 48990,
     "rangeKm": 435,
     "oneStopRangeKm": 559,
@@ -2373,6 +2588,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1971",
     "name": "CUPRA Tavascan 210 kW - 77 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/CUPRA_Tavascan_2024/CUPRA_Tavascan_2024-01-thumb.jpg",
     "priceEur": 48990,
     "rangeKm": 445,
     "oneStopRangeKm": 467,
@@ -2384,6 +2600,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3256",
     "name": "Volkswagen ID.7 Pro",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID7/Volkswagen_ID7-01-thumb.jpg",
     "priceEur": 48990,
     "rangeKm": 475,
     "oneStopRangeKm": 541,
@@ -2395,6 +2612,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3159",
     "name": "Volvo EX40 Single Motor ER",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX40_2025/Volvo_EX40_2025-01-thumb.jpg",
     "priceEur": 48995,
     "rangeKm": 400,
     "oneStopRangeKm": 436,
@@ -2406,6 +2624,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3400",
     "name": "Toyota bZ4X Touring FWD 74.7 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Toyota_bZ4X_Touring_2026/Toyota_bZ4X_Touring_2026-01-thumb.jpg",
     "priceEur": 48995,
     "rangeKm": 400,
     "oneStopRangeKm": 433,
@@ -2417,6 +2636,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3160",
     "name": "Volvo EX40 Twin Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX40_2025/Volvo_EX40_2025-01-thumb.jpg",
     "priceEur": 48995,
     "rangeKm": 385,
     "oneStopRangeKm": 414,
@@ -2428,6 +2648,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3028",
     "name": "Kia EV6 Long Range 2WD",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV6_2024/Kia_EV6_2024-01-thumb.jpg",
     "priceEur": 49495,
     "rangeKm": 455,
     "oneStopRangeKm": 565,
@@ -2439,6 +2660,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3483",
     "name": "Volvo EX30 Cross Country P8 AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX30_CrossCountry/Volvo_EX30_CrossCountry-01-thumb.jpg",
     "priceEur": 49795,
     "rangeKm": 330,
     "oneStopRangeKm": 361,
@@ -2450,6 +2672,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2005",
     "name": "Peugeot e-3008 97 kWh Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-3008_2024/Peugeot_e-3008_2024-01-thumb.jpg",
     "priceEur": 49915,
     "rangeKm": 500,
     "oneStopRangeKm": 512,
@@ -2461,6 +2684,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2261",
     "name": "Opel Zafira Electric L3H1 50 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Zafira-e_Life_2024/Opel_Zafira-e_Life_2024-01-thumb.jpg",
     "priceEur": 49963,
     "rangeKm": 180,
     "oneStopRangeKm": 189,
@@ -2472,6 +2696,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2013",
     "name": "Audi Q4 e-tron 45",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-01-thumb.jpg",
     "priceEur": 49990,
     "rangeKm": 420,
     "oneStopRangeKm": 460,
@@ -2483,6 +2708,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3259",
     "name": "Volkswagen ID.7 Tourer Pro",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID7_Tourer/Volkswagen_ID7_Tourer-01-thumb.jpg",
     "priceEur": 49990,
     "rangeKm": 470,
     "oneStopRangeKm": 535,
@@ -2494,6 +2720,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2128",
     "name": "CUPRA Born VZ",
+    "imageUrl": "https://ev-database.org/img/auto/Cupra_el-Born_Veloz/Cupra_el-Born_Veloz-01-thumb.jpg",
     "priceEur": 49990,
     "rangeKm": 465,
     "oneStopRangeKm": 517,
@@ -2505,6 +2732,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3251",
     "name": "Volkswagen ID.4 Pro 4MOTION",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID4_2024/Volkswagen_ID4_2024-01-thumb.jpg",
     "priceEur": 49990,
     "rangeKm": 435,
     "oneStopRangeKm": 477,
@@ -2516,6 +2744,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3057",
     "name": "Abarth 600e Scorpionissima",
+    "imageUrl": "https://ev-database.org/img/auto/Abarth_600e_Scorpionissima/Abarth_600e_Scorpionissima-01-thumb.jpg",
     "priceEur": 49990,
     "rangeKm": 280,
     "oneStopRangeKm": 297,
@@ -2527,6 +2756,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3137",
     "name": "Voyah Courage 80 kWh AWD Performance",
+    "imageUrl": "https://ev-database.org/img/auto/Voyah_Courage/Voyah_Courage-01-thumb.jpg",
     "priceEur": 49990,
     "rangeKm": 390,
     "oneStopRangeKm": 427,
@@ -2538,6 +2768,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3119",
     "name": "Volkswagen ID. Buzz NWB Pure",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID_Buzz/Volkswagen_ID_Buzz-01-thumb.jpg",
     "priceEur": 49990,
     "rangeKm": 265,
     "oneStopRangeKm": 301,
@@ -2549,6 +2780,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3364",
     "name": "Opel Grandland Electric 97 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Grandland_2024/Opel_Grandland_2024-01-thumb.jpg",
     "priceEur": 49999,
     "rangeKm": 490,
     "oneStopRangeKm": 498,
@@ -2560,6 +2792,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1908",
     "name": "Mercedes-Benz EQT 200 L1",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQT_2023/Mercedes_EQT_2023-01-thumb.jpg",
     "priceEur": 50227,
     "rangeKm": 225,
     "oneStopRangeKm": 225,
@@ -2571,6 +2804,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3058",
     "name": "Mini Cooper SE",
+    "imageUrl": "https://ev-database.org/img/auto/Mini_Cooper_Electric_JCW_2024/Mini_Cooper_Electric_JCW_2024-01-thumb.jpg",
     "priceEur": 50490,
     "rangeKm": 290,
     "oneStopRangeKm": 308,
@@ -2582,6 +2816,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3155",
     "name": "Volvo EC40 Single Motor ER",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EC40_2025/Volvo_EC40_2025-01-thumb.jpg",
     "priceEur": 50495,
     "rangeKm": 420,
     "oneStopRangeKm": 454,
@@ -2593,6 +2828,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3070",
     "name": "BYD SEALION 7 82.5 kWh RWD Comfort",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_SEALION_7/BYD_SEALION_7-01-thumb.jpg",
     "priceEur": 50690,
     "rangeKm": 420,
     "oneStopRangeKm": 440,
@@ -2604,6 +2840,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1807",
     "name": "VinFast VF 8 Eco Extended Range",
+    "imageUrl": "https://ev-database.org/img/auto/VinFast_VF_8/VinFast_VF_8-01-thumb.jpg",
     "priceEur": 50690,
     "rangeKm": 405,
     "oneStopRangeKm": 411,
@@ -2615,6 +2852,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3453",
     "name": "Ford Capri Extended Range AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Ford_Capri_2024/Ford_Capri_2024-01-thumb.jpg",
     "priceEur": 50750,
     "rangeKm": 445,
     "oneStopRangeKm": 493,
@@ -2626,6 +2864,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1718",
     "name": "Hyundai IONIQ 6 Long Range 2WD",
+    "imageUrl": "https://ev-database.org/img/auto/Hyundai_IONIQ6_2022/Hyundai_IONIQ6_2022-01-thumb.jpg",
     "priceEur": 50895,
     "rangeKm": 495,
     "oneStopRangeKm": 630,
@@ -2637,6 +2876,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3476",
     "name": "Tesla Model Y Premium RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Tesla_Model_Y_2025/Tesla_Model_Y_2025-01-thumb.jpg",
     "priceEur": 50990,
     "rangeKm": 495,
     "oneStopRangeKm": 576,
@@ -2648,6 +2888,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3363",
     "name": "Tesla Model Y Premium RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Tesla_Model_Y_2025/Tesla_Model_Y_2025-01-thumb.jpg",
     "priceEur": 50990,
     "rangeKm": 470,
     "oneStopRangeKm": 552,
@@ -2659,6 +2900,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3405",
     "name": "Tesla Model 3 Premium AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Tesla_Model_3_2024/Tesla_Model_3_2024-01-thumb.jpg",
     "priceEur": 50990,
     "rangeKm": 555,
     "oneStopRangeKm": 654,
@@ -2670,6 +2912,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3395",
     "name": "Toyota C-HR+ 77 kWh AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Toyota_C-HR-Plus_2026/Toyota_C-HR-Plus_2026-01-thumb.jpg",
     "priceEur": 50995,
     "rangeKm": 385,
     "oneStopRangeKm": 417,
@@ -2681,6 +2924,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3473",
     "name": "Mercedes-Benz CLA 250",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_CLA/Mercedes_CLA-01-thumb.jpg",
     "priceEur": 51134,
     "rangeKm": 490,
     "oneStopRangeKm": 660,
@@ -2692,6 +2936,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3151",
     "name": "Polestar 2 Long Range Single Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Polestar_2_2024/Polestar_2_2024-01-thumb.jpg",
     "priceEur": 51200,
     "rangeKm": 475,
     "oneStopRangeKm": 527,
@@ -2703,6 +2948,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3460",
     "name": "BMW iX2 eDrive20",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_iX2_2024/BMW_iX2_2024-01-thumb.jpg",
     "priceEur": 51840,
     "rangeKm": 405,
     "oneStopRangeKm": 437,
@@ -2714,6 +2960,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3429",
     "name": "Zeekr 7GT Long Range RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Zeekr_7GT_2026/Zeekr_7GT_2026-01-thumb.jpg",
     "priceEur": 51990,
     "rangeKm": 540,
     "oneStopRangeKm": 706,
@@ -2725,6 +2972,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2016",
     "name": "Audi Q4 Sportback e-tron 45",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_Q4_e-tron_Sportback_2021/Audi_Q4_e-tron_Sportback_2021-01-thumb.jpg",
     "priceEur": 51990,
     "rangeKm": 435,
     "oneStopRangeKm": 485,
@@ -2736,6 +2984,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2239",
     "name": "Mercedes-Benz EQT 200 L2",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQT_2023/Mercedes_EQT_2023-01-thumb.jpg",
     "priceEur": 52326,
     "rangeKm": 220,
     "oneStopRangeKm": 221,
@@ -2747,6 +2996,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3373",
     "name": "Skoda Elroq RS",
+    "imageUrl": "https://ev-database.org/img/auto/Skoda_Elroq_RS_2025/Skoda_Elroq_RS_2025-01-thumb.jpg",
     "priceEur": 52490,
     "rangeKm": 455,
     "oneStopRangeKm": 510,
@@ -2758,6 +3008,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3059",
     "name": "Mini Aceman JCW",
+    "imageUrl": "https://ev-database.org/img/auto/Mini_Aceman_Electric_JCW_2024/Mini_Aceman_Electric_JCW_2024-01-thumb.jpg",
     "priceEur": 52490,
     "rangeKm": 280,
     "oneStopRangeKm": 294,
@@ -2769,6 +3020,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3156",
     "name": "Volvo EC40 Twin Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EC40_2025/Volvo_EC40_2025-01-thumb.jpg",
     "priceEur": 52495,
     "rangeKm": 400,
     "oneStopRangeKm": 438,
@@ -2780,6 +3032,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2151",
     "name": "Peugeot e-5008 97 kWh Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-5008_2024/Peugeot_e-5008_2024-01-thumb.jpg",
     "priceEur": 52915,
     "rangeKm": 485,
     "oneStopRangeKm": 496,
@@ -2791,6 +3044,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2014",
     "name": "Audi Q4 e-tron 45 quattro",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_Q4_e-tron_2021/Audi_Q4_e-tron_2021-01-thumb.jpg",
     "priceEur": 52990,
     "rangeKm": 395,
     "oneStopRangeKm": 437,
@@ -2802,6 +3056,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3401",
     "name": "Toyota bZ4X Touring AWD 74.7 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Toyota_bZ4X_Touring_2026/Toyota_bZ4X_Touring_2026-01-thumb.jpg",
     "priceEur": 52995,
     "rangeKm": 385,
     "oneStopRangeKm": 419,
@@ -2813,6 +3068,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3118",
     "name": "Volvo EX30 Cross Country",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX30_CrossCountry/Volvo_EX30_CrossCountry-01-thumb.jpg",
     "priceEur": 52995,
     "rangeKm": 335,
     "oneStopRangeKm": 361,
@@ -2824,6 +3080,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3142",
     "name": "Smart #5 Pro+",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_5_2025/Smart_5_2025-01-thumb.jpg",
     "priceEur": 53440,
     "rangeKm": 475,
     "oneStopRangeKm": 587,
@@ -2835,6 +3092,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3375",
     "name": "Skoda Enyaq RS",
+    "imageUrl": "https://ev-database.org/img/auto/Skoda_Enyaq_RS_2025/Skoda_Enyaq_RS_2025-01-thumb.jpg",
     "priceEur": 53490,
     "rangeKm": 460,
     "oneStopRangeKm": 520,
@@ -2846,6 +3104,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3139",
     "name": "Mercedes-Benz CLA 250+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_CLA/Mercedes_CLA-01-thumb.jpg",
     "priceEur": 53554,
     "rangeKm": 585,
     "oneStopRangeKm": 746,
@@ -2857,6 +3116,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2002",
     "name": "BYD SEAL 82.5 kWh AWD Excellence",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_SEAL/BYD_SEAL-01-thumb.jpg",
     "priceEur": 53690,
     "rangeKm": 445,
     "oneStopRangeKm": 472,
@@ -2868,6 +3128,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3071",
     "name": "BYD SEALION 7 82.5 kWh AWD Design",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_SEALION_7/BYD_SEALION_7-01-thumb.jpg",
     "priceEur": 53690,
     "rangeKm": 405,
     "oneStopRangeKm": 431,
@@ -2879,6 +3140,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3333",
     "name": "Tesla Model Y Premium AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Tesla_Model_Y_2025/Tesla_Model_Y_2025-01-thumb.jpg",
     "priceEur": 53990,
     "rangeKm": 475,
     "oneStopRangeKm": 556,
@@ -2890,6 +3152,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3433",
     "name": "XPENG P7+ AWD Performance",
+    "imageUrl": "https://ev-database.org/img/auto/XPENG_P7_Plus_2026/XPENG_P7_Plus_2026-01-thumb.jpg",
     "priceEur": 53990,
     "rangeKm": 425,
     "oneStopRangeKm": 563,
@@ -2901,6 +3164,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2049",
     "name": "Voyah Free 106 kWh Premium Standaard",
+    "imageUrl": "https://ev-database.org/img/auto/Voyah_Free/Voyah_Free-01-thumb.jpg",
     "priceEur": 53990,
     "rangeKm": 480,
     "oneStopRangeKm": 433,
@@ -2912,6 +3176,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3276",
     "name": "XPENG G6 AWD Performance",
+    "imageUrl": "https://ev-database.org/img/auto/XPENG_G6_2025/XPENG_G6_2025-01-thumb.jpg",
     "priceEur": 53990,
     "rangeKm": 425,
     "oneStopRangeKm": 548,
@@ -2923,6 +3188,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3081",
     "name": "Zeekr 7X Core RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Zeekr_7X_2024/Zeekr_7X_2024-01-thumb.jpg",
     "priceEur": 53990,
     "rangeKm": 380,
     "oneStopRangeKm": 492,
@@ -2934,6 +3200,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2232",
     "name": "Volkswagen ID. Buzz NWB Pro",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID_Buzz/Volkswagen_ID_Buzz-01-thumb.jpg",
     "priceEur": 53990,
     "rangeKm": 370,
     "oneStopRangeKm": 405,
@@ -2945,6 +3212,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3293",
     "name": "Lexus RZ 350e",
+    "imageUrl": "https://ev-database.org/img/auto/Lexus_RZ_2026/Lexus_RZ_2026-01-thumb.jpg",
     "priceEur": 53995,
     "rangeKm": 400,
     "oneStopRangeKm": 433,
@@ -2956,6 +3224,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3396",
     "name": "Mercedes-Benz CLA Shooting Brake 250+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_CLA_Shooting_Brake/Mercedes_CLA_Shooting_Brake-01-thumb.jpg",
     "priceEur": 54986,
     "rangeKm": 565,
     "oneStopRangeKm": 738,
@@ -2967,6 +3236,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2154",
     "name": "Volkswagen ID. Buzz LWB Pro",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID_Buzz_LWB/Volkswagen_ID_Buzz_LWB-01-thumb.jpg",
     "priceEur": 54990,
     "rangeKm": 390,
     "oneStopRangeKm": 432,
@@ -2978,6 +3248,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3252",
     "name": "Volkswagen ID.4 GTX",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID4_GTX_2024/Volkswagen_ID4_GTX_2024-01-thumb.jpg",
     "priceEur": 54990,
     "rangeKm": 435,
     "oneStopRangeKm": 485,
@@ -2989,6 +3260,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3254",
     "name": "Volkswagen ID.5 Pro",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID5_2024/Volkswagen_ID5_2024-01-thumb.jpg",
     "priceEur": 54990,
     "rangeKm": 455,
     "oneStopRangeKm": 508,
@@ -3000,6 +3272,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2017",
     "name": "Audi Q4 Sportback e-tron 45 quattro",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_Q4_e-tron_Sportback_2021/Audi_Q4_e-tron_Sportback_2021-01-thumb.jpg",
     "priceEur": 54990,
     "rangeKm": 410,
     "oneStopRangeKm": 453,
@@ -3011,6 +3284,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3264",
     "name": "Hongqi E-HS7 111 kWh Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/Hongqi_E-HS7/Hongqi_E-HS7-01-thumb.jpg",
     "priceEur": 54995,
     "rangeKm": 455,
     "oneStopRangeKm": 535,
@@ -3022,6 +3296,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2264",
     "name": "Toyota Proace Verso M 50 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Toyota_PROACE_Verso_2024/Toyota_PROACE_Verso_2024-01-thumb.jpg",
     "priceEur": 55050,
     "rangeKm": 180,
     "oneStopRangeKm": 189,
@@ -3033,6 +3308,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3152",
     "name": "Polestar 2 Long Range Dual Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Polestar_2_2024/Polestar_2_2024-01-thumb.jpg",
     "priceEur": 55200,
     "rangeKm": 455,
     "oneStopRangeKm": 509,
@@ -3044,6 +3320,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3188",
     "name": "Ford Mustang Mach-E ER RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Ford_Mustang_Mach-E/Ford_Mustang_Mach-E-01-thumb.jpg",
     "priceEur": 55400,
     "rangeKm": 475,
     "oneStopRangeKm": 482,
@@ -3055,6 +3332,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3377",
     "name": "Skoda Enyaq Coupe RS",
+    "imageUrl": "https://ev-database.org/img/auto/Skoda_Enyaq_Coupe_RS_2025/Skoda_Enyaq_Coupe_RS_2025-01-thumb.jpg",
     "priceEur": 55490,
     "rangeKm": 470,
     "oneStopRangeKm": 534,
@@ -3066,6 +3344,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3029",
     "name": "Kia EV6 Long Range AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV6_2024/Kia_EV6_2024-01-thumb.jpg",
     "priceEur": 55495,
     "rangeKm": 440,
     "oneStopRangeKm": 549,
@@ -3077,6 +3356,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1304",
     "name": "Nissan Ariya e-4ORCE 87kWh - 225 kW",
+    "imageUrl": "https://ev-database.org/img/auto/Nissan_Ariya/Nissan_Ariya-01-thumb.jpg",
     "priceEur": 55690,
     "rangeKm": 405,
     "oneStopRangeKm": 391,
@@ -3088,6 +3368,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1933",
     "name": "Zeekr 001 Long Range RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Zeekr_001_2023/Zeekr_001_2023-01-thumb.jpg",
     "priceEur": 55990,
     "rangeKm": 505,
     "oneStopRangeKm": 547,
@@ -3099,6 +3380,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3201",
     "name": "Opel Grandland Electric 73 kWh AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Grandland_2024/Opel_Grandland_2024-01-thumb.jpg",
     "priceEur": 55999,
     "rangeKm": 355,
     "oneStopRangeKm": 374,
@@ -3110,6 +3392,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3184",
     "name": "Skoda Enyaq RS",
+    "imageUrl": "https://ev-database.org/img/auto/Skoda_Enyaq_RS_2025/Skoda_Enyaq_RS_2025-01-thumb.jpg",
     "priceEur": 56490,
     "rangeKm": 460,
     "oneStopRangeKm": 520,
@@ -3121,6 +3404,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3161",
     "name": "Volvo EX40 Twin Motor Performance",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX40_2025/Volvo_EX40_2025-01-thumb.jpg",
     "priceEur": 56495,
     "rangeKm": 385,
     "oneStopRangeKm": 414,
@@ -3132,6 +3416,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2004",
     "name": "Peugeot e-3008 73 kWh Dual Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-3008_2024/Peugeot_e-3008_2024-01-thumb.jpg",
     "priceEur": 56515,
     "rangeKm": 365,
     "oneStopRangeKm": 388,
@@ -3143,6 +3428,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1809",
     "name": "VinFast VF 8 Plus Extended Range",
+    "imageUrl": "https://ev-database.org/img/auto/VinFast_VF_8/VinFast_VF_8-01-thumb.jpg",
     "priceEur": 56690,
     "rangeKm": 400,
     "oneStopRangeKm": 411,
@@ -3154,6 +3440,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3082",
     "name": "Zeekr 7X Long Range RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Zeekr_7X_2024/Zeekr_7X_2024-01-thumb.jpg",
     "priceEur": 56990,
     "rangeKm": 500,
     "oneStopRangeKm": 640,
@@ -3165,6 +3452,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3257",
     "name": "Volkswagen ID.7 Pro S",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID7/Volkswagen_ID7-01-thumb.jpg",
     "priceEur": 56990,
     "rangeKm": 525,
     "oneStopRangeKm": 600,
@@ -3176,6 +3464,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3255",
     "name": "Volkswagen ID.5 GTX",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID5_GTX_2024/Volkswagen_ID5_GTX_2024-01-thumb.jpg",
     "priceEur": 56990,
     "rangeKm": 445,
     "oneStopRangeKm": 500,
@@ -3187,6 +3476,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3076",
     "name": "DS Automobiles N°8 FWD",
+    "imageUrl": "https://ev-database.org/img/auto/DS_No8_2024/DS_No8_2024-01-thumb.jpg",
     "priceEur": 57000,
     "rangeKm": 415,
     "oneStopRangeKm": 443,
@@ -3198,6 +3488,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3406",
     "name": "Mercedes-Benz GLB 250+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_GLB/Mercedes_GLB-01-thumb.jpg",
     "priceEur": 57184,
     "rangeKm": 465,
     "oneStopRangeKm": 573,
@@ -3209,6 +3500,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2262",
     "name": "Opel Zafira Electric L2H1 75 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Zafira-e_Life_2024/Opel_Zafira-e_Life_2024-01-thumb.jpg",
     "priceEur": 57753,
     "rangeKm": 265,
     "oneStopRangeKm": 252,
@@ -3220,6 +3512,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3143",
     "name": "Smart #5 Premium",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_5_2025/Smart_5_2025-01-thumb.jpg",
     "priceEur": 57940,
     "rangeKm": 475,
     "oneStopRangeKm": 587,
@@ -3231,6 +3524,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3144",
     "name": "Smart #5 Pulse",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_5_2025/Smart_5_2025-01-thumb.jpg",
     "priceEur": 57940,
     "rangeKm": 465,
     "oneStopRangeKm": 574,
@@ -3242,6 +3536,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3260",
     "name": "Volkswagen ID.7 Tourer Pro S",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID7_Tourer/Volkswagen_ID7_Tourer-01-thumb.jpg",
     "priceEur": 57990,
     "rangeKm": 520,
     "oneStopRangeKm": 589,
@@ -3253,6 +3548,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3157",
     "name": "Volvo EC40 Twin Motor Performance",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EC40_2025/Volvo_EC40_2025-01-thumb.jpg",
     "priceEur": 57995,
     "rangeKm": 400,
     "oneStopRangeKm": 438,
@@ -3264,6 +3560,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3072",
     "name": "BYD SEALION 7 91.3 kWh AWD Excellence",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_SEALION_7/BYD_SEALION_7-01-thumb.jpg",
     "priceEur": 58190,
     "rangeKm": 440,
     "oneStopRangeKm": 502,
@@ -3275,6 +3572,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3430",
     "name": "Zeekr 7GT Privilege AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Zeekr_7GT_2026/Zeekr_7GT_2026-01-thumb.jpg",
     "priceEur": 58490,
     "rangeKm": 515,
     "oneStopRangeKm": 671,
@@ -3286,6 +3584,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3332",
     "name": "Tesla Model 3 Performance",
+    "imageUrl": "https://ev-database.org/img/auto/Tesla_Model_3_Performance_2024/Tesla_Model_3_Performance_2024-01-thumb.jpg",
     "priceEur": 58490,
     "rangeKm": 515,
     "oneStopRangeKm": 604,
@@ -3297,6 +3596,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2263",
     "name": "Opel Zafira Electric L3H1 75 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Opel_Zafira-e_Life_2024/Opel_Zafira-e_Life_2024-01-thumb.jpg",
     "priceEur": 58963,
     "rangeKm": 265,
     "oneStopRangeKm": 252,
@@ -3308,6 +3608,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1972",
     "name": "CUPRA Tavascan VZ",
+    "imageUrl": "https://ev-database.org/img/auto/CUPRA_Tavascan_2024/CUPRA_Tavascan_2024-01-thumb.jpg",
     "priceEur": 58990,
     "rangeKm": 425,
     "oneStopRangeKm": 446,
@@ -3319,6 +3620,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3185",
     "name": "Skoda Enyaq Coupe RS",
+    "imageUrl": "https://ev-database.org/img/auto/Skoda_Enyaq_Coupe_RS_2025/Skoda_Enyaq_Coupe_RS_2025-01-thumb.jpg",
     "priceEur": 58990,
     "rangeKm": 470,
     "oneStopRangeKm": 534,
@@ -3330,6 +3632,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3138",
     "name": "Hongqi EH7 111 kWh Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/Hongqi_E-H7/Hongqi_E-H7-01-thumb.jpg",
     "priceEur": 58995,
     "rangeKm": 550,
     "oneStopRangeKm": 668,
@@ -3341,6 +3644,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1986",
     "name": "Mercedes-Benz EQA 300 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQA_2024/Mercedes_EQA_2024-01-thumb.jpg",
     "priceEur": 59342,
     "rangeKm": 350,
     "oneStopRangeKm": 359,
@@ -3352,6 +3656,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1719",
     "name": "Hyundai IONIQ 6 Long Range AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Hyundai_IONIQ6_2022/Hyundai_IONIQ6_2022-01-thumb.jpg",
     "priceEur": 59395,
     "rangeKm": 440,
     "oneStopRangeKm": 569,
@@ -3363,6 +3668,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3145",
     "name": "Smart #5 Summit Edition",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_5_2025/Smart_5_2025-01-thumb.jpg",
     "priceEur": 59440,
     "rangeKm": 460,
     "oneStopRangeKm": 570,
@@ -3374,6 +3680,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2150",
     "name": "Peugeot e-5008 73 kWh Dual Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-5008_2024/Peugeot_e-5008_2024-01-thumb.jpg",
     "priceEur": 59515,
     "rangeKm": 355,
     "oneStopRangeKm": 374,
@@ -3385,6 +3692,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2252",
     "name": "Citroen e-SpaceTourer Standard 50 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Citroen_e-SpaceTourer_2024/Citroen_e-SpaceTourer_2024-01-thumb.jpg",
     "priceEur": 59571,
     "rangeKm": 180,
     "oneStopRangeKm": 189,
@@ -3396,6 +3704,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2256",
     "name": "Peugeot e-Traveller Standard 50 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-Traveller_2024/Peugeot_e-Traveller_2024-01-thumb.jpg",
     "priceEur": 59571,
     "rangeKm": 180,
     "oneStopRangeKm": 189,
@@ -3407,6 +3716,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3459",
     "name": "BMW iX1 xDrive30",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_iX1_2022/BMW_iX1_2022-01-thumb.jpg",
     "priceEur": 59874,
     "rangeKm": 390,
     "oneStopRangeKm": 419,
@@ -3418,6 +3728,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3277",
     "name": "XPENG G9 RWD Standard Range",
+    "imageUrl": "https://ev-database.org/img/auto/XPENG_G9_2025/XPENG_G9_2025-01-thumb.jpg",
     "priceEur": 59990,
     "rangeKm": 410,
     "oneStopRangeKm": 528,
@@ -3429,6 +3740,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1833",
     "name": "Kia EV9 71.6 kWh RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV9_2023/Kia_EV9_2023-01-thumb.jpg",
     "priceEur": 59995,
     "rangeKm": 350,
     "oneStopRangeKm": 414,
@@ -3440,6 +3752,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3204",
     "name": "BMW i4 eDrive35",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i4_2024/BMW_i4_2024-01-thumb.jpg",
     "priceEur": 60700,
     "rangeKm": 435,
     "oneStopRangeKm": 493,
@@ -3451,6 +3764,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2257",
     "name": "Peugeot e-Traveller Long 50 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-Traveller_2024/Peugeot_e-Traveller_2024-01-thumb.jpg",
     "priceEur": 60781,
     "rangeKm": 180,
     "oneStopRangeKm": 189,
@@ -3462,6 +3776,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2253",
     "name": "Citroen e-SpaceTourer Long 50 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Citroen_e-SpaceTourer_2024/Citroen_e-SpaceTourer_2024-01-thumb.jpg",
     "priceEur": 60781,
     "rangeKm": 180,
     "oneStopRangeKm": 189,
@@ -3473,6 +3788,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2266",
     "name": "Toyota Proace Verso M 75 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Toyota_PROACE_Verso_2024/Toyota_PROACE_Verso_2024-01-thumb.jpg",
     "priceEur": 61100,
     "rangeKm": 265,
     "oneStopRangeKm": 252,
@@ -3484,6 +3800,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3074",
     "name": "Nissan Ariya e-4ORCE 87kWh - 320 kW Nismo",
+    "imageUrl": "https://ev-database.org/img/auto/Nissan_Ariya_Nismo/Nissan_Ariya_Nismo-01-thumb.jpg",
     "priceEur": 61190,
     "rangeKm": 385,
     "oneStopRangeKm": 373,
@@ -3495,6 +3812,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3461",
     "name": "BMW iX2 xDrive30",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_iX2_2024/BMW_iX2_2024-01-thumb.jpg",
     "priceEur": 61374,
     "rangeKm": 395,
     "oneStopRangeKm": 429,
@@ -3506,6 +3824,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2237",
     "name": "Hyundai IONIQ 5 84 kWh AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Hyundai_IONIQ5_2024/Hyundai_IONIQ5_2024-01-thumb.jpg",
     "priceEur": 61395,
     "rangeKm": 445,
     "oneStopRangeKm": 546,
@@ -3517,6 +3836,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3153",
     "name": "Polestar 2 Long Range Performance",
+    "imageUrl": "https://ev-database.org/img/auto/Polestar_2_2024/Polestar_2_2024-01-thumb.jpg",
     "priceEur": 61700,
     "rangeKm": 450,
     "oneStopRangeKm": 501,
@@ -3528,6 +3848,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3309",
     "name": "Volkswagen e-Transporter Kombi L1 100 kW 64 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_e-Caravelle/Volkswagen_e-Caravelle-01-thumb.jpg",
     "priceEur": 61990,
     "rangeKm": 255,
     "oneStopRangeKm": 254,
@@ -3539,6 +3860,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2267",
     "name": "Toyota Proace Verso L 75 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Toyota_PROACE_Verso_2024/Toyota_PROACE_Verso_2024-01-thumb.jpg",
     "priceEur": 62070,
     "rangeKm": 265,
     "oneStopRangeKm": 252,
@@ -3550,6 +3872,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3077",
     "name": "DS Automobiles N°8 FWD Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/DS_No8_2024/DS_No8_2024-01-thumb.jpg",
     "priceEur": 62200,
     "rangeKm": 545,
     "oneStopRangeKm": 566,
@@ -3561,6 +3884,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3269",
     "name": "Tesla Model Y Performance",
+    "imageUrl": "https://ev-database.org/img/auto/Tesla_Model_Y_Performance_2025/Tesla_Model_Y_Performance_2025-01-thumb.jpg",
     "priceEur": 62990,
     "rangeKm": 460,
     "oneStopRangeKm": 535,
@@ -3572,6 +3896,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3312",
     "name": "Volkswagen e-Transporter Kombi L2 100 kW 64 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_e-Caravelle/Volkswagen_e-Caravelle-01-thumb.jpg",
     "priceEur": 62990,
     "rangeKm": 250,
     "oneStopRangeKm": 250,
@@ -3583,6 +3908,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3179",
     "name": "Smart #5 Brabus",
+    "imageUrl": "https://ev-database.org/img/auto/Smart_5_Brabus_2025/Smart_5_Brabus_2025-01-thumb.jpg",
     "priceEur": 63440,
     "rangeKm": 460,
     "oneStopRangeKm": 570,
@@ -3594,6 +3920,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1915",
     "name": "NIO ET5 Touring Standard Range",
+    "imageUrl": "https://ev-database.org/img/auto/NIO_ET5_Touring/NIO_ET5_Touring-01-thumb.jpg",
     "priceEur": 63900,
     "rangeKm": 400,
     "oneStopRangeKm": 434,
@@ -3605,6 +3932,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3083",
     "name": "Zeekr 7X Privilege AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Zeekr_7X_2024/Zeekr_7X_2024-01-thumb.jpg",
     "priceEur": 63990,
     "rangeKm": 485,
     "oneStopRangeKm": 625,
@@ -3616,6 +3944,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3053",
     "name": "Audi A6 Sportback e-tron",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_A6_Sportback_etron_2024/Audi_A6_Sportback_etron_2024-01-thumb.jpg",
     "priceEur": 63990,
     "rangeKm": 485,
     "oneStopRangeKm": 587,
@@ -3627,6 +3956,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3258",
     "name": "Volkswagen ID.7 GTX",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID7_GTX/Volkswagen_ID7_GTX-01-thumb.jpg",
     "priceEur": 63990,
     "rangeKm": 500,
     "oneStopRangeKm": 572,
@@ -3638,6 +3968,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3441",
     "name": "Volvo EX60 P6",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX60_MY27/Volvo_EX60_MY27-01-thumb.jpg",
     "priceEur": 63995,
     "rangeKm": 455,
     "oneStopRangeKm": 562,
@@ -3649,6 +3980,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3310",
     "name": "Volkswagen e-Transporter Kombi L1 160 kW 64 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_e-Caravelle/Volkswagen_e-Caravelle-01-thumb.jpg",
     "priceEur": 64240,
     "rangeKm": 255,
     "oneStopRangeKm": 254,
@@ -3660,6 +3992,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3205",
     "name": "BMW i4 eDrive40",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i4_2024/BMW_i4_2024-01-thumb.jpg",
     "priceEur": 64330,
     "rangeKm": 525,
     "oneStopRangeKm": 595,
@@ -3671,6 +4004,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3189",
     "name": "Ford Mustang Mach-E ER AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Ford_Mustang_Mach-E/Ford_Mustang_Mach-E-01-thumb.jpg",
     "priceEur": 64400,
     "rangeKm": 435,
     "oneStopRangeKm": 441,
@@ -3682,6 +4016,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3140",
     "name": "Mercedes-Benz CLA 350 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_CLA/Mercedes_CLA-01-thumb.jpg",
     "priceEur": 64565,
     "rangeKm": 575,
     "oneStopRangeKm": 729,
@@ -3693,6 +4028,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1841",
     "name": "Polestar 4 Long Range Single Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Polestar_4_2024/Polestar_4_2024-01-thumb.jpg",
     "priceEur": 64800,
     "rangeKm": 495,
     "oneStopRangeKm": 533,
@@ -3704,6 +4040,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3261",
     "name": "Volkswagen ID.7 Tourer GTX",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID7_Tourer_GTX/Volkswagen_ID7_Tourer_GTX-01-thumb.jpg",
     "priceEur": 64990,
     "rangeKm": 500,
     "oneStopRangeKm": 566,
@@ -3715,6 +4052,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3313",
     "name": "Volkswagen e-Transporter Kombi L2 160 kW 64 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_e-Caravelle/Volkswagen_e-Caravelle-01-thumb.jpg",
     "priceEur": 65290,
     "rangeKm": 250,
     "oneStopRangeKm": 250,
@@ -3726,6 +4064,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3055",
     "name": "Audi A6 Avant e-tron",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_A6_Avant_etron_2024/Audi_A6_Avant_etron_2024-01-thumb.jpg",
     "priceEur": 65490,
     "rangeKm": 465,
     "oneStopRangeKm": 560,
@@ -3737,6 +4076,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2281",
     "name": "Audi Q6 e-tron",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_Q6_etron_2024/Audi_Q6_etron_2024-01-thumb.jpg",
     "priceEur": 65950,
     "rangeKm": 395,
     "oneStopRangeKm": 459,
@@ -3748,6 +4088,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3278",
     "name": "XPENG G9 RWD Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/XPENG_G9_2025/XPENG_G9_2025-01-thumb.jpg",
     "priceEur": 65990,
     "rangeKm": 480,
     "oneStopRangeKm": 619,
@@ -3759,6 +4100,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2202",
     "name": "MG Cyberster Trophy",
+    "imageUrl": "https://ev-database.org/img/auto/MG_Cyberster/MG_Cyberster-01-thumb.jpg",
     "priceEur": 66360,
     "rangeKm": 425,
     "oneStopRangeKm": 440,
@@ -3770,6 +4112,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3294",
     "name": "Lexus RZ 500e",
+    "imageUrl": "https://ev-database.org/img/auto/Lexus_RZ_2026/Lexus_RZ_2026-01-thumb.jpg",
     "priceEur": 66495,
     "rangeKm": 395,
     "oneStopRangeKm": 431,
@@ -3781,6 +4124,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3397",
     "name": "Mercedes-Benz CLA Shooting Brake 350 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_CLA_Shooting_Brake/Mercedes_CLA_Shooting_Brake-01-thumb.jpg",
     "priceEur": 66602,
     "rangeKm": 555,
     "oneStopRangeKm": 704,
@@ -3792,6 +4136,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3206",
     "name": "BMW i4 xDrive40",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i4_2024/BMW_i4_2024-01-thumb.jpg",
     "priceEur": 66871,
     "rangeKm": 495,
     "oneStopRangeKm": 563,
@@ -3803,6 +4148,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1934",
     "name": "Zeekr 001 Performance AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Zeekr_001_2023/Zeekr_001_2023-01-thumb.jpg",
     "priceEur": 66990,
     "rangeKm": 480,
     "oneStopRangeKm": 524,
@@ -3814,6 +4160,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3442",
     "name": "Volvo EX60 P10 AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX60_MY27/Volvo_EX60_MY27-01-thumb.jpg",
     "priceEur": 66995,
     "rangeKm": 500,
     "oneStopRangeKm": 620,
@@ -3825,6 +4172,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3420",
     "name": "Ford e-Tourneo Custom L1 160 kW RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Ford_eTourneo_Custom_2024/Ford_eTourneo_Custom_2024-01-thumb.jpg",
     "priceEur": 67260,
     "rangeKm": 270,
     "oneStopRangeKm": 272,
@@ -3836,6 +4184,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2095",
     "name": "BYD TANG Flagship",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_TANG_2024/BYD_TANG_2024-01-thumb.jpg",
     "priceEur": 67390,
     "rangeKm": 460,
     "oneStopRangeKm": 444,
@@ -3847,6 +4196,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3239",
     "name": "Mercedes-Benz EQE 300",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE/Mercedes_EQE-01-thumb.jpg",
     "priceEur": 67428,
     "rangeKm": 525,
     "oneStopRangeKm": 570,
@@ -3858,6 +4208,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1987",
     "name": "Mercedes-Benz EQA 350 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQA_2024/Mercedes_EQA_2024-01-thumb.jpg",
     "priceEur": 67691,
     "rangeKm": 350,
     "oneStopRangeKm": 359,
@@ -3869,6 +4220,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1921",
     "name": "NIO EL6 Standard Range",
+    "imageUrl": "https://ev-database.org/img/auto/NIO_EL6/NIO_EL6-01-thumb.jpg",
     "priceEur": 67900,
     "rangeKm": 365,
     "oneStopRangeKm": 388,
@@ -3880,6 +4232,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3041",
     "name": "Audi Q6 Sportback e-tron",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_Q6_etron_Sportback_2024/Audi_Q6_etron_Sportback_2024-01-thumb.jpg",
     "priceEur": 67990,
     "rangeKm": 410,
     "oneStopRangeKm": 485,
@@ -3891,6 +4244,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3067",
     "name": "Hyundai IONIQ 9 110.3 kWh RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Hyundai_IONIQ9_2024/Hyundai_IONIQ9_2024-01-thumb.jpg",
     "priceEur": 67995,
     "rangeKm": 505,
     "oneStopRangeKm": 575,
@@ -3902,6 +4256,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3424",
     "name": "Ford e-Tourneo Custom L2 160 kW RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Ford_eTourneo_Custom_2024/Ford_eTourneo_Custom_2024-01-thumb.jpg",
     "priceEur": 68349,
     "rangeKm": 270,
     "oneStopRangeKm": 272,
@@ -3913,6 +4268,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3315",
     "name": "Volkswagen e-Caravelle L1 100 kW 64 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_e-Caravelle/Volkswagen_e-Caravelle-01-thumb.jpg",
     "priceEur": 68390,
     "rangeKm": 245,
     "oneStopRangeKm": 247,
@@ -3924,6 +4280,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3190",
     "name": "Ford Mustang Mach-E GT",
+    "imageUrl": "https://ev-database.org/img/auto/Ford_Mustang_Mach-E/Ford_Mustang_Mach-E-01-thumb.jpg",
     "priceEur": 68400,
     "rangeKm": 435,
     "oneStopRangeKm": 441,
@@ -3935,6 +4292,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3079",
     "name": "Kia EV6 GT",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV6_GT_2025/Kia_EV6_GT_2025-01-thumb.jpg",
     "priceEur": 68495,
     "rangeKm": 395,
     "oneStopRangeKm": 488,
@@ -3946,6 +4304,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2258",
     "name": "Peugeot e-Traveller Standard 75 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-Traveller_2024/Peugeot_e-Traveller_2024-01-thumb.jpg",
     "priceEur": 68571,
     "rangeKm": 265,
     "oneStopRangeKm": 252,
@@ -3957,6 +4316,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2254",
     "name": "Citroen e-SpaceTourer Standard 75 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Citroen_e-SpaceTourer_2024/Citroen_e-SpaceTourer_2024-01-thumb.jpg",
     "priceEur": 68571,
     "rangeKm": 265,
     "oneStopRangeKm": 252,
@@ -3968,6 +4328,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1834",
     "name": "Kia EV9 99.8 kWh RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV9_2023/Kia_EV9_2023-01-thumb.jpg",
     "priceEur": 68795,
     "rangeKm": 450,
     "oneStopRangeKm": 502,
@@ -3979,6 +4340,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3407",
     "name": "Mercedes-Benz GLB 350 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_GLB/Mercedes_GLB-01-thumb.jpg",
     "priceEur": 68800,
     "rangeKm": 460,
     "oneStopRangeKm": 571,
@@ -3990,6 +4352,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3318",
     "name": "Volkswagen e-Caravelle L2 100 kW 64 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_e-Caravelle/Volkswagen_e-Caravelle-01-thumb.jpg",
     "priceEur": 69390,
     "rangeKm": 245,
     "oneStopRangeKm": 247,
@@ -4001,6 +4364,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2259",
     "name": "Peugeot e-Traveller Long 75 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-Traveller_2024/Peugeot_e-Traveller_2024-01-thumb.jpg",
     "priceEur": 69781,
     "rangeKm": 265,
     "oneStopRangeKm": 252,
@@ -4012,6 +4376,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2255",
     "name": "Citroen e-SpaceTourer Long 75 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Citroen_e-SpaceTourer_2024/Citroen_e-SpaceTourer_2024-01-thumb.jpg",
     "priceEur": 69781,
     "rangeKm": 265,
     "oneStopRangeKm": 252,
@@ -4023,6 +4388,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2156",
     "name": "Volkswagen ID. Buzz NWB GTX",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID_Buzz_GTX/Volkswagen_ID_Buzz_GTX-01-thumb.jpg",
     "priceEur": 69990,
     "rangeKm": 360,
     "oneStopRangeKm": 395,
@@ -4034,6 +4400,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3128",
     "name": "Volvo ES90 Single Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_ES90/Volvo_ES90-01-thumb.jpg",
     "priceEur": 69995,
     "rangeKm": 485,
     "oneStopRangeKm": 584,
@@ -4045,6 +4412,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1746",
     "name": "Hongqi E-HS9 84 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Hongqi_E-HS9/Hongqi_E-HS9-01-thumb.jpg",
     "priceEur": 69995,
     "rangeKm": 320,
     "oneStopRangeKm": 334,
@@ -4056,6 +4424,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3290",
     "name": "BMW iX3 50 xDrive",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_iX3_2026/BMW_iX3_2026-01-thumb.jpg",
     "priceEur": 70501,
     "rangeKm": 610,
     "oneStopRangeKm": 742,
@@ -4067,6 +4436,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3316",
     "name": "Volkswagen e-Caravelle L1 160 kW 64 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_e-Caravelle/Volkswagen_e-Caravelle-01-thumb.jpg",
     "priceEur": 70690,
     "rangeKm": 245,
     "oneStopRangeKm": 247,
@@ -4078,6 +4448,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2203",
     "name": "MG Cyberster GT",
+    "imageUrl": "https://ev-database.org/img/auto/MG_Cyberster/MG_Cyberster-01-thumb.jpg",
     "priceEur": 70860,
     "rangeKm": 395,
     "oneStopRangeKm": 409,
@@ -4089,6 +4460,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2157",
     "name": "Volkswagen ID. Buzz LWB GTX",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID_Buzz_GTX/Volkswagen_ID_Buzz_GTX-01-thumb.jpg",
     "priceEur": 70990,
     "rangeKm": 380,
     "oneStopRangeKm": 425,
@@ -4100,6 +4472,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3191",
     "name": "Ford Mustang Mach-E Rally",
+    "imageUrl": "https://ev-database.org/img/auto/Ford_Mustang_Mach-E_Rally/Ford_Mustang_Mach-E_Rally-01-thumb.jpg",
     "priceEur": 71400,
     "rangeKm": 415,
     "oneStopRangeKm": 420,
@@ -4111,6 +4484,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3319",
     "name": "Volkswagen e-Caravelle L2 160 kW 64 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_e-Caravelle/Volkswagen_e-Caravelle-01-thumb.jpg",
     "priceEur": 71690,
     "rangeKm": 245,
     "oneStopRangeKm": 247,
@@ -4122,6 +4496,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2215",
     "name": "Audi Q6 e-tron performance",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_Q6_etron_2024/Audi_Q6_etron_2024-01-thumb.jpg",
     "priceEur": 71950,
     "rangeKm": 490,
     "oneStopRangeKm": 568,
@@ -4133,6 +4508,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1935",
     "name": "Zeekr 001 Privilege AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Zeekr_001_2023/Zeekr_001_2023-01-thumb.jpg",
     "priceEur": 71990,
     "rangeKm": 480,
     "oneStopRangeKm": 521,
@@ -4144,6 +4520,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3068",
     "name": "Hyundai IONIQ 9 110.3 kWh AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Hyundai_IONIQ9_2024/Hyundai_IONIQ9_2024-01-thumb.jpg",
     "priceEur": 71995,
     "rangeKm": 495,
     "oneStopRangeKm": 567,
@@ -4155,6 +4532,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1835",
     "name": "Kia EV9 99.8 kWh AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV9_2023/Kia_EV9_2023-01-thumb.jpg",
     "priceEur": 72295,
     "rangeKm": 435,
     "oneStopRangeKm": 485,
@@ -4166,6 +4544,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3296",
     "name": "Mercedes-Benz GLC 400 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_GLC_2026/Mercedes_GLC_2026-01-thumb.jpg",
     "priceEur": 72631,
     "rangeKm": 500,
     "oneStopRangeKm": 606,
@@ -4177,6 +4556,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1842",
     "name": "Polestar 4 Long Range Dual Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Polestar_4_2024/Polestar_4_2024-01-thumb.jpg",
     "priceEur": 72800,
     "rangeKm": 485,
     "oneStopRangeKm": 524,
@@ -4188,6 +4568,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1916",
     "name": "NIO ET5 Touring Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/NIO_ET5_Touring/NIO_ET5_Touring-01-thumb.jpg",
     "priceEur": 72900,
     "rangeKm": 485,
     "oneStopRangeKm": 527,
@@ -4199,6 +4580,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3443",
     "name": "Volvo EX60 P12 AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX60_MY27/Volvo_EX60_MY27-01-thumb.jpg",
     "priceEur": 72995,
     "rangeKm": 610,
     "oneStopRangeKm": 742,
@@ -4210,6 +4592,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3078",
     "name": "DS Automobiles N°8 AWD Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/DS_No8_2024/DS_No8_2024-01-thumb.jpg",
     "priceEur": 73600,
     "rangeKm": 530,
     "oneStopRangeKm": 552,
@@ -4221,6 +4604,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3317",
     "name": "Volkswagen e-Caravelle L1 210 kW 64 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_e-Caravelle/Volkswagen_e-Caravelle-01-thumb.jpg",
     "priceEur": 73890,
     "rangeKm": 245,
     "oneStopRangeKm": 247,
@@ -4232,6 +4616,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3042",
     "name": "Audi Q6 Sportback e-tron performance",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_Q6_etron_Sportback_2024/Audi_Q6_etron_Sportback_2024-01-thumb.jpg",
     "priceEur": 73990,
     "rangeKm": 510,
     "oneStopRangeKm": 595,
@@ -4243,6 +4628,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2044",
     "name": "Hyundai IONIQ 5 N",
+    "imageUrl": "https://ev-database.org/img/auto/Hyundai_IONIQ5_N_2024/Hyundai_IONIQ5_N_2024-01-thumb.jpg",
     "priceEur": 73995,
     "rangeKm": 390,
     "oneStopRangeKm": 476,
@@ -4254,6 +4640,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3295",
     "name": "Lexus RZ 550e F SPORT",
+    "imageUrl": "https://ev-database.org/img/auto/Lexus_RZ_FSPORT_2026/Lexus_RZ_FSPORT_2026-01-thumb.jpg",
     "priceEur": 74495,
     "rangeKm": 390,
     "oneStopRangeKm": 425,
@@ -4265,6 +4652,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3320",
     "name": "Volkswagen e-Caravelle L2 210 kW 64 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_e-Caravelle/Volkswagen_e-Caravelle-01-thumb.jpg",
     "priceEur": 74940,
     "rangeKm": 245,
     "oneStopRangeKm": 247,
@@ -4276,6 +4664,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3265",
     "name": "Hongqi E-HS7 111 kWh AWD Pro",
+    "imageUrl": "https://ev-database.org/img/auto/Hongqi_E-HS7/Hongqi_E-HS7-01-thumb.jpg",
     "priceEur": 74995,
     "rangeKm": 435,
     "oneStopRangeKm": 510,
@@ -4287,6 +4676,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3240",
     "name": "Mercedes-Benz EQE 350+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE/Mercedes_EQE-01-thumb.jpg",
     "priceEur": 75051,
     "rangeKm": 555,
     "oneStopRangeKm": 597,
@@ -4298,6 +4688,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2270",
     "name": "Audi A6 Sportback e-tron performance",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_A6_Sportback_etron_2024/Audi_A6_Sportback_etron_2024-01-thumb.jpg",
     "priceEur": 75990,
     "rangeKm": 600,
     "oneStopRangeKm": 718,
@@ -4309,6 +4700,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3279",
     "name": "XPENG G9 AWD Performance",
+    "imageUrl": "https://ev-database.org/img/auto/XPENG_G9_2025/XPENG_G9_2025-01-thumb.jpg",
     "priceEur": 75990,
     "rangeKm": 465,
     "oneStopRangeKm": 600,
@@ -4320,6 +4712,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1922",
     "name": "NIO EL6 Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/NIO_EL6/NIO_EL6-01-thumb.jpg",
     "priceEur": 76900,
     "rangeKm": 435,
     "oneStopRangeKm": 471,
@@ -4331,6 +4724,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2272",
     "name": "Audi A6 Avant e-tron performance",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_A6_Avant_etron_2024/Audi_A6_Avant_etron_2024-01-thumb.jpg",
     "priceEur": 77490,
     "rangeKm": 575,
     "oneStopRangeKm": 688,
@@ -4342,6 +4736,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2146",
     "name": "Audi Q6 e-tron quattro",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_Q6_etron_2024/Audi_Q6_etron_2024-01-thumb.jpg",
     "priceEur": 77950,
     "rangeKm": 480,
     "oneStopRangeKm": 558,
@@ -4353,6 +4748,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3241",
     "name": "Mercedes-Benz EQE 350 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE/Mercedes_EQE-01-thumb.jpg",
     "priceEur": 78076,
     "rangeKm": 515,
     "oneStopRangeKm": 564,
@@ -4364,6 +4760,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3112",
     "name": "BMW i5 eDrive40 Sedan",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i5_eDrive40_Sedan/BMW_i5_eDrive40_Sedan-01-thumb.jpg",
     "priceEur": 78608,
     "rangeKm": 480,
     "oneStopRangeKm": 536,
@@ -4375,6 +4772,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1993",
     "name": "Kia EV9 99.8 kWh AWD GT-Line",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV9_GTLine_2023/Kia_EV9_GTLine_2023-01-thumb.jpg",
     "priceEur": 78795,
     "rangeKm": 425,
     "oneStopRangeKm": 471,
@@ -4386,6 +4784,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3207",
     "name": "BMW i4 M60 xDrive",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i4_M50_2024/BMW_i4_M50_2024-01-thumb.jpg",
     "priceEur": 78971,
     "rangeKm": 465,
     "oneStopRangeKm": 523,
@@ -4397,6 +4796,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2229",
     "name": "Polestar 3 Long Range Single motor",
+    "imageUrl": "https://ev-database.org/img/auto/Polestar_3/Polestar_3-01-thumb.jpg",
     "priceEur": 79950,
     "rangeKm": 530,
     "oneStopRangeKm": 571,
@@ -4408,6 +4808,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3052",
     "name": "Audi A6 Sportback e-tron quattro",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_A6_Sportback_etron_2024/Audi_A6_Sportback_etron_2024-01-thumb.jpg",
     "priceEur": 79990,
     "rangeKm": 570,
     "oneStopRangeKm": 682,
@@ -4419,6 +4820,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3043",
     "name": "Audi Q6 Sportback e-tron quattro",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_Q6_etron_Sportback_2024/Audi_Q6_etron_Sportback_2024-01-thumb.jpg",
     "priceEur": 79990,
     "rangeKm": 500,
     "oneStopRangeKm": 585,
@@ -4430,6 +4832,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1747",
     "name": "Hongqi E-HS9 99 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Hongqi_E-HS9/Hongqi_E-HS9-01-thumb.jpg",
     "priceEur": 79995,
     "rangeKm": 370,
     "oneStopRangeKm": 367,
@@ -4441,6 +4844,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3115",
     "name": "BMW i5 eDrive40 Touring",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i5_eDrive40_Touring/BMW_i5_eDrive40_Touring-01-thumb.jpg",
     "priceEur": 80665,
     "rangeKm": 465,
     "oneStopRangeKm": 519,
@@ -4452,6 +4856,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3113",
     "name": "BMW i5 xDrive40 Sedan",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i5_eDrive40_Sedan/BMW_i5_eDrive40_Sedan-01-thumb.jpg",
     "priceEur": 81270,
     "rangeKm": 465,
     "oneStopRangeKm": 525,
@@ -4463,6 +4868,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3054",
     "name": "Audi A6 Avant e-tron quattro",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_A6_Avant_etron_2024/Audi_A6_Avant_etron_2024-01-thumb.jpg",
     "priceEur": 81490,
     "rangeKm": 560,
     "oneStopRangeKm": 666,
@@ -4474,6 +4880,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3069",
     "name": "Hyundai IONIQ 9 110.3 kWh AWD+",
+    "imageUrl": "https://ev-database.org/img/auto/Hyundai_IONIQ9_2024/Hyundai_IONIQ9_2024-01-thumb.jpg",
     "priceEur": 81495,
     "rangeKm": 485,
     "oneStopRangeKm": 550,
@@ -4485,6 +4892,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3283",
     "name": "Mercedes-Benz EQE SUV 300",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE_SUV/Mercedes_EQE_SUV-01-thumb.jpg",
     "priceEur": 81827,
     "rangeKm": 450,
     "oneStopRangeKm": 485,
@@ -4496,6 +4904,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3116",
     "name": "BMW i5 xDrive40 Touring",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i5_eDrive40_Touring/BMW_i5_eDrive40_Touring-01-thumb.jpg",
     "priceEur": 83327,
     "rangeKm": 450,
     "oneStopRangeKm": 502,
@@ -4507,6 +4916,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3323",
     "name": "Volvo EX90 Single Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX90/Volvo_EX90-01-thumb.jpg",
     "priceEur": 84495,
     "rangeKm": 425,
     "oneStopRangeKm": 501,
@@ -4518,6 +4928,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2140",
     "name": "Mercedes-Benz eVito Tourer L2 90 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_eVito_2024/Mercedes_eVito_2024-01-thumb.jpg",
     "priceEur": 84773,
     "rangeKm": 325,
     "oneStopRangeKm": 299,
@@ -4529,6 +4940,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2050",
     "name": "Hongqi E-HS9 120 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Hongqi_E-HS9/Hongqi_E-HS9-01-thumb.jpg",
     "priceEur": 84995,
     "rangeKm": 455,
     "oneStopRangeKm": 418,
@@ -4540,6 +4952,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3129",
     "name": "Volvo ES90 Twin Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_ES90/Volvo_ES90-01-thumb.jpg",
     "priceEur": 85995,
     "rangeKm": 535,
     "oneStopRangeKm": 642,
@@ -4551,6 +4964,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3378",
     "name": "Porsche Macan Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Macan_Electric_2024/Porsche_Macan_Electric_2024-01-thumb.jpg",
     "priceEur": 86000,
     "rangeKm": 495,
     "oneStopRangeKm": 578,
@@ -4562,6 +4976,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3242",
     "name": "Mercedes-Benz EQE 500 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE/Mercedes_EQE-01-thumb.jpg",
     "priceEur": 86304,
     "rangeKm": 505,
     "oneStopRangeKm": 553,
@@ -4573,6 +4988,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3109",
     "name": "BMW iX xDrive 45",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_iX_2025/BMW_iX_2025-01-thumb.jpg",
     "priceEur": 86403,
     "rangeKm": 470,
     "oneStopRangeKm": 490,
@@ -4584,6 +5000,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1758",
     "name": "Polestar 3 Long Range Dual motor",
+    "imageUrl": "https://ev-database.org/img/auto/Polestar_3/Polestar_3-01-thumb.jpg",
     "priceEur": 86950,
     "rangeKm": 515,
     "oneStopRangeKm": 555,
@@ -4595,6 +5012,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2131",
     "name": "Mercedes-Benz EQV L2 90 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQV_2024/Mercedes_EQV_2024-01-thumb.jpg",
     "priceEur": 88626,
     "rangeKm": 320,
     "oneStopRangeKm": 297,
@@ -4606,6 +5024,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3196",
     "name": "Kia EV9 99.8 kWh AWD GT",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV9_GT_2025/Kia_EV9_GT_2025-01-thumb.jpg",
     "priceEur": 88795,
     "rangeKm": 420,
     "oneStopRangeKm": 468,
@@ -4617,6 +5036,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3271",
     "name": "Lucid Air Pure RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Lucid_Air/Lucid_Air-01-thumb.jpg",
     "priceEur": 88900,
     "rangeKm": 580,
     "oneStopRangeKm": 668,
@@ -4628,6 +5048,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3379",
     "name": "Porsche Macan 4 Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Macan_4_2024/Porsche_Macan_4_2024-01-thumb.jpg",
     "priceEur": 89600,
     "rangeKm": 470,
     "oneStopRangeKm": 553,
@@ -4639,6 +5060,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2274",
     "name": "Mercedes-Benz EQV L3 90 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQV_2024/Mercedes_EQV_2024-01-thumb.jpg",
     "priceEur": 89679,
     "rangeKm": 315,
     "oneStopRangeKm": 291,
@@ -4650,6 +5072,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3284",
     "name": "Mercedes-Benz EQE SUV 350+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE_SUV/Mercedes_EQE_SUV-01-thumb.jpg",
     "priceEur": 90297,
     "rangeKm": 475,
     "oneStopRangeKm": 503,
@@ -4661,6 +5084,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2222",
     "name": "NIO EL8 Standard Range",
+    "imageUrl": "https://ev-database.org/img/auto/NIO_EL8/NIO_EL8-01-thumb.jpg",
     "priceEur": 90900,
     "rangeKm": 360,
     "oneStopRangeKm": 388,
@@ -4672,6 +5096,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3130",
     "name": "Volvo ES90 Twin Motor Performance",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_ES90/Volvo_ES90-01-thumb.jpg",
     "priceEur": 91495,
     "rangeKm": 535,
     "oneStopRangeKm": 642,
@@ -4683,6 +5108,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3285",
     "name": "Mercedes-Benz EQE SUV 350 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE_SUV/Mercedes_EQE_SUV-01-thumb.jpg",
     "priceEur": 92727,
     "rangeKm": 435,
     "oneStopRangeKm": 468,
@@ -4694,6 +5120,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1759",
     "name": "Polestar 3 Long Range Performance",
+    "imageUrl": "https://ev-database.org/img/auto/Polestar_3/Polestar_3-01-thumb.jpg",
     "priceEur": 93550,
     "rangeKm": 480,
     "oneStopRangeKm": 516,
@@ -4705,6 +5132,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3324",
     "name": "Volvo EX90 Twin Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX90/Volvo_EX90-01-thumb.jpg",
     "priceEur": 94495,
     "rangeKm": 480,
     "oneStopRangeKm": 567,
@@ -4716,6 +5144,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3380",
     "name": "Porsche Macan 4S Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Macan_4S_2024/Porsche_Macan_4S_2024-01-thumb.jpg",
     "priceEur": 96700,
     "rangeKm": 470,
     "oneStopRangeKm": 553,
@@ -4727,6 +5156,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2155",
     "name": "Mercedes-Benz EQS 350",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_2024/Mercedes_EQS_2024-01-thumb.jpg",
     "priceEur": 98867,
     "rangeKm": 570,
     "oneStopRangeKm": 614,
@@ -4738,6 +5168,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3286",
     "name": "Mercedes-Benz EQE SUV 500 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE_SUV/Mercedes_EQE_SUV-01-thumb.jpg",
     "priceEur": 99372,
     "rangeKm": 455,
     "oneStopRangeKm": 482,
@@ -4749,6 +5180,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3325",
     "name": "Volvo EX90 Twin Motor Performance",
+    "imageUrl": "https://ev-database.org/img/auto/Volvo_EX90/Volvo_EX90-01-thumb.jpg",
     "priceEur": 99495,
     "rangeKm": 465,
     "oneStopRangeKm": 547,
@@ -4760,6 +5192,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3110",
     "name": "BMW iX xDrive 60",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_iX_2025/BMW_iX_2025-01-thumb.jpg",
     "priceEur": 99900,
     "rangeKm": 525,
     "oneStopRangeKm": 554,
@@ -4771,6 +5204,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2223",
     "name": "NIO EL8 Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/NIO_EL8/NIO_EL8-01-thumb.jpg",
     "priceEur": 99900,
     "rangeKm": 440,
     "oneStopRangeKm": 524,
@@ -4782,6 +5216,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3182",
     "name": "Audi e-tron GT quattro",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_e-tron_GT_S_2025/Audi_e-tron_GT_S_2025-01-thumb.jpg",
     "priceEur": 99990,
     "rangeKm": 540,
     "oneStopRangeKm": 700,
@@ -4793,6 +5228,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2271",
     "name": "Audi S6 Sportback e-tron",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_S6_Sportback_etron_2024/Audi_S6_Sportback_etron_2024-01-thumb.jpg",
     "priceEur": 99990,
     "rangeKm": 555,
     "oneStopRangeKm": 663,
@@ -4804,6 +5240,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2193",
     "name": "Mercedes-Benz EQS 450+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_2024/Mercedes_EQS_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 685,
     "oneStopRangeKm": 731,
@@ -4815,6 +5252,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3273",
     "name": "Lucid Air Grand Touring",
+    "imageUrl": "https://ev-database.org/img/auto/Lucid_Air/Lucid_Air-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 720,
     "oneStopRangeKm": 836,
@@ -4826,6 +5264,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1765",
     "name": "Rolls-Royce Spectre",
+    "imageUrl": "https://ev-database.org/img/auto/Rolls-Royce-Spectre/Rolls-Royce-Spectre-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 465,
     "oneStopRangeKm": 494,
@@ -4837,6 +5276,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3398",
     "name": "Porsche Cayenne Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Cayenne_2026/Porsche_Cayenne_2026-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 520,
     "oneStopRangeKm": 668,
@@ -4848,6 +5288,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3298",
     "name": "Polestar 5 Dual Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Polestar_5/Polestar_5-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 580,
     "oneStopRangeKm": 698,
@@ -4859,6 +5300,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3292",
     "name": "Lucid Gravity Grand Touring",
+    "imageUrl": "https://ev-database.org/img/auto/Lucid_Gravity/Lucid_Gravity-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 615,
     "oneStopRangeKm": 729,
@@ -4870,6 +5312,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3464",
     "name": "Maserati Grecale Folgore",
+    "imageUrl": "https://ev-database.org/img/auto/Maserati_Grecale_Folgore_2026/Maserati_Grecale_Folgore_2026-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 450,
     "oneStopRangeKm": 450,
@@ -4881,6 +5324,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2192",
     "name": "Mercedes-Benz G 580",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_G-Class/Mercedes_G-Class-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 395,
     "oneStopRangeKm": 394,
@@ -4892,6 +5336,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1803",
     "name": "Maserati GranTurismo Folgore",
+    "imageUrl": "https://ev-database.org/img/auto/Maserati_GranTurismo_Folgore/Maserati_GranTurismo_Folgore-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 420,
     "oneStopRangeKm": 531,
@@ -4903,6 +5348,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3274",
     "name": "Lucid Air Sapphire",
+    "imageUrl": "https://ev-database.org/img/auto/Lucid_Air_Sapphire_2025/Lucid_Air_Sapphire_2025-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 610,
     "oneStopRangeKm": 693,
@@ -4914,6 +5360,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3385",
     "name": "Tesla Model X AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Tesla_Model_X_2026/Tesla_Model_X_2026-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 490,
     "oneStopRangeKm": 544,
@@ -4925,6 +5372,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3383",
     "name": "Tesla Model S AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Tesla_Model_S_2026/Tesla_Model_S_2026-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 590,
     "oneStopRangeKm": 667,
@@ -4936,6 +5384,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1905",
     "name": "BMW i7 eDrive50",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 520,
     "oneStopRangeKm": 568,
@@ -4947,6 +5396,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3384",
     "name": "Tesla Model S Plaid",
+    "imageUrl": "https://ev-database.org/img/auto/Tesla_Model_S_2026/Tesla_Model_S_2026-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 565,
     "oneStopRangeKm": 639,
@@ -4958,6 +5408,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2147",
     "name": "Audi SQ6 e-tron",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_SQ6_etron_2024/Audi_SQ6_etron_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 470,
     "oneStopRangeKm": 550,
@@ -4969,6 +5420,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2099",
     "name": "Porsche Taycan Plus",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 575,
     "oneStopRangeKm": 750,
@@ -4980,6 +5432,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3399",
     "name": "Porsche Cayenne Turbo Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Cayenne_Turbo_2026/Porsche_Cayenne_Turbo_2026-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 495,
     "oneStopRangeKm": 636,
@@ -4991,6 +5444,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3216",
     "name": "Lotus Eletre 600",
+    "imageUrl": "https://ev-database.org/img/auto/Lotus_Eletre/Lotus_Eletre-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 495,
     "oneStopRangeKm": 597,
@@ -5002,6 +5456,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2101",
     "name": "Porsche Taycan 4S Plus",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 565,
     "oneStopRangeKm": 738,
@@ -5013,6 +5468,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2273",
     "name": "Audi S6 Avant e-tron",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_S6_Avant_etron_2024/Audi_S6_Avant_etron_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 530,
     "oneStopRangeKm": 628,
@@ -5024,6 +5480,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3299",
     "name": "Polestar 5 Performance",
+    "imageUrl": "https://ev-database.org/img/auto/Polestar_5/Polestar_5-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 530,
     "oneStopRangeKm": 637,
@@ -5035,6 +5492,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1676",
     "name": "BMW i7 xDrive60",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i7_2022/BMW_i7_2022-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 510,
     "oneStopRangeKm": 560,
@@ -5046,6 +5504,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3386",
     "name": "Tesla Model X Plaid",
+    "imageUrl": "https://ev-database.org/img/auto/Tesla_Model_X_2026/Tesla_Model_X_2026-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 475,
     "oneStopRangeKm": 531,
@@ -5057,6 +5516,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3111",
     "name": "BMW iX M70 xDrive",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_iX_M70_2025/BMW_iX_M70_2025-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 500,
     "oneStopRangeKm": 524,
@@ -5068,6 +5528,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2100",
     "name": "Porsche Taycan 4S",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 490,
     "oneStopRangeKm": 611,
@@ -5079,6 +5540,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2194",
     "name": "Mercedes-Benz EQS 450 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_2024/Mercedes_EQS_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 655,
     "oneStopRangeKm": 704,
@@ -5090,6 +5552,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2196",
     "name": "Mercedes-Benz EQS 580 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_2024/Mercedes_EQS_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 640,
     "oneStopRangeKm": 682,
@@ -5101,6 +5564,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2220",
     "name": "Audi RS e-tron GT",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_e-tron_GT_RS_2025/Audi_e-tron_GT_RS_2025-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 525,
     "oneStopRangeKm": 682,
@@ -5112,6 +5576,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3382",
     "name": "Porsche Macan Turbo Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Macan_Turbo_2024/Porsche_Macan_Turbo_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 465,
     "oneStopRangeKm": 550,
@@ -5123,6 +5588,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3381",
     "name": "Porsche Macan GTS Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Macan_GTS_2026/Porsche_Macan_GTS_2026-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 465,
     "oneStopRangeKm": 546,
@@ -5134,6 +5600,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2195",
     "name": "Mercedes-Benz EQS 500 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_2024/Mercedes_EQS_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 640,
     "oneStopRangeKm": 682,
@@ -5145,6 +5612,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3214",
     "name": "Lotus Emeya 600",
+    "imageUrl": "https://ev-database.org/img/auto/Lotus_Emeya/Lotus_Emeya-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 520,
     "oneStopRangeKm": 693,
@@ -5156,6 +5624,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2098",
     "name": "Porsche Taycan",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 495,
     "oneStopRangeKm": 622,
@@ -5167,6 +5636,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3114",
     "name": "BMW i5 M60 xDrive Sedan",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i5_M60_xDrive_Sedan/BMW_i5_M60_xDrive_Sedan-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 430,
     "oneStopRangeKm": 479,
@@ -5178,6 +5648,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3117",
     "name": "BMW i5 M60 xDrive Touring",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i5_M60_xDrive_Touring/BMW_i5_M60_xDrive_Touring-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 425,
     "oneStopRangeKm": 475,
@@ -5189,6 +5660,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2087",
     "name": "Mercedes-Benz EQS SUV 450+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_SUV_2022/Mercedes_EQS_SUV_2022-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 540,
     "oneStopRangeKm": 559,
@@ -5200,6 +5672,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2219",
     "name": "Audi S e-tron GT",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_e-tron_GT_S_2025/Audi_e-tron_GT_S_2025-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 540,
     "oneStopRangeKm": 700,
@@ -5211,6 +5684,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2104",
     "name": "Porsche Taycan Sport Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Sport_Turismo_2024/Porsche_Taycan_Sport_Turismo_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 460,
     "oneStopRangeKm": 568,
@@ -5222,6 +5696,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2221",
     "name": "Audi RS e-tron GT performance",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_e-tron_GT_RS_Performance_2025/Audi_e-tron_GT_RS_Performance_2025-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 525,
     "oneStopRangeKm": 682,
@@ -5233,6 +5708,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3217",
     "name": "Lotus Eletre 900",
+    "imageUrl": "https://ev-database.org/img/auto/Lotus_Eletre/Lotus_Eletre-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 455,
     "oneStopRangeKm": 553,
@@ -5244,6 +5720,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3291",
     "name": "Lucid Gravity Touring",
+    "imageUrl": "https://ev-database.org/img/auto/Lucid_Gravity/Lucid_Gravity-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 460,
     "oneStopRangeKm": 547,
@@ -5255,6 +5732,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "1838",
     "name": "BMW i7 M70 xDrive",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i7_M70_2023/BMW_i7_M70_2023-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 490,
     "oneStopRangeKm": 530,
@@ -5266,6 +5744,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3060",
     "name": "Porsche Taycan 4",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 490,
     "oneStopRangeKm": 611,
@@ -5277,6 +5756,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2086",
     "name": "Mercedes-Benz EQS SUV Maybach 680",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_Maybach_EQS_SUV_2024/Mercedes_Maybach_EQS_SUV_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 490,
     "oneStopRangeKm": 507,
@@ -5288,6 +5768,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3062",
     "name": "Porsche Taycan GTS",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_GTS_2024/Porsche_Taycan_GTS_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 535,
     "oneStopRangeKm": 693,
@@ -5299,6 +5780,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2090",
     "name": "Mercedes-Benz EQS SUV 580 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_SUV_2022/Mercedes_EQS_SUV_2022-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 530,
     "oneStopRangeKm": 543,
@@ -5310,6 +5792,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2187",
     "name": "Maserati GranCabrio Folgore",
+    "imageUrl": "https://ev-database.org/img/auto/Maserati_GranCabrio_Folgore/Maserati_GranCabrio_Folgore-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 395,
     "oneStopRangeKm": 489,
@@ -5321,6 +5804,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3215",
     "name": "Lotus Emeya 900",
+    "imageUrl": "https://ev-database.org/img/auto/Lotus_Emeya/Lotus_Emeya-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 465,
     "oneStopRangeKm": 611,
@@ -5332,6 +5816,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2144",
     "name": "Porsche Taycan Turbo GT",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Turbo_GT_2024/Porsche_Taycan_Turbo_GT_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 475,
     "oneStopRangeKm": 610,
@@ -5343,6 +5828,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2112",
     "name": "Porsche Taycan Turbo Cross Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Cross_Turismo_2024/Porsche_Taycan_Cross_Turismo_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 495,
     "oneStopRangeKm": 636,
@@ -5354,6 +5840,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2145",
     "name": "Porsche Taycan Turbo GT Weissach",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Turbo_GT_Weissach_2024/Porsche_Taycan_Turbo_GT_Weissach_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 475,
     "oneStopRangeKm": 610,
@@ -5365,6 +5852,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2089",
     "name": "Mercedes-Benz EQS SUV 500 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_SUV_2022/Mercedes_EQS_SUV_2022-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 530,
     "oneStopRangeKm": 543,
@@ -5376,6 +5864,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2102",
     "name": "Porsche Taycan Turbo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 535,
     "oneStopRangeKm": 693,
@@ -5387,6 +5876,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2111",
     "name": "Porsche Taycan 4S Cross Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Cross_Turismo_2024/Porsche_Taycan_Cross_Turismo_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 510,
     "oneStopRangeKm": 655,
@@ -5398,6 +5888,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3044",
     "name": "Audi SQ6 Sportback e-tron",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_SQ6_etron_Sportback_2024/Audi_SQ6_etron_Sportback_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 495,
     "oneStopRangeKm": 578,
@@ -5409,6 +5900,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2106",
     "name": "Porsche Taycan 4S Sport Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Sport_Turismo_2024/Porsche_Taycan_Sport_Turismo_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 440,
     "oneStopRangeKm": 546,
@@ -5420,6 +5912,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3063",
     "name": "Porsche Taycan GTS Sport Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_GTS_Sport_Turismo_2024/Porsche_Taycan_GTS_Sport_Turismo_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 505,
     "oneStopRangeKm": 655,
@@ -5431,6 +5924,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3243",
     "name": "Mercedes-Benz EQE AMG 53 4MATIC+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE_AMG_53/Mercedes_EQE_AMG_53-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 450,
     "oneStopRangeKm": 491,
@@ -5442,6 +5936,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2103",
     "name": "Porsche Taycan Turbo S",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 525,
     "oneStopRangeKm": 674,
@@ -5453,6 +5948,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2105",
     "name": "Porsche Taycan Plus Sport Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Sport_Turismo_2024/Porsche_Taycan_Sport_Turismo_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 530,
     "oneStopRangeKm": 685,
@@ -5464,6 +5960,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2110",
     "name": "Porsche Taycan 4 Cross Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Cross_Turismo_2024/Porsche_Taycan_Cross_Turismo_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 510,
     "oneStopRangeKm": 655,
@@ -5475,6 +5972,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3272",
     "name": "Lucid Air Touring",
+    "imageUrl": "https://ev-database.org/img/auto/Lucid_Air/Lucid_Air-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 600,
     "oneStopRangeKm": 698,
@@ -5486,6 +5984,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2109",
     "name": "Porsche Taycan Turbo S Sport Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Sport_Turismo_2024/Porsche_Taycan_Sport_Turismo_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 505,
     "oneStopRangeKm": 655,
@@ -5497,6 +5996,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3287",
     "name": "Mercedes-Benz EQE SUV AMG 53 4MATIC+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE_AMG_SUV/Mercedes_EQE_AMG_SUV-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 420,
     "oneStopRangeKm": 453,
@@ -5508,6 +6008,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2088",
     "name": "Mercedes-Benz EQS SUV 450 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_SUV_2022/Mercedes_EQS_SUV_2022-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 530,
     "oneStopRangeKm": 543,
@@ -5519,6 +6020,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3061",
     "name": "Porsche Taycan 4 Plus",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 565,
     "oneStopRangeKm": 738,
@@ -5530,6 +6032,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2107",
     "name": "Porsche Taycan 4S Plus Sport Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Sport_Turismo_2024/Porsche_Taycan_Sport_Turismo_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 510,
     "oneStopRangeKm": 655,
@@ -5541,6 +6044,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2108",
     "name": "Porsche Taycan Turbo Sport Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Sport_Turismo_2024/Porsche_Taycan_Sport_Turismo_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 505,
     "oneStopRangeKm": 655,
@@ -5552,6 +6056,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "2113",
     "name": "Porsche Taycan Turbo S Cross Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Cross_Turismo_2024/Porsche_Taycan_Cross_Turismo_2024-01-thumb.jpg",
     "priceEur": 100000,
     "rangeKm": 485,
     "oneStopRangeKm": 620,
