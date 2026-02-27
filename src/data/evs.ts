@@ -14,7 +14,7 @@ export interface ElectricVehicle {
 
 // Data source: https://ev-database.org/nl/
 // Locale: Netherlands (nl), current availability only
-// Generated at: 2026-02-27T12:27:10.992Z
+// Generated at: 2026-02-27T12:42:35.415Z
 export const EV_DATABASE: ElectricVehicle[] = [
   {
     "id": "3408",
