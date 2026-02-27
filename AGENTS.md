@@ -41,9 +41,11 @@ Each EV record includes:
 - Deploy workflow: `.github/workflows/deploy-pages.yml`.
   - Triggers on `main` pushes and manual dispatch.
   - Builds with Bun and publishes `dist/` to `gh-pages`.
+  - Uses Bun install retries with `npm install` fallback for runner network resilience.
 - Weekly data refresh workflow: `.github/workflows/weekly-evdb-nl-refresh.yml`.
   - Runs every Friday at `15:00 UTC` (`cron: 0 15 * * 5`) plus manual dispatch.
   - Syncs EV data, runs tests/build, commits `src/data/evs.ts` if changed, and pushes to `main`.
+  - Uses Bun install retries with `npm install` fallback for runner network resilience.
 
 ## Current source map
 - `scripts/sync-evdb-nl.ts`: scrape/transform script for EV Database NL source.
