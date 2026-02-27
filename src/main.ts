@@ -19,13 +19,13 @@ if (!app) {
   throw new Error('App root not found')
 }
 
-const money = new Intl.NumberFormat('nl-NL', {
+const money = new Intl.NumberFormat('en-GB', {
   style: 'currency',
   currency: 'EUR',
   maximumFractionDigits: 0,
 })
 
-const decimal = new Intl.NumberFormat('nl-NL', {
+const decimal = new Intl.NumberFormat('en-GB', {
   maximumFractionDigits: 2,
 })
 
@@ -40,7 +40,7 @@ const renderVehicleCard = (recommendation: Recommendation, rank: number): string
       </header>
       <dl>
         <div>
-          <dt>NL prijs</dt>
+          <dt>NL price</dt>
           <dd>${money.format(vehicle.priceEur)}</dd>
         </div>
         <div>
@@ -48,11 +48,11 @@ const renderVehicleCard = (recommendation: Recommendation, rank: number): string
           <dd>${vehicle.oneStopRangeKm} km</dd>
         </div>
         <div>
-          <dt>Bagageruimte</dt>
+          <dt>Cargo space</dt>
           <dd>${decimal.format(vehicle.cargoLiters)} L</dd>
         </div>
         <div>
-          <dt>Snelladen</dt>
+          <dt>Fast charging</dt>
           <dd>${decimal.format(vehicle.fastChargeKw)} kW</dd>
         </div>
       </dl>
@@ -82,7 +82,7 @@ app.innerHTML = `
     </section>
 
     <section class="controls">
-      <label for="price-range" class="controls__label">Target NL price</label>
+      <label for="price-range" class="controls__label">Target NL Price</label>
       <div class="controls__numbers">
         <p id="target-price" class="target-price"></p>
         <p id="price-window" class="price-window"></p>
@@ -152,7 +152,7 @@ const updateView = (): void => {
 
   targetPriceEl.textContent = money.format(selectedPrice)
   priceWindowEl.textContent = `${money.format(results.priceFloor)} to ${money.format(results.priceCeiling)}`
-  matchCountEl.textContent = `${results.eligibleVehicles.length} voertuigen in range`
+  matchCountEl.textContent = `${results.eligibleVehicles.length} vehicles in range`
 
   valueLeaderEl.textContent = results.metricLeaders.valueLeader
     ? `${results.metricLeaders.valueLeader.vehicle.name} · ${money.format(results.metricLeaders.valueLeader.metrics.costPerOneStopKm)}/km`

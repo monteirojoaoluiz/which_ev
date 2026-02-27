@@ -1,0 +1,58 @@
+name: Weekly EVDB Netherlands refresh
+
+on:
+  schedule:
+    - cron: '0 15 * * 5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-evdb-nl-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: |
+          for attempt in 1 2 3 4 5; do
+            bun install --frozen-lockfile && exit 0
+            echo "bun install failed on attempt ${attempt}, retrying..."
+            sleep 8
+          done
+          echo "bun install failed after 5 attempts"
+          exit 1
+
+      - name: Refresh EV Database NL dataset
+        run: bun run sync:evdb-nl
+
+      - name: Run tests
+        run: bun test
+
+      - name: Verify build
+        run: bun run build
+
+      - name: Commit and push dataset updates
+        id: commit_updates
+        run: |
+          if git diff --quiet -- src/data/evs.ts; then
+            echo "No data changes detected."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/evs.ts
+          git commit -m "chore(data): weekly EV Database NL refresh"
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
