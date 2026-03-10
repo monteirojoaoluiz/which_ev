@@ -130,7 +130,7 @@ const parseVehicles = (html: string): ScrapedVehicle[] => {
 const toTsFile = (vehicles: ScrapedVehicle[]): string => {
   const generatedAt = new Date().toISOString()
 
-  return `export type DriveType = 'FWD' | 'RWD' | 'AWD' | 'Unknown'\n\nexport interface ElectricVehicle {\n  id: string\n  name: string\n  imageUrl: string\n  priceEur: number\n  rangeKm: number\n  oneStopRangeKm: number\n  cargoLiters: number\n  fastChargeKw: number\n  driveType: DriveType\n  sourceUrl: string\n}\n\n// Data source: ${SOURCE_URL}\n// Locale: Netherlands (nl), current availability only\n// Generated at: ${generatedAt}\nexport const EV_DATABASE: ElectricVehicle[] = ${JSON.stringify(vehicles, null, 2)}\n`
+  return `export type DriveType = 'FWD' | 'RWD' | 'AWD' | 'Unknown'\n\nexport interface ElectricVehicle {\n  id: string\n  name: string\n  imageUrl: string\n  priceEur: number\n  rangeKm: number\n  oneStopRangeKm: number\n  cargoLiters: number\n  fastChargeKw: number\n  driveType: DriveType\n  sourceUrl: string\n}\n\n// Data source: ${SOURCE_URL}\n// Locale: Netherlands (nl), current availability only\n// Generated at: ${generatedAt}\nexport const EV_DATABASE_UPDATED_AT = '${generatedAt}'\nexport const EV_DATABASE: ElectricVehicle[] = ${JSON.stringify(vehicles, null, 2)}\n`
 }
 
 const response = await fetch(SOURCE_URL)

@@ -1,5 +1,5 @@
 import './style.css'
-import { EV_DATABASE } from './data/evs'
+import { EV_DATABASE, EV_DATABASE_UPDATED_AT } from './data/evs'
 import { rankVehicles, type Recommendation } from './lib/recommendations'
 
 const PRICE_STEP = 500
@@ -87,6 +87,13 @@ const decimal = new Intl.NumberFormat('en-GB', {
   maximumFractionDigits: 2,
 })
 
+const updateStamp = new Intl.DateTimeFormat('en-GB', {
+  dateStyle: 'long',
+  timeStyle: 'short',
+})
+
+const updatedAtLabel = updateStamp.format(new Date(EV_DATABASE_UPDATED_AT))
+
 const renderVehicleCard = (recommendation: Recommendation, rank: number): string => {
   const { vehicle, metrics } = recommendation
 
@@ -146,6 +153,7 @@ app.innerHTML = `
         <strong>€5.000 below and €5.000 above</strong>, then rank top options
         by value, cargo+range, and road-trip balance.
       </p>
+      <p class="hero__meta">Latest EV Database NL sync: <strong>${updatedAtLabel}</strong></p>
     </section>
 
     <section class="controls">

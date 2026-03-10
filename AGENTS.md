@@ -12,11 +12,13 @@
 - UI copy is English.
 - Top 3 cards show EV images from EV Database.
 - Price slider includes a violin-style distribution backdrop that visualizes option density by price.
+- Frontend hero shows the latest EV Database NL sync timestamp from the generated dataset metadata.
 
 ## Data source
 - Primary source: `https://ev-database.org/nl/` (Netherlands locale).
 - Only vehicles with `availability current` are included in the local dataset.
 - Dataset file: `src/data/evs.ts`.
+- Dataset metadata export: `EV_DATABASE_UPDATED_AT` contains the last sync timestamp shown in the UI.
 - Refresh command: `bun run sync:evdb-nl`.
 
 ## EV data shape
