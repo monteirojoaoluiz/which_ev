@@ -15,21 +15,9 @@ export interface ElectricVehicle {
 
 // Data source: https://ev-database.org/nl/
 // Locale: Netherlands (nl), current availability only
-// Generated at: 2026-10-02T19:37:12.441Z
-export const EV_DATABASE_UPDATED_AT = '2026-10-02T19:37:12.441Z'
+// Generated at: 2026-10-09T19:52:40.552Z
+export const EV_DATABASE_UPDATED_AT = '2026-10-09T19:52:40.552Z'
 export const EV_DATABASE: ElectricVehicle[] = [
-  {
-    "id": "3408",
-    "name": "Dacia Spring Electric 70",
-    "imageUrl": "https://ev-database.org/img/auto/Dacia_Spring_Electric_2026/Dacia_Spring_Electric_2026-01-thumb.jpg",
-    "priceEur": 18000,
-    "rangeKm": 165,
-    "oneStopRangeKm": 166,
-    "cargoLiters": 342,
-    "fastChargeKw": 35,
-    "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3408/Dacia-Spring-Electric-70"
-  },
   {
     "id": "3039",
     "name": "Leapmotor T03",
@@ -41,18 +29,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 30,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3039/Leapmotor-T03"
-  },
-  {
-    "id": "3409",
-    "name": "Dacia Spring Electric 100",
-    "imageUrl": "https://ev-database.org/img/auto/Dacia_Spring_Electric_2026/Dacia_Spring_Electric_2026-01-thumb.jpg",
-    "priceEur": 20800,
-    "rangeKm": 160,
-    "oneStopRangeKm": 160,
-    "cargoLiters": 342,
-    "fastChargeKw": 35,
-    "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3409/Dacia-Spring-Electric-100"
   },
   {
     "id": "3392",
@@ -77,6 +53,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 30,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3280/Citroen-e-C3-Urban-Range-30-kWh"
+  },
+  {
+    "id": "3700",
+    "name": "Geely E2 35 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Geely_EX2_2026/Geely_EX2_2026-01-thumb.jpg",
+    "priceEur": 22990,
+    "rangeKm": 215,
+    "oneStopRangeKm": 217,
+    "cargoLiters": 445,
+    "fastChargeKw": 45,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3700/Geely-E2-35-kWh"
   },
   {
     "id": "3193",
@@ -151,16 +139,16 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/2039/Citroen-e-C3-Comfort-Range-44-kWh"
   },
   {
-    "id": "3674",
-    "name": "Volkswagen ID. Polo 85 kW - 37 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_IDPolo_2026/Volkswagen_IDPolo_2026-01-thumb.jpg",
+    "id": "3701",
+    "name": "Geely E2 47 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Geely_EX2_2026/Geely_EX2_2026-01-thumb.jpg",
     "priceEur": 24990,
-    "rangeKm": 245,
-    "oneStopRangeKm": 273,
-    "cargoLiters": 441,
-    "fastChargeKw": 70,
-    "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3674/Volkswagen-ID-Polo-85-kW---37-kWh"
+    "rangeKm": 280,
+    "oneStopRangeKm": 286,
+    "cargoLiters": 445,
+    "fastChargeKw": 60,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3701/Geely-E2-47-kWh"
   },
   {
     "id": "3194",
@@ -209,6 +197,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 65,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3470/MG-MG4-Urban-Comfort-Standard-Range"
+  },
+  {
+    "id": "3674",
+    "name": "Volkswagen ID. Polo 85 kW - 37 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_IDPolo_2026/Volkswagen_IDPolo_2026-01-thumb.jpg",
+    "priceEur": 25990,
+    "rangeKm": 245,
+    "oneStopRangeKm": 273,
+    "cargoLiters": 441,
+    "fastChargeKw": 70,
+    "driveType": "FWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3674/Volkswagen-ID-Polo-85-kW---37-kWh"
   },
   {
     "id": "3507",
@@ -307,18 +307,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3490/Kia-EV2-422-kWh"
   },
   {
-    "id": "3675",
-    "name": "Volkswagen ID. Polo 99 kW - 37 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_IDPolo_2026/Volkswagen_IDPolo_2026-01-thumb.jpg",
-    "priceEur": 27990,
-    "rangeKm": 245,
-    "oneStopRangeKm": 273,
-    "cargoLiters": 441,
-    "fastChargeKw": 70,
-    "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3675/Volkswagen-ID-Polo-99-kW---37-kWh"
-  },
-  {
     "id": "3508",
     "name": "CUPRA Raval 99 kW - 37 kWh",
     "imageUrl": "https://ev-database.org/img/auto/Cupra_Raval_2026/Cupra_Raval_2026-01-thumb.jpg",
@@ -415,6 +403,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/1945/Fiat-600e"
   },
   {
+    "id": "3675",
+    "name": "Volkswagen ID. Polo 99 kW - 37 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_IDPolo_2026/Volkswagen_IDPolo_2026-01-thumb.jpg",
+    "priceEur": 29490,
+    "rangeKm": 245,
+    "oneStopRangeKm": 273,
+    "cargoLiters": 441,
+    "fastChargeKw": 70,
+    "driveType": "FWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3675/Volkswagen-ID-Polo-99-kW---37-kWh"
+  },
+  {
     "id": "3202",
     "name": "Nissan Micra Standard Range 40 kWh",
     "imageUrl": "https://ev-database.org/img/auto/Nissan_Micra_2025/Nissan_Micra_2025-01-thumb.jpg",
@@ -449,6 +449,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 80,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3046/Omoda-5-EV"
+  },
+  {
+    "id": "3621",
+    "name": "Skoda Epiq 40",
+    "imageUrl": "https://ev-database.org/img/auto/Skoda_Epiq_2026/Skoda_Epiq_2026-01-thumb.jpg",
+    "priceEur": 29990,
+    "rangeKm": 235,
+    "oneStopRangeKm": 265,
+    "cargoLiters": 500,
+    "fastChargeKw": 70,
+    "driveType": "FWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3621/Skoda-Epiq-40"
   },
   {
     "id": "3126",
@@ -547,18 +559,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/1328/Fiat-500e-3plus1-42-kWh"
   },
   {
-    "id": "3125",
-    "name": "BYD ATTO 2",
-    "imageUrl": "https://ev-database.org/img/auto/BYD_ATTO_2/BYD_ATTO_2-01-thumb.jpg",
-    "priceEur": 31690,
-    "rangeKm": 245,
-    "oneStopRangeKm": 235,
-    "cargoLiters": 400,
-    "fastChargeKw": 51,
-    "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3125/BYD-ATTO-2"
-  },
-  {
     "id": "1997",
     "name": "Mini Cooper E",
     "imageUrl": "https://ev-database.org/img/auto/Mini_Cooper_Electric_2024/Mini_Cooper_Electric_2024-01-thumb.jpg",
@@ -581,18 +581,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 75,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3472/MG-MG4-Urban-Premium-Long-Range"
-  },
-  {
-    "id": "3581",
-    "name": "Volkswagen ID. Polo 155 kW - 52 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_IDPolo_2026/Volkswagen_IDPolo_2026-01-thumb.jpg",
-    "priceEur": 31990,
-    "rangeKm": 335,
-    "oneStopRangeKm": 363,
-    "cargoLiters": 441,
-    "fastChargeKw": 95,
-    "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3581/Volkswagen-ID-Polo-155-kW---52-kWh"
   },
   {
     "id": "3555",
@@ -667,18 +655,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3222/Peugeot-e-208-50-kWh"
   },
   {
-    "id": "3509",
-    "name": "CUPRA Raval 155 kW - 52 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/Cupra_Raval_2026/Cupra_Raval_2026-01-thumb.jpg",
-    "priceEur": 32990,
-    "rangeKm": 330,
-    "oneStopRangeKm": 354,
-    "cargoLiters": 441,
-    "fastChargeKw": 95,
-    "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3509/CUPRA-Raval-155-kW---52-kWh"
-  },
-  {
     "id": "3127",
     "name": "Renault 4 E-Tech 52kWh 150hp",
     "imageUrl": "https://ev-database.org/img/auto/Renault_4_ETech/Renault_4_ETech-01-thumb.jpg",
@@ -689,6 +665,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 75,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3127/Renault-4-E-Tech-52kWh-150hp"
+  },
+  {
+    "id": "3509",
+    "name": "CUPRA Raval 155 kW - 52 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Cupra_Raval_2026/Cupra_Raval_2026-01-thumb.jpg",
+    "priceEur": 32990,
+    "rangeKm": 330,
+    "oneStopRangeKm": 354,
+    "cargoLiters": 441,
+    "fastChargeKw": 95,
+    "driveType": "FWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3509/CUPRA-Raval-155-kW---52-kWh"
   },
   {
     "id": "3520",
@@ -749,6 +737,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 85,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3597/Ford-Puma-Gen-E"
+  },
+  {
+    "id": "3581",
+    "name": "Volkswagen ID. Polo 155 kW - 52 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Volkswagen_IDPolo_2026/Volkswagen_IDPolo_2026-01-thumb.jpg",
+    "priceEur": 33490,
+    "rangeKm": 335,
+    "oneStopRangeKm": 363,
+    "cargoLiters": 441,
+    "fastChargeKw": 95,
+    "driveType": "FWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3581/Volkswagen-ID-Polo-155-kW---52-kWh"
   },
   {
     "id": "3491",
@@ -835,6 +835,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3045/LynkCo-02"
   },
   {
+    "id": "3268",
+    "name": "BYD ATTO 2 64.8 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_ATTO_2/BYD_ATTO_2-01-thumb.jpg",
+    "priceEur": 34490,
+    "rangeKm": 340,
+    "oneStopRangeKm": 368,
+    "cargoLiters": 450,
+    "fastChargeKw": 100,
+    "driveType": "FWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3268/BYD-ATTO-2-648-kWh"
+  },
+  {
     "id": "2041",
     "name": "Smart #1 Pro",
     "imageUrl": "https://ev-database.org/img/auto/Smart_1_2023/Smart_1_2023-01-thumb.jpg",
@@ -895,18 +907,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3673/Volkswagen-ID-Cross-155-kW---52-kWh"
   },
   {
-    "id": "3048",
-    "name": "Citroen e-C4 54 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/Citroen_e-C4_2024/Citroen_e-C4_2024-01-thumb.jpg",
-    "priceEur": 34990,
-    "rangeKm": 325,
-    "oneStopRangeKm": 353,
-    "cargoLiters": 380,
-    "fastChargeKw": 79,
-    "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3048/Citroen-e-C4-54-kWh"
-  },
-  {
     "id": "3511",
     "name": "CUPRA Born 140 kW - 58 kWh",
     "imageUrl": "https://ev-database.org/img/auto/Cupra_Born_2027/Cupra_Born_2027-01-thumb.jpg",
@@ -917,6 +917,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 95,
     "driveType": "RWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3511/CUPRA-Born-140-kW---58-kWh"
+  },
+  {
+    "id": "3048",
+    "name": "Citroen e-C4 54 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Citroen_e-C4_2024/Citroen_e-C4_2024-01-thumb.jpg",
+    "priceEur": 34990,
+    "rangeKm": 325,
+    "oneStopRangeKm": 353,
+    "cargoLiters": 380,
+    "fastChargeKw": 79,
+    "driveType": "FWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3048/Citroen-e-C4-54-kWh"
   },
   {
     "id": "3723",
@@ -1015,6 +1027,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3467/MG-MG4-Premium-Long-Range"
   },
   {
+    "id": "3783",
+    "name": "Renault Megane E-Tech 67 kWh 220hp",
+    "imageUrl": "https://ev-database.org/img/auto/Renault_Megane_2027/Renault_Megane_2027-01-thumb.jpg",
+    "priceEur": 35990,
+    "rangeKm": 420,
+    "oneStopRangeKm": 471,
+    "cargoLiters": 440,
+    "fastChargeKw": 110,
+    "driveType": "FWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3783/Renault-Megane-E-Tech-67-kWh-220hp"
+  },
+  {
     "id": "3050",
     "name": "Citroen e-C4 X 54 kWh",
     "imageUrl": "https://ev-database.org/img/auto/Citroen_e-C4_X_2024/Citroen_e-C4_X_2024-01-thumb.jpg",
@@ -1097,18 +1121,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 75,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/2268/Alpine-A290-Electric-180-pk"
-  },
-  {
-    "id": "3268",
-    "name": "BYD ATTO 2 64.8 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/BYD_ATTO_2/BYD_ATTO_2-01-thumb.jpg",
-    "priceEur": 36690,
-    "rangeKm": 340,
-    "oneStopRangeKm": 368,
-    "cargoLiters": 450,
-    "fastChargeKw": 100,
-    "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3268/BYD-ATTO-2-648-kWh"
   },
   {
     "id": "1947",
@@ -1223,24 +1235,12 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "name": "Abarth 600e Turismo",
     "imageUrl": "https://ev-database.org/img/auto/Abarth_600e/Abarth_600e-01-thumb.jpg",
     "priceEur": 36999,
-    "rangeKm": 280,
-    "oneStopRangeKm": 297,
+    "rangeKm": 285,
+    "oneStopRangeKm": 304,
     "cargoLiters": 360,
     "fastChargeKw": 79,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3056/Abarth-600e-Turismo"
-  },
-  {
-    "id": "3297",
-    "name": "BYD DOLPHIN 60.4 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/BYD_DOLPHIN_2025/BYD_DOLPHIN_2025-01-thumb.jpg",
-    "priceEur": 37190,
-    "rangeKm": 350,
-    "oneStopRangeKm": 354,
-    "cargoLiters": 345,
-    "fastChargeKw": 75,
-    "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3297/BYD-DOLPHIN-604-kWh"
   },
   {
     "id": "3521",
@@ -1363,18 +1363,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/2191/Mini-Aceman-SE"
   },
   {
-    "id": "3644",
-    "name": "Ford Explorer Standard Range RWD",
-    "imageUrl": "https://ev-database.org/img/auto/Ford_Explorer_2024/Ford_Explorer_2024-01-thumb.jpg",
-    "priceEur": 38950,
-    "rangeKm": 335,
-    "oneStopRangeKm": 347,
-    "cargoLiters": 532,
-    "fastChargeKw": 95,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3644/Ford-Explorer-Standard-Range-RWD"
-  },
-  {
     "id": "3468",
     "name": "MG MG4 Premium Extended Range",
     "imageUrl": "https://ev-database.org/img/auto/MG_MG4_Electric_2026/MG_MG4_Electric_2026-01-thumb.jpg",
@@ -1387,6 +1375,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3468/MG-MG4-Premium-Extended-Range"
   },
   {
+    "id": "3644",
+    "name": "Ford Explorer Standard Range RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Ford_Explorer_2024/Ford_Explorer_2024-01-thumb.jpg",
+    "priceEur": 38950,
+    "rangeKm": 335,
+    "oneStopRangeKm": 347,
+    "cargoLiters": 532,
+    "fastChargeKw": 95,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3644/Ford-Explorer-Standard-Range-RWD"
+  },
+  {
     "id": "3366",
     "name": "Nissan LEAF Extended Range 75 kWh",
     "imageUrl": "https://ev-database.org/img/auto/Nissan_LEAF_2026/Nissan_LEAF_2026-01-thumb.jpg",
@@ -1397,6 +1397,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 103,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3366/Nissan-LEAF-Extended-Range-75-kWh"
+  },
+  {
+    "id": "3786",
+    "name": "Renault Scenic E-Tech 67 kWh 220hp",
+    "imageUrl": "https://ev-database.org/img/auto/Renault_Scenic_2027/Renault_Scenic_2027-01-thumb.jpg",
+    "priceEur": 38990,
+    "rangeKm": 375,
+    "oneStopRangeKm": 413,
+    "cargoLiters": 545,
+    "fastChargeKw": 110,
+    "driveType": "FWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3786/Renault-Scenic-E-Tech-67-kWh-220hp"
   },
   {
     "id": "3389",
@@ -1591,18 +1603,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3510/CUPRA-Raval-VZ"
   },
   {
-    "id": "3608",
-    "name": "CUPRA Tavascan 140 kW - 58 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/CUPRA_Tavascan_2027/CUPRA_Tavascan_2027-01-thumb.jpg",
-    "priceEur": 39990,
-    "rangeKm": 345,
-    "oneStopRangeKm": 363,
-    "cargoLiters": 540,
-    "fastChargeKw": 95,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3608/CUPRA-Tavascan-140-kW---58-kWh"
-  },
-  {
     "id": "3582",
     "name": "Geely E5 Pro+",
     "imageUrl": "https://ev-database.org/img/auto/Geely_EX5/Geely_EX5-01-thumb.jpg",
@@ -1613,6 +1613,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 100,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3582/Geely-E5-Proplus"
+  },
+  {
+    "id": "3608",
+    "name": "CUPRA Tavascan 140 kW - 58 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/CUPRA_Tavascan_2027/CUPRA_Tavascan_2027-01-thumb.jpg",
+    "priceEur": 39990,
+    "rangeKm": 345,
+    "oneStopRangeKm": 363,
+    "cargoLiters": 540,
+    "fastChargeKw": 95,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3608/CUPRA-Tavascan-140-kW---58-kWh"
   },
   {
     "id": "3463",
@@ -1627,18 +1639,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3463/Hyundai-Kona-Electric-648-kWh"
   },
   {
-    "id": "3288",
-    "name": "Kia PV5 Passenger 51.5 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/Kia_PV5_Passenger/Kia_PV5_Passenger-01-thumb.jpg",
-    "priceEur": 39995,
-    "rangeKm": 245,
-    "oneStopRangeKm": 279,
-    "cargoLiters": 1330,
-    "fastChargeKw": 75,
-    "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3288/Kia-PV5-Passenger-515-kWh"
-  },
-  {
     "id": "3133",
     "name": "Toyota bZ4X FWD 57.7 kWh",
     "imageUrl": "https://ev-database.org/img/auto/Toyota_bZ4X_2025/Toyota_bZ4X_2025-01-thumb.jpg",
@@ -1649,6 +1649,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 85,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3133/Toyota-bZ4X-FWD-577-kWh"
+  },
+  {
+    "id": "3288",
+    "name": "Kia PV5 Passenger 51.5 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_PV5_Passenger/Kia_PV5_Passenger-01-thumb.jpg",
+    "priceEur": 39995,
+    "rangeKm": 245,
+    "oneStopRangeKm": 279,
+    "cargoLiters": 1330,
+    "fastChargeKw": 75,
+    "driveType": "FWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3288/Kia-PV5-Passenger-515-kWh"
   },
   {
     "id": "3282",
@@ -1723,18 +1735,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3713/Mazda-6e-78-kWh"
   },
   {
-    "id": "3512",
-    "name": "CUPRA Born 170 kW - 79 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/Cupra_Born_2027/Cupra_Born_2027-01-thumb.jpg",
-    "priceEur": 40990,
-    "rangeKm": 485,
-    "oneStopRangeKm": 527,
-    "cargoLiters": 385,
-    "fastChargeKw": 115,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3512/CUPRA-Born-170-kW---79-kWh"
-  },
-  {
     "id": "3474",
     "name": "BYD ATTO 3 Evo RWD Design",
     "imageUrl": "https://ev-database.org/img/auto/BYD_ATTO_3_EVO_2026/BYD_ATTO_3_EVO_2026-01-thumb.jpg",
@@ -1745,6 +1745,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 130,
     "driveType": "RWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3474/BYD-ATTO-3-Evo-RWD-Design"
+  },
+  {
+    "id": "3512",
+    "name": "CUPRA Born 170 kW - 79 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Cupra_Born_2027/Cupra_Born_2027-01-thumb.jpg",
+    "priceEur": 40990,
+    "rangeKm": 485,
+    "oneStopRangeKm": 527,
+    "cargoLiters": 385,
+    "fastChargeKw": 115,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3512/CUPRA-Born-170-kW---79-kWh"
   },
   {
     "id": "3465",
@@ -1865,6 +1877,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 80,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/2159/Citroen-e-Berlingo-Standaard-50-kWh"
+  },
+  {
+    "id": "3824",
+    "name": "Kia EV5 60.3 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV5_2026/Kia_EV5_2026-01-thumb.jpg",
+    "priceEur": 41495,
+    "rangeKm": 310,
+    "oneStopRangeKm": 337,
+    "cargoLiters": 610,
+    "fastChargeKw": 85,
+    "driveType": "FWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3824/Kia-EV5-603-kWh"
   },
   {
     "id": "3583",
@@ -1999,18 +2023,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3787/Renault-Scenic-E-Tech-89-kWh-220hp"
   },
   {
-    "id": "2094",
-    "name": "BYD SEAL U 71.8 kWh Comfort",
-    "imageUrl": "https://ev-database.org/img/auto/BYD_SEAL_U/BYD_SEAL_U-01-thumb.jpg",
-    "priceEur": 42990,
-    "rangeKm": 360,
-    "oneStopRangeKm": 352,
-    "cargoLiters": 552,
-    "fastChargeKw": 72,
-    "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2094/BYD-SEAL-U-718-kWh-Comfort"
-  },
-  {
     "id": "3678",
     "name": "XPENG L03 AWD Performance",
     "imageUrl": "https://ev-database.org/img/auto/XPENG_L03_2026/XPENG_L03_2026-01-thumb.jpg",
@@ -2021,18 +2033,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 150,
     "driveType": "AWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3678/XPENG-L03-AWD-Performance"
-  },
-  {
-    "id": "3475",
-    "name": "BYD ATTO 3 Evo AWD Excellence",
-    "imageUrl": "https://ev-database.org/img/auto/BYD_ATTO_3_EVO_2026/BYD_ATTO_3_EVO_2026-01-thumb.jpg",
-    "priceEur": 42990,
-    "rangeKm": 390,
-    "oneStopRangeKm": 438,
-    "cargoLiters": 591,
-    "fastChargeKw": 130,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3475/BYD-ATTO-3-Evo-AWD-Excellence"
   },
   {
     "id": "3585",
@@ -2155,6 +2155,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3645/Ford-Explorer-Extended-Range-RWD"
   },
   {
+    "id": "3475",
+    "name": "BYD ATTO 3 Evo AWD Excellence",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_ATTO_3_EVO_2026/BYD_ATTO_3_EVO_2026-01-thumb.jpg",
+    "priceEur": 43990,
+    "rangeKm": 390,
+    "oneStopRangeKm": 438,
+    "cargoLiters": 591,
+    "fastChargeKw": 130,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3475/BYD-ATTO-3-Evo-AWD-Excellence"
+  },
+  {
     "id": "3402",
     "name": "XPENG G6 RWD Standard Range",
     "imageUrl": "https://ev-database.org/img/auto/XPENG_G6_2025/XPENG_G6_2025-01-thumb.jpg",
@@ -2201,18 +2213,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 75,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3289/Kia-PV5-Passenger-712-kWh"
-  },
-  {
-    "id": "3447",
-    "name": "KGM Musso EV 2WD",
-    "imageUrl": "https://ev-database.org/img/auto/KGM_Musso_EV/KGM_Musso_EV-01-thumb.jpg",
-    "priceEur": 44059,
-    "rangeKm": 365,
-    "oneStopRangeKm": 357,
-    "cargoLiters": 907,
-    "fastChargeKw": 100,
-    "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3447/KGM-Musso-EV-2WD"
   },
   {
     "id": "3482",
@@ -2335,18 +2335,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3496/Volkswagen-ID4-Pro"
   },
   {
-    "id": "3136",
-    "name": "Voyah Courage 80 kWh RWD Business",
-    "imageUrl": "https://ev-database.org/img/auto/Voyah_Courage/Voyah_Courage-01-thumb.jpg",
-    "priceEur": 44990,
-    "rangeKm": 395,
-    "oneStopRangeKm": 434,
-    "cargoLiters": 527,
-    "fastChargeKw": 110,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3136/Voyah-Courage-80-kWh-RWD-Business"
-  },
-  {
     "id": "3602",
     "name": "Volkswagen ID.7 Tourer 59 kWh",
     "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID7_Tourer/Volkswagen_ID7_Tourer-01-thumb.jpg",
@@ -2359,18 +2347,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3602/Volkswagen-ID7-Tourer-59-kWh"
   },
   {
-    "id": "3368",
-    "name": "Changan Deepal S05 4WD Max",
-    "imageUrl": "https://ev-database.org/img/auto/Changan_Deepal_S05/Changan_Deepal_S05-01-thumb.jpg",
-    "priceEur": 44990,
-    "rangeKm": 365,
-    "oneStopRangeKm": 428,
-    "cargoLiters": 651,
-    "fastChargeKw": 130,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3368/Changan-Deepal-S05-4WD-Max"
-  },
-  {
     "id": "3573",
     "name": "Skoda Enyaq Coupe 60",
     "imageUrl": "https://ev-database.org/img/auto/Skoda_Enyaq_Coupe_2025/Skoda_Enyaq_Coupe_2025-01-thumb.jpg",
@@ -2381,6 +2357,30 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 95,
     "driveType": "RWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3573/Skoda-Enyaq-Coupe-60"
+  },
+  {
+    "id": "3136",
+    "name": "Voyah Courage 80 kWh RWD Business",
+    "imageUrl": "https://ev-database.org/img/auto/Voyah_Courage/Voyah_Courage-01-thumb.jpg",
+    "priceEur": 44990,
+    "rangeKm": 395,
+    "oneStopRangeKm": 434,
+    "cargoLiters": 527,
+    "fastChargeKw": 110,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3136/Voyah-Courage-80-kWh-RWD-Business"
+  },
+  {
+    "id": "3368",
+    "name": "Changan Deepal S05 4WD Max",
+    "imageUrl": "https://ev-database.org/img/auto/Changan_Deepal_S05/Changan_Deepal_S05-01-thumb.jpg",
+    "priceEur": 44990,
+    "rangeKm": 365,
+    "oneStopRangeKm": 428,
+    "cargoLiters": 651,
+    "fastChargeKw": 130,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3368/Changan-Deepal-S05-4WD-Max"
   },
   {
     "id": "3030",
@@ -2479,6 +2479,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3201/Opel-Grandland-Electric-73-kWh-AWD"
   },
   {
+    "id": "2067",
+    "name": "BYD SEAL U 87 kWh Design",
+    "imageUrl": "https://ev-database.org/img/auto/BYD_SEAL_U/BYD_SEAL_U-01-thumb.jpg",
+    "priceEur": 45690,
+    "rangeKm": 425,
+    "oneStopRangeKm": 418,
+    "cargoLiters": 552,
+    "fastChargeKw": 85,
+    "driveType": "FWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2067/BYD-SEAL-U-87-kWh-Design"
+  },
+  {
     "id": "3457",
     "name": "Mini Countryman SE ALL4",
     "imageUrl": "https://ev-database.org/img/auto/Mini_Countryman_2024/Mini_Countryman_2024-01-thumb.jpg",
@@ -2491,18 +2503,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3457/Mini-Countryman-SE-ALL4"
   },
   {
-    "id": "3418",
-    "name": "MG MGS6 EV Long Range 77 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/MG_MGS6_EV_2026/MG_MGS6_EV_2026-01-thumb.jpg",
-    "priceEur": 45750,
-    "rangeKm": 405,
-    "oneStopRangeKm": 419,
-    "cargoLiters": 617,
-    "fastChargeKw": 90,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3418/MG-MGS6-EV-Long-Range-77-kWh"
-  },
-  {
     "id": "3648",
     "name": "Ford Capri Extended Range RWD",
     "imageUrl": "https://ev-database.org/img/auto/Ford_Capri_2024/Ford_Capri_2024-01-thumb.jpg",
@@ -2513,6 +2513,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 115,
     "driveType": "RWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3648/Ford-Capri-Extended-Range-RWD"
+  },
+  {
+    "id": "3418",
+    "name": "MG MGS6 EV Long Range 77 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/MG_MGS6_EV_2026/MG_MGS6_EV_2026-01-thumb.jpg",
+    "priceEur": 45750,
+    "rangeKm": 405,
+    "oneStopRangeKm": 419,
+    "cargoLiters": 617,
+    "fastChargeKw": 90,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3418/MG-MGS6-EV-Long-Range-77-kWh"
   },
   {
     "id": "2185",
@@ -2539,18 +2551,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3404/Tesla-Model-3-Premium-RWD"
   },
   {
-    "id": "3596",
-    "name": "Mazda CX-6e 78 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/Mazda_CX-6e_2026/Mazda_CX-6e_2026-01-thumb.jpg",
-    "priceEur": 45990,
-    "rangeKm": 420,
-    "oneStopRangeKm": 479,
-    "cargoLiters": 548,
-    "fastChargeKw": 135,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3596/Mazda-CX-6e-78-kWh"
-  },
-  {
     "id": "3727",
     "name": "Audi A2 e-tron 170 kW - 79 kWh",
     "imageUrl": "https://ev-database.org/img/auto/Audi_A2_e-tron_2026/Audi_A2_e-tron_2026-01-thumb.jpg",
@@ -2561,6 +2561,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 115,
     "driveType": "RWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3727/Audi-A2-e-tron-170-kW---79-kWh"
+  },
+  {
+    "id": "3596",
+    "name": "Mazda CX-6e 78 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Mazda_CX-6e_2026/Mazda_CX-6e_2026-01-thumb.jpg",
+    "priceEur": 45990,
+    "rangeKm": 420,
+    "oneStopRangeKm": 479,
+    "cargoLiters": 548,
+    "fastChargeKw": 135,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3596/Mazda-CX-6e-78-kWh"
   },
   {
     "id": "3587",
@@ -2575,18 +2587,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3587/Audi-Q4-e-tron"
   },
   {
-    "id": "2067",
-    "name": "BYD SEAL U 87 kWh Design",
-    "imageUrl": "https://ev-database.org/img/auto/BYD_SEAL_U/BYD_SEAL_U-01-thumb.jpg",
-    "priceEur": 45990,
-    "rangeKm": 425,
-    "oneStopRangeKm": 418,
-    "cargoLiters": 552,
-    "fastChargeKw": 85,
-    "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2067/BYD-SEAL-U-87-kWh-Design"
-  },
-  {
     "id": "3369",
     "name": "Changan Deepal S07",
     "imageUrl": "https://ev-database.org/img/auto/Changan_Deepal_S07/Changan_Deepal_S07-01-thumb.jpg",
@@ -2597,18 +2597,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 70,
     "driveType": "RWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3369/Changan-Deepal-S07"
-  },
-  {
-    "id": "3134",
-    "name": "Toyota bZ4X FWD 73.1 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/Toyota_bZ4X_2025/Toyota_bZ4X_2025-01-thumb.jpg",
-    "priceEur": 45995,
-    "rangeKm": 385,
-    "oneStopRangeKm": 423,
-    "cargoLiters": 452,
-    "fastChargeKw": 110,
-    "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3134/Toyota-bZ4X-FWD-731-kWh"
   },
   {
     "id": "3671",
@@ -2623,16 +2611,16 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3671/Kia-PV5-Passenger-712-kWh-7-zits"
   },
   {
-    "id": "1940",
-    "name": "Honda e:Ny1",
-    "imageUrl": "https://ev-database.org/img/auto/Honda_e:Ny1/Honda_e:Ny1-01-thumb.jpg",
-    "priceEur": 46149,
-    "rangeKm": 335,
-    "oneStopRangeKm": 318,
-    "cargoLiters": 361,
-    "fastChargeKw": 60,
+    "id": "3134",
+    "name": "Toyota bZ4X FWD 73.1 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Toyota_bZ4X_2025/Toyota_bZ4X_2025-01-thumb.jpg",
+    "priceEur": 45995,
+    "rangeKm": 385,
+    "oneStopRangeKm": 423,
+    "cargoLiters": 452,
+    "fastChargeKw": 110,
     "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/1940/Honda-eNy1"
+    "sourceUrl": "https://ev-database.org/nl/auto/3134/Toyota-bZ4X-FWD-731-kWh"
   },
   {
     "id": "3458",
@@ -2803,18 +2791,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3481/Volvo-EX30-P8-AWD"
   },
   {
-    "id": "3586",
-    "name": "Zeekr X Privilege AWD",
-    "imageUrl": "https://ev-database.org/img/auto/Zeekr_X_2023/Zeekr_X_2023-01-thumb.jpg",
-    "priceEur": 47990,
-    "rangeKm": 350,
-    "oneStopRangeKm": 392,
-    "cargoLiters": 404,
-    "fastChargeKw": 112,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3586/Zeekr-X-Privilege-AWD"
-  },
-  {
     "id": "3591",
     "name": "Audi Q4 Sportback e-tron",
     "imageUrl": "https://ev-database.org/img/auto/Audi_Q4_Sportback_e-tron_2027/Audi_Q4_Sportback_e-tron_2027-01-thumb.jpg",
@@ -2825,6 +2801,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 95,
     "driveType": "RWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3591/Audi-Q4-Sportback-e-tron"
+  },
+  {
+    "id": "3586",
+    "name": "Zeekr X Privilege AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Zeekr_X_2023/Zeekr_X_2023-01-thumb.jpg",
+    "priceEur": 47990,
+    "rangeKm": 350,
+    "oneStopRangeKm": 392,
+    "cargoLiters": 404,
+    "fastChargeKw": 112,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3586/Zeekr-X-Privilege-AWD"
   },
   {
     "id": "3135",
@@ -2849,18 +2837,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 125,
     "driveType": "RWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3370/Mercedes-Benz-CLA-200"
-  },
-  {
-    "id": "3448",
-    "name": "KGM Musso EV 4WD",
-    "imageUrl": "https://ev-database.org/img/auto/KGM_Musso_EV/KGM_Musso_EV-01-thumb.jpg",
-    "priceEur": 48294,
-    "rangeKm": 360,
-    "oneStopRangeKm": 351,
-    "cargoLiters": 907,
-    "fastChargeKw": 100,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3448/KGM-Musso-EV-4WD"
   },
   {
     "id": "2149",
@@ -2933,6 +2909,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 74,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/2260/Opel-Zafira-Electric-L2H1-50-kWh"
+  },
+  {
+    "id": "3244",
+    "name": "MG IM5 Standard Range",
+    "imageUrl": "https://ev-database.org/img/auto/MG_IM5_2025/MG_IM5_2025-01-thumb.jpg",
+    "priceEur": 48799,
+    "rangeKm": 405,
+    "oneStopRangeKm": 452,
+    "cargoLiters": 475,
+    "fastChargeKw": 120,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3244/MG-IM5-Standard-Range"
   },
   {
     "id": "3646",
@@ -3055,6 +3043,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3028/Kia-EV6-Long-Range-2WD"
   },
   {
+    "id": "3489",
+    "name": "Kia EV5 81.4 kWh AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV5_2026/Kia_EV5_2026-01-thumb.jpg",
+    "priceEur": 49495,
+    "rangeKm": 395,
+    "oneStopRangeKm": 421,
+    "cargoLiters": 610,
+    "fastChargeKw": 115,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3489/Kia-EV5-814-kWh-AWD"
+  },
+  {
     "id": "3628",
     "name": "Mercedes-Benz CLA Shooting Brake 200",
     "imageUrl": "https://ev-database.org/img/auto/Mercedes_CLA_Shooting_Brake/Mercedes_CLA_Shooting_Brake-01-thumb.jpg",
@@ -3139,18 +3139,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3513/CUPRA-Born-VZ"
   },
   {
-    "id": "3234",
-    "name": "Genesis GV60 Pure",
-    "imageUrl": "https://ev-database.org/img/auto/Genesis_GV60_2025/Genesis_GV60_2025-01-thumb.jpg",
-    "priceEur": 49990,
-    "rangeKm": 425,
-    "oneStopRangeKm": 522,
-    "cargoLiters": 432,
-    "fastChargeKw": 205,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3234/Genesis-GV60-Pure"
-  },
-  {
     "id": "3497",
     "name": "Volkswagen ID.4 Pro 4MOTION",
     "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID4_2024/Volkswagen_ID4_2024-01-thumb.jpg",
@@ -3161,6 +3149,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 115,
     "driveType": "AWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3497/Volkswagen-ID4-Pro-4MOTION"
+  },
+  {
+    "id": "3234",
+    "name": "Genesis GV60 Pure",
+    "imageUrl": "https://ev-database.org/img/auto/Genesis_GV60_2025/Genesis_GV60_2025-01-thumb.jpg",
+    "priceEur": 49990,
+    "rangeKm": 425,
+    "oneStopRangeKm": 522,
+    "cargoLiters": 432,
+    "fastChargeKw": 205,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3234/Genesis-GV60-Pure"
   },
   {
     "id": "3137",
@@ -3271,18 +3271,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3588/Audi-Q4-e-tron-performance"
   },
   {
-    "id": "3728",
-    "name": "Audi A2 e-tron 240 kW - 79 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/Audi_A2_e-tron_2026/Audi_A2_e-tron_2026-01-thumb.jpg",
-    "priceEur": 50990,
-    "rangeKm": 505,
-    "oneStopRangeKm": 555,
-    "cargoLiters": 409,
-    "fastChargeKw": 115,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3728/Audi-A2-e-tron-240-kW---79-kWh"
-  },
-  {
     "id": "3405",
     "name": "Tesla Model 3 Premium AWD",
     "imageUrl": "https://ev-database.org/img/auto/Tesla_Model_3_2024/Tesla_Model_3_2024-01-thumb.jpg",
@@ -3293,6 +3281,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 125,
     "driveType": "AWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3405/Tesla-Model-3-Premium-AWD"
+  },
+  {
+    "id": "3728",
+    "name": "Audi A2 e-tron 240 kW - 79 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_A2_e-tron_2026/Audi_A2_e-tron_2026-01-thumb.jpg",
+    "priceEur": 50990,
+    "rangeKm": 505,
+    "oneStopRangeKm": 555,
+    "cargoLiters": 409,
+    "fastChargeKw": 115,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3728/Audi-A2-e-tron-240-kW---79-kWh"
   },
   {
     "id": "3395",
@@ -3353,6 +3353,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 125,
     "driveType": "RWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3788/Mercedes-Benz-GLB-200"
+  },
+  {
+    "id": "3822",
+    "name": "MG IM6 Standard Range",
+    "imageUrl": "https://ev-database.org/img/auto/MG_IM6_2025/MG_IM6_2025-01-thumb.jpg",
+    "priceEur": 51799,
+    "rangeKm": 380,
+    "oneStopRangeKm": 419,
+    "cargoLiters": 0,
+    "fastChargeKw": 120,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3822/MG-IM6-Standard-Range"
   },
   {
     "id": "3460",
@@ -3523,16 +3535,16 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3142/Smart-5-Proplus"
   },
   {
-    "id": "3276",
-    "name": "XPENG G6 AWD Performance",
-    "imageUrl": "https://ev-database.org/img/auto/XPENG_G6_2025/XPENG_G6_2025-01-thumb.jpg",
+    "id": "3572",
+    "name": "Skoda Enyaq RS",
+    "imageUrl": "https://ev-database.org/img/auto/Skoda_Enyaq_RS_2025/Skoda_Enyaq_RS_2025-01-thumb.jpg",
     "priceEur": 53990,
-    "rangeKm": 440,
-    "oneStopRangeKm": 575,
-    "cargoLiters": 571,
-    "fastChargeKw": 290,
+    "rangeKm": 450,
+    "oneStopRangeKm": 494,
+    "cargoLiters": 606,
+    "fastChargeKw": 115,
     "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3276/XPENG-G6-AWD-Performance"
+    "sourceUrl": "https://ev-database.org/nl/auto/3572/Skoda-Enyaq-RS"
   },
   {
     "id": "3433",
@@ -3545,18 +3557,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 260,
     "driveType": "AWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3433/XPENG-P7plus-AWD-Performance"
-  },
-  {
-    "id": "3572",
-    "name": "Skoda Enyaq RS",
-    "imageUrl": "https://ev-database.org/img/auto/Skoda_Enyaq_RS_2025/Skoda_Enyaq_RS_2025-01-thumb.jpg",
-    "priceEur": 53990,
-    "rangeKm": 450,
-    "oneStopRangeKm": 494,
-    "cargoLiters": 606,
-    "fastChargeKw": 115,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3572/Skoda-Enyaq-RS"
   },
   {
     "id": "3590",
@@ -3581,6 +3581,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 240,
     "driveType": "RWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3081/Zeekr-7X-Core-RWD"
+  },
+  {
+    "id": "3276",
+    "name": "XPENG G6 AWD Performance",
+    "imageUrl": "https://ev-database.org/img/auto/XPENG_G6_2025/XPENG_G6_2025-01-thumb.jpg",
+    "priceEur": 53990,
+    "rangeKm": 440,
+    "oneStopRangeKm": 575,
+    "cargoLiters": 571,
+    "fastChargeKw": 290,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3276/XPENG-G6-AWD-Performance"
   },
   {
     "id": "3293",
@@ -3643,18 +3655,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3631/Volkswagen-ID-Buzz-NWB-Pro"
   },
   {
-    "id": "3659",
-    "name": "Skoda Peaq 90",
-    "imageUrl": "https://ev-database.org/img/auto/Skoda_Peaq_2026/Skoda_Peaq_2026-01-thumb.jpg",
-    "priceEur": 54990,
-    "rangeKm": 500,
-    "oneStopRangeKm": 552,
-    "cargoLiters": 972,
-    "fastChargeKw": 130,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3659/Skoda-Peaq-90"
-  },
-  {
     "id": "3742",
     "name": "Tesla Model Y Premium AWD",
     "imageUrl": "https://ev-database.org/img/auto/Tesla_Model_Y_2025/Tesla_Model_Y_2025-01-thumb.jpg",
@@ -3667,6 +3667,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3742/Tesla-Model-Y-Premium-AWD"
   },
   {
+    "id": "3659",
+    "name": "Skoda Peaq 90",
+    "imageUrl": "https://ev-database.org/img/auto/Skoda_Peaq_2026/Skoda_Peaq_2026-01-thumb.jpg",
+    "priceEur": 54990,
+    "rangeKm": 500,
+    "oneStopRangeKm": 552,
+    "cargoLiters": 972,
+    "fastChargeKw": 130,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3659/Skoda-Peaq-90"
+  },
+  {
     "id": "3498",
     "name": "Volkswagen ID.4 GTX",
     "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID4_GTX_2024/Volkswagen_ID4_GTX_2024-01-thumb.jpg",
@@ -3677,18 +3689,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 120,
     "driveType": "AWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3498/Volkswagen-ID4-GTX"
-  },
-  {
-    "id": "3264",
-    "name": "Hongqi E-HS7 111 kWh Long Range",
-    "imageUrl": "https://ev-database.org/img/auto/Hongqi_E-HS7/Hongqi_E-HS7-01-thumb.jpg",
-    "priceEur": 54995,
-    "rangeKm": 495,
-    "oneStopRangeKm": 553,
-    "cargoLiters": 705,
-    "fastChargeKw": 180,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3264/Hongqi-E-HS7-111-kWh-Long-Range"
   },
   {
     "id": "3396",
@@ -3749,6 +3749,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 110,
     "driveType": "AWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3738/Volvo-EC40-P8-Performance-AWD"
+  },
+  {
+    "id": "3245",
+    "name": "MG IM5 Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/MG_IM5_2025/MG_IM5_2025-01-thumb.jpg",
+    "priceEur": 55799,
+    "rangeKm": 520,
+    "oneStopRangeKm": 665,
+    "cargoLiters": 475,
+    "fastChargeKw": 250,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3245/MG-IM5-Long-Range"
   },
   {
     "id": "3714",
@@ -3883,6 +3895,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3600/Volkswagen-ID7-86-kWh"
   },
   {
+    "id": "3724",
+    "name": "Hyundai STARIA Electric 84 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Hyundai_STARIA_Electric_2027/Hyundai_STARIA_Electric_2027-01-thumb.jpg",
+    "priceEur": 56995,
+    "rangeKm": 310,
+    "oneStopRangeKm": 360,
+    "cargoLiters": 855,
+    "fastChargeKw": 170,
+    "driveType": "FWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3724/Hyundai-STARIA-Electric-84-kWh"
+  },
+  {
     "id": "3076",
     "name": "DS Automobiles N°8 FWD",
     "imageUrl": "https://ev-database.org/img/auto/DS_No8_2024/DS_No8_2024-01-thumb.jpg",
@@ -3953,6 +3977,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 130,
     "driveType": "RWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3604/Volkswagen-ID7-Tourer-86-kWh"
+  },
+  {
+    "id": "3660",
+    "name": "Skoda Peaq 90x",
+    "imageUrl": "https://ev-database.org/img/auto/Skoda_Peaq_2026/Skoda_Peaq_2026-01-thumb.jpg",
+    "priceEur": 57990,
+    "rangeKm": 490,
+    "oneStopRangeKm": 543,
+    "cargoLiters": 972,
+    "fastChargeKw": 130,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3660/Skoda-Peaq-90x"
   },
   {
     "id": "3072",
@@ -4027,6 +4063,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3785/Mercedes-Benz-C-300-4MATIC"
   },
   {
+    "id": "3247",
+    "name": "MG IM6 Long Range",
+    "imageUrl": "https://ev-database.org/img/auto/MG_IM6_2025/MG_IM6_2025-01-thumb.jpg",
+    "priceEur": 58799,
+    "rangeKm": 490,
+    "oneStopRangeKm": 615,
+    "cargoLiters": 697,
+    "fastChargeKw": 250,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3247/MG-IM6-Long-Range"
+  },
+  {
     "id": "2263",
     "name": "Opel Zafira Electric L3H1 75 kWh",
     "imageUrl": "https://ev-database.org/img/auto/Opel_Zafira-e_Life_2024/Opel_Zafira-e_Life_2024-01-thumb.jpg",
@@ -4037,18 +4085,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 77,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/2263/Opel-Zafira-Electric-L3H1-75-kWh"
-  },
-  {
-    "id": "3138",
-    "name": "Hongqi EH7 111 kWh Long Range",
-    "imageUrl": "https://ev-database.org/img/auto/Hongqi_E-H7/Hongqi_E-H7-01-thumb.jpg",
-    "priceEur": 58995,
-    "rangeKm": 600,
-    "oneStopRangeKm": 689,
-    "cargoLiters": 468,
-    "fastChargeKw": 180,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3138/Hongqi-EH7-111-kWh-Long-Range"
   },
   {
     "id": "2150",
@@ -4123,18 +4159,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3459/BMW-iX1-xDrive30"
   },
   {
-    "id": "3277",
-    "name": "XPENG G9 RWD Standard Range",
-    "imageUrl": "https://ev-database.org/img/auto/XPENG_G9_2025/XPENG_G9_2025-01-thumb.jpg",
-    "priceEur": 59990,
-    "rangeKm": 420,
-    "oneStopRangeKm": 539,
-    "cargoLiters": 731,
-    "fastChargeKw": 280,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3277/XPENG-G9-RWD-Standard-Range"
-  },
-  {
     "id": "3610",
     "name": "CUPRA Tavascan 250 kW - 77 kWh VZ",
     "imageUrl": "https://ev-database.org/img/auto/CUPRA_Tavascan_2027/CUPRA_Tavascan_2027-01-thumb.jpg",
@@ -4145,6 +4169,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 115,
     "driveType": "AWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3610/CUPRA-Tavascan-250-kW---77-kWh-VZ"
+  },
+  {
+    "id": "3277",
+    "name": "XPENG G9 RWD Standard Range",
+    "imageUrl": "https://ev-database.org/img/auto/XPENG_G9_2025/XPENG_G9_2025-01-thumb.jpg",
+    "priceEur": 59990,
+    "rangeKm": 420,
+    "oneStopRangeKm": 539,
+    "cargoLiters": 731,
+    "fastChargeKw": 280,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3277/XPENG-G9-RWD-Standard-Range"
   },
   {
     "id": "3632",
@@ -4241,6 +4277,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 105,
     "driveType": "RWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3790/Volkswagen-e-Transporter-Kombi-L1-100-kW-71-kWh"
+  },
+  {
+    "id": "3246",
+    "name": "MG IM5 Performance",
+    "imageUrl": "https://ev-database.org/img/auto/MG_IM5_2025/MG_IM5_2025-01-thumb.jpg",
+    "priceEur": 60799,
+    "rangeKm": 490,
+    "oneStopRangeKm": 622,
+    "cargoLiters": 475,
+    "fastChargeKw": 250,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3246/MG-IM5-Performance"
   },
   {
     "id": "3699",
@@ -4351,6 +4399,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3077/DS-Automobiles-N8-FWD-Long-Range"
   },
   {
+    "id": "3505",
+    "name": "BMW iX3 40",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_iX3_2026/BMW_iX3_2026-01-thumb.jpg",
+    "priceEur": 62592,
+    "rangeKm": 510,
+    "oneStopRangeKm": 616,
+    "cargoLiters": 578,
+    "fastChargeKw": 170,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3505/BMW-iX3-40"
+  },
+  {
     "id": "3625",
     "name": "DS Automobiles N°7 AWD Long Range",
     "imageUrl": "https://ev-database.org/img/auto/DS_No7_2026/DS_No7_2026-01-thumb.jpg",
@@ -4397,18 +4457,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 77,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/2267/Toyota-Proace-Verso-L-75-kWh"
-  },
-  {
-    "id": "3505",
-    "name": "BMW iX3 40",
-    "imageUrl": "https://ev-database.org/img/auto/BMW_iX3_2026/BMW_iX3_2026-01-thumb.jpg",
-    "priceEur": 62987,
-    "rangeKm": 510,
-    "oneStopRangeKm": 616,
-    "cargoLiters": 578,
-    "fastChargeKw": 170,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3505/BMW-iX3-40"
   },
   {
     "id": "3791",
@@ -4615,6 +4663,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3140/Mercedes-Benz-CLA-350-4MATIC"
   },
   {
+    "id": "3248",
+    "name": "MG IM6 Performance",
+    "imageUrl": "https://ev-database.org/img/auto/MG_IM6_2025/MG_IM6_2025-01-thumb.jpg",
+    "priceEur": 64799,
+    "rangeKm": 440,
+    "oneStopRangeKm": 555,
+    "cargoLiters": 697,
+    "fastChargeKw": 250,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3248/MG-IM6-Performance"
+  },
+  {
     "id": "3605",
     "name": "Volkswagen ID.7 Tourer GTX",
     "imageUrl": "https://ev-database.org/img/auto/Volkswagen_ID7_Tourer_GTX/Volkswagen_ID7_Tourer_GTX-01-thumb.jpg",
@@ -4631,12 +4691,24 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "name": "Lexus ES 350e",
     "imageUrl": "https://ev-database.org/img/auto/Lexus_ES_2026/Lexus_ES_2026-01-thumb.jpg",
     "priceEur": 64995,
-    "rangeKm": 390,
-    "oneStopRangeKm": 422,
+    "rangeKm": 400,
+    "oneStopRangeKm": 438,
     "cargoLiters": 517,
-    "fastChargeKw": 105,
+    "fastChargeKw": 110,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3492/Lexus-ES-350e"
+  },
+  {
+    "id": "3823",
+    "name": "BMW iX3 40 xDrive",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_iX3_2026/BMW_iX3_2026-01-thumb.jpg",
+    "priceEur": 65139,
+    "rangeKm": 500,
+    "oneStopRangeKm": 608,
+    "cargoLiters": 578,
+    "fastChargeKw": 170,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3823/BMW-iX3-40-xDrive"
   },
   {
     "id": "3237",
@@ -4783,22 +4855,10 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3420/Ford-e-Tourneo-Custom-L1-160-kW-RWD"
   },
   {
-    "id": "2095",
-    "name": "BYD TANG Flagship",
-    "imageUrl": "https://ev-database.org/img/auto/BYD_TANG_2024/BYD_TANG_2024-01-thumb.jpg",
-    "priceEur": 67390,
-    "rangeKm": 460,
-    "oneStopRangeKm": 444,
-    "cargoLiters": 940,
-    "fastChargeKw": 100,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2095/BYD-TANG-Flagship"
-  },
-  {
     "id": "3239",
     "name": "Mercedes-Benz EQE 300",
     "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE/Mercedes_EQE-01-thumb.jpg",
-    "priceEur": 67428,
+    "priceEur": 67448,
     "rangeKm": 525,
     "oneStopRangeKm": 570,
     "cargoLiters": 430,
@@ -4817,6 +4877,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 105,
     "driveType": "RWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3802/Volkswagen-e-Caravelle-L1-100-kW-71-kWh"
+  },
+  {
+    "id": "3654",
+    "name": "Mercedes-Benz GLC 300 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_GLC_2026/Mercedes_GLC_2026-01-thumb.jpg",
+    "priceEur": 67569,
+    "rangeKm": 490,
+    "oneStopRangeKm": 599,
+    "cargoLiters": 698,
+    "fastChargeKw": 165,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3654/Mercedes-Benz-GLC-300-4MATIC"
   },
   {
     "id": "3796",
@@ -4927,18 +4999,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3805/Volkswagen-e-Caravelle-L2-100-kW-71-kWh"
   },
   {
-    "id": "2258",
-    "name": "Peugeot e-Traveller Standard 75 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-Traveller_2024/Peugeot_e-Traveller_2024-01-thumb.jpg",
-    "priceEur": 68571,
-    "rangeKm": 265,
-    "oneStopRangeKm": 252,
-    "cargoLiters": 603,
-    "fastChargeKw": 77,
-    "driveType": "FWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2258/Peugeot-e-Traveller-Standard-75-kWh"
-  },
-  {
     "id": "2254",
     "name": "Citroen e-SpaceTourer Standard 75 kWh",
     "imageUrl": "https://ev-database.org/img/auto/Citroen_e-SpaceTourer_2024/Citroen_e-SpaceTourer_2024-01-thumb.jpg",
@@ -4951,16 +5011,16 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/2254/Citroen-e-SpaceTourer-Standard-75-kWh"
   },
   {
-    "id": "1834",
-    "name": "Kia EV9 99.8 kWh RWD",
-    "imageUrl": "https://ev-database.org/img/auto/Kia_EV9_2023/Kia_EV9_2023-01-thumb.jpg",
-    "priceEur": 68795,
-    "rangeKm": 450,
-    "oneStopRangeKm": 502,
-    "cargoLiters": 918,
-    "fastChargeKw": 196,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/1834/Kia-EV9-998-kWh-RWD"
+    "id": "2258",
+    "name": "Peugeot e-Traveller Standard 75 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Peugeot_e-Traveller_2024/Peugeot_e-Traveller_2024-01-thumb.jpg",
+    "priceEur": 68571,
+    "rangeKm": 265,
+    "oneStopRangeKm": 252,
+    "cargoLiters": 603,
+    "fastChargeKw": 77,
+    "driveType": "FWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2258/Peugeot-e-Traveller-Standard-75-kWh"
   },
   {
     "id": "3799",
@@ -4985,6 +5045,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 186,
     "driveType": "RWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3042/Audi-Q6-Sportback-e-tron-performance"
+  },
+  {
+    "id": "1834",
+    "name": "Kia EV9 99.8 kWh RWD",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV9_2023/Kia_EV9_2023-01-thumb.jpg",
+    "priceEur": 69295,
+    "rangeKm": 450,
+    "oneStopRangeKm": 502,
+    "cargoLiters": 918,
+    "fastChargeKw": 196,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/1834/Kia-EV9-998-kWh-RWD"
   },
   {
     "id": "3652",
@@ -5035,26 +5107,14 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3803/Volkswagen-e-Caravelle-L1-160-kW-71-kWh"
   },
   {
-    "id": "1747",
-    "name": "Hongqi E-HS9 99 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/Hongqi_E-HS9/Hongqi_E-HS9-01-thumb.jpg",
-    "priceEur": 69995,
-    "rangeKm": 370,
-    "oneStopRangeKm": 367,
-    "cargoLiters": 438,
-    "fastChargeKw": 112,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/1747/Hongqi-E-HS9-99-kWh"
-  },
-  {
     "id": "3493",
     "name": "Lexus ES 500e DIRECT 4",
     "imageUrl": "https://ev-database.org/img/auto/Lexus_ES_2026/Lexus_ES_2026-01-thumb.jpg",
     "priceEur": 69995,
-    "rangeKm": 380,
-    "oneStopRangeKm": 411,
+    "rangeKm": 390,
+    "oneStopRangeKm": 428,
     "cargoLiters": 517,
-    "fastChargeKw": 100,
+    "fastChargeKw": 110,
     "driveType": "AWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3493/Lexus-ES-500e-DIRECT-4"
   },
@@ -5069,6 +5129,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 105,
     "driveType": "AWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3797/Volkswagen-e-Transporter-Kombi-L1-160-kW-4MOTION-71-kWh"
+  },
+  {
+    "id": "3290",
+    "name": "BMW iX3 50 xDrive",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_iX3_2026/BMW_iX3_2026-01-thumb.jpg",
+    "priceEur": 70584,
+    "rangeKm": 645,
+    "oneStopRangeKm": 785,
+    "cargoLiters": 578,
+    "fastChargeKw": 230,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3290/BMW-iX3-50-xDrive"
   },
   {
     "id": "3633",
@@ -5105,18 +5177,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 105,
     "driveType": "RWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3806/Volkswagen-e-Caravelle-L2-160-kW-71-kWh"
-  },
-  {
-    "id": "3290",
-    "name": "BMW iX3 50 xDrive",
-    "imageUrl": "https://ev-database.org/img/auto/BMW_iX3_2026/BMW_iX3_2026-01-thumb.jpg",
-    "priceEur": 70979,
-    "rangeKm": 645,
-    "oneStopRangeKm": 785,
-    "cargoLiters": 578,
-    "fastChargeKw": 230,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3290/BMW-iX3-50-xDrive"
   },
   {
     "id": "3800",
@@ -5203,16 +5263,16 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3068/Hyundai-IONIQ-9-1103-kWh-AWD"
   },
   {
-    "id": "1835",
-    "name": "Kia EV9 99.8 kWh AWD",
-    "imageUrl": "https://ev-database.org/img/auto/Kia_EV9_2023/Kia_EV9_2023-01-thumb.jpg",
-    "priceEur": 72295,
-    "rangeKm": 435,
-    "oneStopRangeKm": 485,
-    "cargoLiters": 880,
-    "fastChargeKw": 196,
+    "id": "3826",
+    "name": "BMW iX4 40 xDrive",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_iX4_2027/BMW_iX4_2027-01-thumb.jpg",
+    "priceEur": 72544,
+    "rangeKm": 515,
+    "oneStopRangeKm": 627,
+    "cargoLiters": 548,
+    "fastChargeKw": 170,
     "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/1835/Kia-EV9-998-kWh-AWD"
+    "sourceUrl": "https://ev-database.org/nl/auto/3826/BMW-iX4-40-xDrive"
   },
   {
     "id": "3296",
@@ -5237,6 +5297,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 205,
     "driveType": "AWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3236/Genesis-GV60-Luxury"
+  },
+  {
+    "id": "1835",
+    "name": "Kia EV9 99.8 kWh AWD",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV9_2023/Kia_EV9_2023-01-thumb.jpg",
+    "priceEur": 72795,
+    "rangeKm": 435,
+    "oneStopRangeKm": 485,
+    "cargoLiters": 880,
+    "fastChargeKw": 196,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/1835/Kia-EV9-998-kWh-AWD"
   },
   {
     "id": "1916",
@@ -5347,22 +5419,10 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3808/Volkswagen-e-Caravelle-L1-100-kW-4MOTION-71-kWh"
   },
   {
-    "id": "3265",
-    "name": "Hongqi E-HS7 111 kWh AWD Pro",
-    "imageUrl": "https://ev-database.org/img/auto/Hongqi_E-HS7/Hongqi_E-HS7-01-thumb.jpg",
-    "priceEur": 74995,
-    "rangeKm": 470,
-    "oneStopRangeKm": 529,
-    "cargoLiters": 705,
-    "fastChargeKw": 180,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3265/Hongqi-E-HS7-111-kWh-AWD-Pro"
-  },
-  {
     "id": "3240",
     "name": "Mercedes-Benz EQE 350+",
     "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE/Mercedes_EQE-01-thumb.jpg",
-    "priceEur": 75051,
+    "priceEur": 75071,
     "rangeKm": 555,
     "oneStopRangeKm": 597,
     "cargoLiters": 430,
@@ -5455,6 +5515,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/2272/Audi-A6-Avant-e-tron-performance"
   },
   {
+    "id": "3827",
+    "name": "BMW iX4 50 xDrive",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_iX4_2027/BMW_iX4_2027-01-thumb.jpg",
+    "priceEur": 77989,
+    "rangeKm": 660,
+    "oneStopRangeKm": 814,
+    "cargoLiters": 548,
+    "fastChargeKw": 230,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3827/BMW-iX4-50-xDrive"
+  },
+  {
     "id": "3812",
     "name": "Volkswagen e-Caravelle L2 160 kW 4MOTION 71 kWh",
     "imageUrl": "https://ev-database.org/img/auto/Volkswagen_e-Caravelle/Volkswagen_e-Caravelle-01-thumb.jpg",
@@ -5482,7 +5554,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "id": "3241",
     "name": "Mercedes-Benz EQE 350 4MATIC",
     "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE/Mercedes_EQE-01-thumb.jpg",
-    "priceEur": 78076,
+    "priceEur": 78096,
     "rangeKm": 515,
     "oneStopRangeKm": 564,
     "cargoLiters": 430,
@@ -5527,18 +5599,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3112/BMW-i5-eDrive40-Sedan"
   },
   {
-    "id": "1993",
-    "name": "Kia EV9 99.8 kWh AWD GT-Line",
-    "imageUrl": "https://ev-database.org/img/auto/Kia_EV9_GTLine_2023/Kia_EV9_GTLine_2023-01-thumb.jpg",
-    "priceEur": 78795,
-    "rangeKm": 425,
-    "oneStopRangeKm": 471,
-    "cargoLiters": 880,
-    "fastChargeKw": 196,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/1993/Kia-EV9-998-kWh-AWD-GT-Line"
-  },
-  {
     "id": "3207",
     "name": "BMW i4 M60 xDrive",
     "imageUrl": "https://ev-database.org/img/auto/BMW_i4_M50_2024/BMW_i4_M50_2024-01-thumb.jpg",
@@ -5561,6 +5621,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 105,
     "driveType": "RWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3804/Volkswagen-e-Caravelle-L1-210-kW-71-kWh"
+  },
+  {
+    "id": "1993",
+    "name": "Kia EV9 99.8 kWh AWD GT-Line",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV9_GTLine_2023/Kia_EV9_GTLine_2023-01-thumb.jpg",
+    "priceEur": 79295,
+    "rangeKm": 425,
+    "oneStopRangeKm": 471,
+    "cargoLiters": 880,
+    "fastChargeKw": 196,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/1993/Kia-EV9-998-kWh-AWD-GT-Line"
   },
   {
     "id": "3326",
@@ -5710,25 +5782,13 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "id": "2140",
     "name": "Mercedes-Benz eVito Tourer L2 90 kWh",
     "imageUrl": "https://ev-database.org/img/auto/Mercedes_eVito_2024/Mercedes_eVito_2024-01-thumb.jpg",
-    "priceEur": 84773,
+    "priceEur": 85768,
     "rangeKm": 325,
     "oneStopRangeKm": 299,
     "cargoLiters": 990,
     "fastChargeKw": 96,
     "driveType": "FWD",
     "sourceUrl": "https://ev-database.org/nl/auto/2140/Mercedes-Benz-eVito-Tourer-L2-90-kWh"
-  },
-  {
-    "id": "2050",
-    "name": "Hongqi E-HS9 120 kWh",
-    "imageUrl": "https://ev-database.org/img/auto/Hongqi_E-HS9/Hongqi_E-HS9-01-thumb.jpg",
-    "priceEur": 84995,
-    "rangeKm": 460,
-    "oneStopRangeKm": 421,
-    "cargoLiters": 438,
-    "fastChargeKw": 110,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2050/Hongqi-E-HS9-120-kWh"
   },
   {
     "id": "3810",
@@ -5770,7 +5830,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "id": "3242",
     "name": "Mercedes-Benz EQE 500 4MATIC",
     "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE/Mercedes_EQE-01-thumb.jpg",
-    "priceEur": 86304,
+    "priceEur": 86324,
     "rangeKm": 505,
     "oneStopRangeKm": 553,
     "cargoLiters": 430,
@@ -5803,6 +5863,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3683/Genesis-GV60-Magma"
   },
   {
+    "id": "2294",
+    "name": "Mercedes-Benz eVito Tourer L3 90 kWh",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_eVito_2024/Mercedes_eVito_2024-01-thumb.jpg",
+    "priceEur": 86990,
+    "rangeKm": 325,
+    "oneStopRangeKm": 299,
+    "cargoLiters": 1390,
+    "fastChargeKw": 96,
+    "driveType": "FWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2294/Mercedes-Benz-eVito-Tourer-L3-90-kWh"
+  },
+  {
     "id": "3813",
     "name": "Volkswagen e-Caravelle L2 210 kW 4MOTION 71 kWh",
     "imageUrl": "https://ev-database.org/img/auto/Volkswagen_e-Caravelle/Volkswagen_e-Caravelle-01-thumb.jpg",
@@ -5825,18 +5897,6 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 110,
     "driveType": "AWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3820/Lexus-TZ-450e-Long-Range"
-  },
-  {
-    "id": "3196",
-    "name": "Kia EV9 99.8 kWh AWD GT",
-    "imageUrl": "https://ev-database.org/img/auto/Kia_EV9_GT_2025/Kia_EV9_GT_2025-01-thumb.jpg",
-    "priceEur": 88795,
-    "rangeKm": 415,
-    "oneStopRangeKm": 461,
-    "cargoLiters": 880,
-    "fastChargeKw": 194,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3196/Kia-EV9-998-kWh-AWD-GT"
   },
   {
     "id": "3271",
@@ -5863,16 +5923,16 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3324/Volvo-EX90-Twin-Motor"
   },
   {
-    "id": "3704",
-    "name": "Porsche Macan 4 Electric",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Macan_4_2024/Porsche_Macan_4_2024-01-thumb.jpg",
-    "priceEur": 89800,
-    "rangeKm": 470,
-    "oneStopRangeKm": 553,
-    "cargoLiters": 624,
-    "fastChargeKw": 186,
+    "id": "3196",
+    "name": "Kia EV9 99.8 kWh AWD GT",
+    "imageUrl": "https://ev-database.org/img/auto/Kia_EV9_GT_2025/Kia_EV9_GT_2025-01-thumb.jpg",
+    "priceEur": 89295,
+    "rangeKm": 415,
+    "oneStopRangeKm": 461,
+    "cargoLiters": 880,
+    "fastChargeKw": 194,
     "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3704/Porsche-Macan-4-Electric"
+    "sourceUrl": "https://ev-database.org/nl/auto/3196/Kia-EV9-998-kWh-AWD-GT"
   },
   {
     "id": "3327",
@@ -5885,6 +5945,18 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "fastChargeKw": 200,
     "driveType": "AWD",
     "sourceUrl": "https://ev-database.org/nl/auto/3327/Polestar-3-Dual-Motor"
+  },
+  {
+    "id": "3704",
+    "name": "Porsche Macan 4 Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Macan_4_2024/Porsche_Macan_4_2024-01-thumb.jpg",
+    "priceEur": 89800,
+    "rangeKm": 470,
+    "oneStopRangeKm": 553,
+    "cargoLiters": 624,
+    "fastChargeKw": 186,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3704/Porsche-Macan-4-Electric"
   },
   {
     "id": "3284",
@@ -6055,190 +6127,22 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/2271/Audi-S6-Sportback-e-tron"
   },
   {
-    "id": "3578",
-    "name": "Mercedes-Benz EQS 450+",
+    "id": "3577",
+    "name": "Mercedes-Benz EQS 400",
     "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_2026/Mercedes_EQS_2026-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 720,
-    "oneStopRangeKm": 842,
+    "priceEur": 101307,
+    "rangeKm": 670,
+    "oneStopRangeKm": 786,
     "cargoLiters": 610,
     "fastChargeKw": 190,
     "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3578/Mercedes-Benz-EQS-450plus"
-  },
-  {
-    "id": "3273",
-    "name": "Lucid Air Grand Touring",
-    "imageUrl": "https://ev-database.org/img/auto/Lucid_Air/Lucid_Air-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 720,
-    "oneStopRangeKm": 836,
-    "cargoLiters": 910,
-    "fastChargeKw": 190,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3273/Lucid-Air-Grand-Touring"
-  },
-  {
-    "id": "3398",
-    "name": "Porsche Cayenne Electric",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Cayenne_2026/Porsche_Cayenne_2026-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 525,
-    "oneStopRangeKm": 665,
-    "cargoLiters": 871,
-    "fastChargeKw": 290,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3398/Porsche-Cayenne-Electric"
-  },
-  {
-    "id": "2192",
-    "name": "Mercedes-Benz G 580",
-    "imageUrl": "https://ev-database.org/img/auto/Mercedes_G-Class/Mercedes_G-Class-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 395,
-    "oneStopRangeKm": 394,
-    "cargoLiters": 555,
-    "fastChargeKw": 150,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2192/Mercedes-Benz-G-580"
-  },
-  {
-    "id": "3292",
-    "name": "Lucid Gravity Grand Touring",
-    "imageUrl": "https://ev-database.org/img/auto/Lucid_Gravity/Lucid_Gravity-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 615,
-    "oneStopRangeKm": 729,
-    "cargoLiters": 1663,
-    "fastChargeKw": 210,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3292/Lucid-Gravity-Grand-Touring"
-  },
-  {
-    "id": "3298",
-    "name": "Polestar 5 Dual Motor",
-    "imageUrl": "https://ev-database.org/img/auto/Polestar_5/Polestar_5-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 580,
-    "oneStopRangeKm": 698,
-    "cargoLiters": 427,
-    "fastChargeKw": 210,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3298/Polestar-5-Dual-Motor"
-  },
-  {
-    "id": "2098",
-    "name": "Porsche Taycan",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 495,
-    "oneStopRangeKm": 622,
-    "cargoLiters": 491,
-    "fastChargeKw": 195,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2098/Porsche-Taycan"
-  },
-  {
-    "id": "3643",
-    "name": "Ferrari Luce",
-    "imageUrl": "https://ev-database.org/img/auto/Ferrari_Luce_2027/Ferrari_Luce_2027-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 580,
-    "oneStopRangeKm": 675,
-    "cargoLiters": 597,
-    "fastChargeKw": 220,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3643/Ferrari-Luce"
-  },
-  {
-    "id": "3716",
-    "name": "Land Rover Range Rover EV450",
-    "imageUrl": "https://ev-database.org/img/auto/Land_Rover_Range_Rover_2027/Land_Rover_Range_Rover_2027-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 480,
-    "oneStopRangeKm": 553,
-    "cargoLiters": 733,
-    "fastChargeKw": 230,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3716/Land-Rover-Range-Rover-EV450"
-  },
-  {
-    "id": "3399",
-    "name": "Porsche Cayenne Turbo Electric",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Cayenne_Turbo_2026/Porsche_Cayenne_Turbo_2026-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 500,
-    "oneStopRangeKm": 635,
-    "cargoLiters": 837,
-    "fastChargeKw": 290,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3399/Porsche-Cayenne-Turbo-Electric"
-  },
-  {
-    "id": "3557",
-    "name": "BMW i7 60 xDrive",
-    "imageUrl": "https://ev-database.org/img/auto/BMW_i7_2026/BMW_i7_2026-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 560,
-    "oneStopRangeKm": 628,
-    "cargoLiters": 500,
-    "fastChargeKw": 175,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3557/BMW-i7-60-xDrive"
-  },
-  {
-    "id": "3702",
-    "name": "Mercedes-Benz AMG GT 4-Door Coupe 53 4MATIC+",
-    "imageUrl": "https://ev-database.org/img/auto/Mercedes-Benz_AMG_GT_4-Door_Coupe_2026/Mercedes-Benz_AMG_GT_4-Door_Coupe_2026-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 630,
-    "oneStopRangeKm": 842,
-    "cargoLiters": 456,
-    "fastChargeKw": 400,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3702/Mercedes-Benz-AMG-GT-4-Door-Coupe-53-4MATICplus"
-  },
-  {
-    "id": "2220",
-    "name": "Audi RS e-tron GT",
-    "imageUrl": "https://ev-database.org/img/auto/Audi_e-tron_GT_RS_2025/Audi_e-tron_GT_RS_2025-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 525,
-    "oneStopRangeKm": 682,
-    "cargoLiters": 427,
-    "fastChargeKw": 267,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2220/Audi-RS-e-tron-GT"
-  },
-  {
-    "id": "3486",
-    "name": "Porsche Cayenne S Electric",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Cayenne_2026/Porsche_Cayenne_2026-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 520,
-    "oneStopRangeKm": 662,
-    "cargoLiters": 871,
-    "fastChargeKw": 290,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3486/Porsche-Cayenne-S-Electric"
-  },
-  {
-    "id": "3299",
-    "name": "Polestar 5 Performance",
-    "imageUrl": "https://ev-database.org/img/auto/Polestar_5/Polestar_5-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 530,
-    "oneStopRangeKm": 637,
-    "cargoLiters": 427,
-    "fastChargeKw": 210,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3299/Polestar-5-Performance"
+    "sourceUrl": "https://ev-database.org/nl/auto/3577/Mercedes-Benz-EQS-400"
   },
   {
     "id": "2147",
     "name": "Audi SQ6 e-tron",
     "imageUrl": "https://ev-database.org/img/auto/Audi_SQ6_etron_2024/Audi_SQ6_etron_2024-01-thumb.jpg",
-    "priceEur": 100000,
+    "priceEur": 101400,
     "rangeKm": 470,
     "oneStopRangeKm": 550,
     "cargoLiters": 578,
@@ -6247,106 +6151,10 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/2147/Audi-SQ6-e-tron"
   },
   {
-    "id": "3626",
-    "name": "Mercedes-Benz AMG GT 4-Door Coupe 63 4MATIC+",
-    "imageUrl": "https://ev-database.org/img/auto/Mercedes-Benz_AMG_GT_4-Door_Coupe_2026/Mercedes-Benz_AMG_GT_4-Door_Coupe_2026-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 600,
-    "oneStopRangeKm": 798,
-    "cargoLiters": 456,
-    "fastChargeKw": 400,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3626/Mercedes-Benz-AMG-GT-4-Door-Coupe-63-4MATICplus"
-  },
-  {
-    "id": "3214",
-    "name": "Lotus Emeya 600",
-    "imageUrl": "https://ev-database.org/img/auto/Lotus_Emeya/Lotus_Emeya-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 520,
-    "oneStopRangeKm": 693,
-    "cargoLiters": 543,
-    "fastChargeKw": 328,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3214/Lotus-Emeya-600"
-  },
-  {
-    "id": "3556",
-    "name": "BMW i7 50 xDrive",
-    "imageUrl": "https://ev-database.org/img/auto/BMW_i7_2026/BMW_i7_2026-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 560,
-    "oneStopRangeKm": 628,
-    "cargoLiters": 500,
-    "fastChargeKw": 175,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3556/BMW-i7-50-xDrive"
-  },
-  {
-    "id": "3328",
-    "name": "Polestar 3 Performance",
-    "imageUrl": "https://ev-database.org/img/auto/Polestar_3_MY26/Polestar_3_MY26-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 460,
-    "oneStopRangeKm": 539,
-    "cargoLiters": 508,
-    "fastChargeKw": 200,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3328/Polestar-3-Performance"
-  },
-  {
-    "id": "3274",
-    "name": "Lucid Air Sapphire",
-    "imageUrl": "https://ev-database.org/img/auto/Lucid_Air_Sapphire_2025/Lucid_Air_Sapphire_2025-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 610,
-    "oneStopRangeKm": 693,
-    "cargoLiters": 910,
-    "fastChargeKw": 190,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3274/Lucid-Air-Sapphire"
-  },
-  {
-    "id": "2087",
-    "name": "Mercedes-Benz EQS SUV 450+",
-    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_SUV_2022/Mercedes_EQS_SUV_2022-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 540,
-    "oneStopRangeKm": 559,
-    "cargoLiters": 645,
-    "fastChargeKw": 160,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2087/Mercedes-Benz-EQS-SUV-450plus"
-  },
-  {
-    "id": "3580",
-    "name": "Mercedes-Benz EQS 580 4MATIC",
-    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_2026/Mercedes_EQS_2026-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 670,
-    "oneStopRangeKm": 782,
-    "cargoLiters": 610,
-    "fastChargeKw": 190,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3580/Mercedes-Benz-EQS-580-4MATIC"
-  },
-  {
-    "id": "3627",
-    "name": "Mercedes-Benz AMG GT 4-Door Coupe 55 4MATIC+",
-    "imageUrl": "https://ev-database.org/img/auto/Mercedes-Benz_AMG_GT_4-Door_Coupe_2026/Mercedes-Benz_AMG_GT_4-Door_Coupe_2026-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 600,
-    "oneStopRangeKm": 798,
-    "cargoLiters": 456,
-    "fastChargeKw": 400,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3627/Mercedes-Benz-AMG-GT-4-Door-Coupe-55-4MATICplus"
-  },
-  {
     "id": "2273",
     "name": "Audi S6 Avant e-tron",
     "imageUrl": "https://ev-database.org/img/auto/Audi_S6_Avant_etron_2024/Audi_S6_Avant_etron_2024-01-thumb.jpg",
-    "priceEur": 100000,
+    "priceEur": 101490,
     "rangeKm": 530,
     "oneStopRangeKm": 628,
     "cargoLiters": 529,
@@ -6355,22 +6163,370 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/2273/Audi-S6-Avant-e-tron"
   },
   {
-    "id": "3217",
-    "name": "Lotus Eletre 900",
+    "id": "3044",
+    "name": "Audi SQ6 Sportback e-tron",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_SQ6_etron_Sportback_2024/Audi_SQ6_etron_Sportback_2024-01-thumb.jpg",
+    "priceEur": 101990,
+    "rangeKm": 495,
+    "oneStopRangeKm": 578,
+    "cargoLiters": 575,
+    "fastChargeKw": 186,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3044/Audi-SQ6-Sportback-e-tron"
+  },
+  {
+    "id": "3272",
+    "name": "Lucid Air Touring",
+    "imageUrl": "https://ev-database.org/img/auto/Lucid_Air/Lucid_Air-01-thumb.jpg",
+    "priceEur": 102900,
+    "rangeKm": 600,
+    "oneStopRangeKm": 698,
+    "cargoLiters": 910,
+    "fastChargeKw": 160,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3272/Lucid-Air-Touring"
+  },
+  {
+    "id": "3216",
+    "name": "Lotus Eletre 600",
     "imageUrl": "https://ev-database.org/img/auto/Lotus_Eletre/Lotus_Eletre-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 455,
-    "oneStopRangeKm": 553,
+    "priceEur": 103795,
+    "rangeKm": 495,
+    "oneStopRangeKm": 597,
     "cargoLiters": 657,
     "fastChargeKw": 246,
     "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3217/Lotus-Eletre-900"
+    "sourceUrl": "https://ev-database.org/nl/auto/3216/Lotus-Eletre-600"
+  },
+  {
+    "id": "2098",
+    "name": "Porsche Taycan",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
+    "priceEur": 107000,
+    "rangeKm": 495,
+    "oneStopRangeKm": 622,
+    "cargoLiters": 491,
+    "fastChargeKw": 195,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2098/Porsche-Taycan"
+  },
+  {
+    "id": "2104",
+    "name": "Porsche Taycan Sport Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Sport_Turismo_2024/Porsche_Taycan_Sport_Turismo_2024-01-thumb.jpg",
+    "priceEur": 108100,
+    "rangeKm": 460,
+    "oneStopRangeKm": 568,
+    "cargoLiters": 530,
+    "fastChargeKw": 195,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2104/Porsche-Taycan-Sport-Turismo"
+  },
+  {
+    "id": "3578",
+    "name": "Mercedes-Benz EQS 450+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_2026/Mercedes_EQS_2026-01-thumb.jpg",
+    "priceEur": 108567,
+    "rangeKm": 720,
+    "oneStopRangeKm": 842,
+    "cargoLiters": 610,
+    "fastChargeKw": 190,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3578/Mercedes-Benz-EQS-450plus"
+  },
+  {
+    "id": "3328",
+    "name": "Polestar 3 Performance",
+    "imageUrl": "https://ev-database.org/img/auto/Polestar_3_MY26/Polestar_3_MY26-01-thumb.jpg",
+    "priceEur": 109200,
+    "rangeKm": 460,
+    "oneStopRangeKm": 539,
+    "cargoLiters": 508,
+    "fastChargeKw": 200,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3328/Polestar-3-Performance"
+  },
+  {
+    "id": "3114",
+    "name": "BMW i5 M60 xDrive Sedan",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i5_M60_xDrive_Sedan/BMW_i5_M60_xDrive_Sedan-01-thumb.jpg",
+    "priceEur": 109463,
+    "rangeKm": 430,
+    "oneStopRangeKm": 479,
+    "cargoLiters": 490,
+    "fastChargeKw": 123,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3114/BMW-i5-M60-xDrive-Sedan"
+  },
+  {
+    "id": "3398",
+    "name": "Porsche Cayenne Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Cayenne_2026/Porsche_Cayenne_2026-01-thumb.jpg",
+    "priceEur": 110143,
+    "rangeKm": 525,
+    "oneStopRangeKm": 665,
+    "cargoLiters": 871,
+    "fastChargeKw": 290,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3398/Porsche-Cayenne-Electric"
+  },
+  {
+    "id": "3060",
+    "name": "Porsche Taycan 4",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
+    "priceEur": 110433,
+    "rangeKm": 490,
+    "oneStopRangeKm": 611,
+    "cargoLiters": 491,
+    "fastChargeKw": 195,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3060/Porsche-Taycan-4"
+  },
+  {
+    "id": "3706",
+    "name": "Porsche Macan GTS Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Macan_GTS_2026/Porsche_Macan_GTS_2026-01-thumb.jpg",
+    "priceEur": 110600,
+    "rangeKm": 465,
+    "oneStopRangeKm": 546,
+    "cargoLiters": 560,
+    "fastChargeKw": 186,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3706/Porsche-Macan-GTS-Electric"
+  },
+  {
+    "id": "3117",
+    "name": "BMW i5 M60 xDrive Touring",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i5_M60_xDrive_Touring/BMW_i5_M60_xDrive_Touring-01-thumb.jpg",
+    "priceEur": 111520,
+    "rangeKm": 425,
+    "oneStopRangeKm": 475,
+    "cargoLiters": 570,
+    "fastChargeKw": 123,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3117/BMW-i5-M60-xDrive-Touring"
+  },
+  {
+    "id": "3214",
+    "name": "Lotus Emeya 600",
+    "imageUrl": "https://ev-database.org/img/auto/Lotus_Emeya/Lotus_Emeya-01-thumb.jpg",
+    "priceEur": 111995,
+    "rangeKm": 520,
+    "oneStopRangeKm": 693,
+    "cargoLiters": 543,
+    "fastChargeKw": 328,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3214/Lotus-Emeya-600"
+  },
+  {
+    "id": "2099",
+    "name": "Porsche Taycan Plus",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
+    "priceEur": 113044,
+    "rangeKm": 575,
+    "oneStopRangeKm": 750,
+    "cargoLiters": 491,
+    "fastChargeKw": 267,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2099/Porsche-Taycan-Plus"
+  },
+  {
+    "id": "3560",
+    "name": "Porsche Cayenne Coupe Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Cayenne_Coupe_2026/Porsche_Cayenne_Coupe_2026-01-thumb.jpg",
+    "priceEur": 114144,
+    "rangeKm": 545,
+    "oneStopRangeKm": 699,
+    "cargoLiters": 624,
+    "fastChargeKw": 290,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3560/Porsche-Cayenne-Coupe-Electric"
+  },
+  {
+    "id": "2105",
+    "name": "Porsche Taycan Plus Sport Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Sport_Turismo_2024/Porsche_Taycan_Sport_Turismo_2024-01-thumb.jpg",
+    "priceEur": 114144,
+    "rangeKm": 530,
+    "oneStopRangeKm": 685,
+    "cargoLiters": 530,
+    "fastChargeKw": 267,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2105/Porsche-Taycan-Plus-Sport-Turismo"
+  },
+  {
+    "id": "3061",
+    "name": "Porsche Taycan 4 Plus",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
+    "priceEur": 116562,
+    "rangeKm": 565,
+    "oneStopRangeKm": 738,
+    "cargoLiters": 491,
+    "fastChargeKw": 267,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3061/Porsche-Taycan-4-Plus"
+  },
+  {
+    "id": "3579",
+    "name": "Mercedes-Benz EQS 500 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_2026/Mercedes_EQS_2026-01-thumb.jpg",
+    "priceEur": 117642,
+    "rangeKm": 680,
+    "oneStopRangeKm": 792,
+    "cargoLiters": 610,
+    "fastChargeKw": 190,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3579/Mercedes-Benz-EQS-500-4MATIC"
+  },
+  {
+    "id": "2110",
+    "name": "Porsche Taycan 4 Cross Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Cross_Turismo_2024/Porsche_Taycan_Cross_Turismo_2024-01-thumb.jpg",
+    "priceEur": 119400,
+    "rangeKm": 510,
+    "oneStopRangeKm": 655,
+    "cargoLiters": 530,
+    "fastChargeKw": 267,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2110/Porsche-Taycan-4-Cross-Turismo"
+  },
+  {
+    "id": "3702",
+    "name": "Mercedes-Benz AMG GT 4-Door Coupe 53 4MATIC+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes-Benz_AMG_GT_4-Door_Coupe_2026/Mercedes-Benz_AMG_GT_4-Door_Coupe_2026-01-thumb.jpg",
+    "priceEur": 119452,
+    "rangeKm": 630,
+    "oneStopRangeKm": 842,
+    "cargoLiters": 456,
+    "fastChargeKw": 400,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3702/Mercedes-Benz-AMG-GT-4-Door-Coupe-53-4MATICplus"
+  },
+  {
+    "id": "3298",
+    "name": "Polestar 5 Dual Motor",
+    "imageUrl": "https://ev-database.org/img/auto/Polestar_5/Polestar_5-01-thumb.jpg",
+    "priceEur": 121900,
+    "rangeKm": 580,
+    "oneStopRangeKm": 698,
+    "cargoLiters": 427,
+    "fastChargeKw": 210,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3298/Polestar-5-Dual-Motor"
+  },
+  {
+    "id": "3707",
+    "name": "Porsche Macan Turbo Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Macan_Turbo_2024/Porsche_Macan_Turbo_2024-01-thumb.jpg",
+    "priceEur": 122500,
+    "rangeKm": 465,
+    "oneStopRangeKm": 550,
+    "cargoLiters": 564,
+    "fastChargeKw": 186,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3707/Porsche-Macan-Turbo-Electric"
+  },
+  {
+    "id": "3292",
+    "name": "Lucid Gravity Grand Touring",
+    "imageUrl": "https://ev-database.org/img/auto/Lucid_Gravity/Lucid_Gravity-01-thumb.jpg",
+    "priceEur": 122900,
+    "rangeKm": 615,
+    "oneStopRangeKm": 729,
+    "cargoLiters": 1663,
+    "fastChargeKw": 210,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3292/Lucid-Gravity-Grand-Touring"
+  },
+  {
+    "id": "3815",
+    "name": "Land Rover Range Rover Sport EV450",
+    "imageUrl": "https://ev-database.org/img/auto/Land_Rover_Range_Rover_Sport_2027/Land_Rover_Range_Rover_Sport_2027-01-thumb.jpg",
+    "priceEur": 123197,
+    "rangeKm": 490,
+    "oneStopRangeKm": 563,
+    "cargoLiters": 627,
+    "fastChargeKw": 230,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3815/Land-Rover-Range-Rover-Sport-EV450"
+  },
+  {
+    "id": "2087",
+    "name": "Mercedes-Benz EQS SUV 450+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_SUV_2022/Mercedes_EQS_SUV_2022-01-thumb.jpg",
+    "priceEur": 125425,
+    "rangeKm": 540,
+    "oneStopRangeKm": 559,
+    "cargoLiters": 645,
+    "fastChargeKw": 160,
+    "driveType": "RWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2087/Mercedes-Benz-EQS-SUV-450plus"
+  },
+  {
+    "id": "2100",
+    "name": "Porsche Taycan 4S",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
+    "priceEur": 126800,
+    "rangeKm": 490,
+    "oneStopRangeKm": 611,
+    "cargoLiters": 491,
+    "fastChargeKw": 195,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2100/Porsche-Taycan-4S"
+  },
+  {
+    "id": "2106",
+    "name": "Porsche Taycan 4S Sport Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Sport_Turismo_2024/Porsche_Taycan_Sport_Turismo_2024-01-thumb.jpg",
+    "priceEur": 127800,
+    "rangeKm": 440,
+    "oneStopRangeKm": 546,
+    "cargoLiters": 530,
+    "fastChargeKw": 195,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2106/Porsche-Taycan-4S-Sport-Turismo"
+  },
+  {
+    "id": "3556",
+    "name": "BMW i7 50 xDrive",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i7_2026/BMW_i7_2026-01-thumb.jpg",
+    "priceEur": 127971,
+    "rangeKm": 560,
+    "oneStopRangeKm": 628,
+    "cargoLiters": 500,
+    "fastChargeKw": 175,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3556/BMW-i7-50-xDrive"
+  },
+  {
+    "id": "3243",
+    "name": "Mercedes-Benz EQE AMG 53 4MATIC+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE_AMG_53/Mercedes_EQE_AMG_53-01-thumb.jpg",
+    "priceEur": 129400,
+    "rangeKm": 450,
+    "oneStopRangeKm": 491,
+    "cargoLiters": 430,
+    "fastChargeKw": 141,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3243/Mercedes-Benz-EQE-AMG-53-4MATICplus"
+  },
+  {
+    "id": "2088",
+    "name": "Mercedes-Benz EQS SUV 450 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_SUV_2022/Mercedes_EQS_SUV_2022-01-thumb.jpg",
+    "priceEur": 129660,
+    "rangeKm": 530,
+    "oneStopRangeKm": 543,
+    "cargoLiters": 645,
+    "fastChargeKw": 160,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2088/Mercedes-Benz-EQS-SUV-450-4MATIC"
   },
   {
     "id": "2219",
     "name": "Audi S e-tron GT",
     "imageUrl": "https://ev-database.org/img/auto/Audi_e-tron_GT_S_2025/Audi_e-tron_GT_S_2025-01-thumb.jpg",
-    "priceEur": 100000,
+    "priceEur": 129990,
     "rangeKm": 540,
     "oneStopRangeKm": 700,
     "cargoLiters": 482,
@@ -6382,7 +6538,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "id": "3111",
     "name": "BMW iX M70 xDrive",
     "imageUrl": "https://ev-database.org/img/auto/BMW_iX_M70_2025/BMW_iX_M70_2025-01-thumb.jpg",
-    "priceEur": 100000,
+    "priceEur": 131414,
     "rangeKm": 500,
     "oneStopRangeKm": 524,
     "cargoLiters": 500,
@@ -6391,298 +6547,22 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3111/BMW-iX-M70-xDrive"
   },
   {
-    "id": "3577",
-    "name": "Mercedes-Benz EQS 400",
-    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_2026/Mercedes_EQS_2026-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 670,
-    "oneStopRangeKm": 786,
-    "cargoLiters": 610,
-    "fastChargeKw": 190,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3577/Mercedes-Benz-EQS-400"
-  },
-  {
-    "id": "2086",
-    "name": "Mercedes-Benz EQS SUV Maybach 680",
-    "imageUrl": "https://ev-database.org/img/auto/Mercedes_Maybach_EQS_SUV_2024/Mercedes_Maybach_EQS_SUV_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 490,
-    "oneStopRangeKm": 507,
-    "cargoLiters": 440,
-    "fastChargeKw": 160,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2086/Mercedes-Benz-EQS-SUV-Maybach-680"
-  },
-  {
-    "id": "3216",
-    "name": "Lotus Eletre 600",
-    "imageUrl": "https://ev-database.org/img/auto/Lotus_Eletre/Lotus_Eletre-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 495,
-    "oneStopRangeKm": 597,
-    "cargoLiters": 657,
-    "fastChargeKw": 246,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3216/Lotus-Eletre-600"
-  },
-  {
-    "id": "3243",
-    "name": "Mercedes-Benz EQE AMG 53 4MATIC+",
-    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE_AMG_53/Mercedes_EQE_AMG_53-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 450,
-    "oneStopRangeKm": 491,
-    "cargoLiters": 430,
-    "fastChargeKw": 141,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3243/Mercedes-Benz-EQE-AMG-53-4MATICplus"
-  },
-  {
-    "id": "3579",
-    "name": "Mercedes-Benz EQS 500 4MATIC",
-    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_2026/Mercedes_EQS_2026-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 680,
-    "oneStopRangeKm": 792,
-    "cargoLiters": 610,
-    "fastChargeKw": 190,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3579/Mercedes-Benz-EQS-500-4MATIC"
-  },
-  {
-    "id": "2089",
-    "name": "Mercedes-Benz EQS SUV 500 4MATIC",
-    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_SUV_2022/Mercedes_EQS_SUV_2022-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 530,
-    "oneStopRangeKm": 543,
-    "cargoLiters": 645,
-    "fastChargeKw": 160,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2089/Mercedes-Benz-EQS-SUV-500-4MATIC"
-  },
-  {
-    "id": "3117",
-    "name": "BMW i5 M60 xDrive Touring",
-    "imageUrl": "https://ev-database.org/img/auto/BMW_i5_M60_xDrive_Touring/BMW_i5_M60_xDrive_Touring-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 425,
-    "oneStopRangeKm": 475,
-    "cargoLiters": 570,
-    "fastChargeKw": 123,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3117/BMW-i5-M60-xDrive-Touring"
-  },
-  {
-    "id": "2104",
-    "name": "Porsche Taycan Sport Turismo",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Sport_Turismo_2024/Porsche_Taycan_Sport_Turismo_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 460,
-    "oneStopRangeKm": 568,
-    "cargoLiters": 530,
-    "fastChargeKw": 195,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2104/Porsche-Taycan-Sport-Turismo"
-  },
-  {
-    "id": "3560",
-    "name": "Porsche Cayenne Coupe Electric",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Cayenne_Coupe_2026/Porsche_Cayenne_Coupe_2026-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 545,
-    "oneStopRangeKm": 699,
-    "cargoLiters": 624,
+    "id": "3486",
+    "name": "Porsche Cayenne S Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Cayenne_2026/Porsche_Cayenne_2026-01-thumb.jpg",
+    "priceEur": 131843,
+    "rangeKm": 520,
+    "oneStopRangeKm": 662,
+    "cargoLiters": 871,
     "fastChargeKw": 290,
     "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3560/Porsche-Cayenne-Coupe-Electric"
-  },
-  {
-    "id": "3650",
-    "name": "Rolls-Royce Spectre Series II",
-    "imageUrl": "https://ev-database.org/img/auto/Rolls-Royce-Spectre/Rolls-Royce-Spectre-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 515,
-    "oneStopRangeKm": 548,
-    "cargoLiters": 380,
-    "fastChargeKw": 170,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3650/Rolls-Royce-Spectre-Series-II"
-  },
-  {
-    "id": "3272",
-    "name": "Lucid Air Touring",
-    "imageUrl": "https://ev-database.org/img/auto/Lucid_Air/Lucid_Air-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 600,
-    "oneStopRangeKm": 698,
-    "cargoLiters": 910,
-    "fastChargeKw": 160,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3272/Lucid-Air-Touring"
-  },
-  {
-    "id": "3718",
-    "name": "Land Rover Range Rover LWB EV550",
-    "imageUrl": "https://ev-database.org/img/auto/Land_Rover_Range_Rover_2027/Land_Rover_Range_Rover_2027-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 470,
-    "oneStopRangeKm": 542,
-    "cargoLiters": 571,
-    "fastChargeKw": 230,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3718/Land-Rover-Range-Rover-LWB-EV550"
-  },
-  {
-    "id": "3114",
-    "name": "BMW i5 M60 xDrive Sedan",
-    "imageUrl": "https://ev-database.org/img/auto/BMW_i5_M60_xDrive_Sedan/BMW_i5_M60_xDrive_Sedan-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 430,
-    "oneStopRangeKm": 479,
-    "cargoLiters": 490,
-    "fastChargeKw": 123,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3114/BMW-i5-M60-xDrive-Sedan"
-  },
-  {
-    "id": "3719",
-    "name": "Maserati GranTurismo Folgore",
-    "imageUrl": "https://ev-database.org/img/auto/Maserati_GranTurismo_Folgore_2027/Maserati_GranTurismo_Folgore_2027-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 465,
-    "oneStopRangeKm": 586,
-    "cargoLiters": 270,
-    "fastChargeKw": 217,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3719/Maserati-GranTurismo-Folgore"
-  },
-  {
-    "id": "3044",
-    "name": "Audi SQ6 Sportback e-tron",
-    "imageUrl": "https://ev-database.org/img/auto/Audi_SQ6_etron_Sportback_2024/Audi_SQ6_etron_Sportback_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 495,
-    "oneStopRangeKm": 578,
-    "cargoLiters": 575,
-    "fastChargeKw": 186,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3044/Audi-SQ6-Sportback-e-tron"
-  },
-  {
-    "id": "2100",
-    "name": "Porsche Taycan 4S",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 490,
-    "oneStopRangeKm": 611,
-    "cargoLiters": 491,
-    "fastChargeKw": 195,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2100/Porsche-Taycan-4S"
-  },
-  {
-    "id": "2090",
-    "name": "Mercedes-Benz EQS SUV 580 4MATIC",
-    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_SUV_2022/Mercedes_EQS_SUV_2022-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 530,
-    "oneStopRangeKm": 543,
-    "cargoLiters": 645,
-    "fastChargeKw": 160,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2090/Mercedes-Benz-EQS-SUV-580-4MATIC"
-  },
-  {
-    "id": "2101",
-    "name": "Porsche Taycan 4S Plus",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 565,
-    "oneStopRangeKm": 738,
-    "cargoLiters": 491,
-    "fastChargeKw": 267,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2101/Porsche-Taycan-4S-Plus"
-  },
-  {
-    "id": "2099",
-    "name": "Porsche Taycan Plus",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 575,
-    "oneStopRangeKm": 750,
-    "cargoLiters": 491,
-    "fastChargeKw": 267,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2099/Porsche-Taycan-Plus"
-  },
-  {
-    "id": "3558",
-    "name": "BMW i7 M70 xDrive",
-    "imageUrl": "https://ev-database.org/img/auto/BMW_i7_2026/BMW_i7_2026-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 530,
-    "oneStopRangeKm": 595,
-    "cargoLiters": 500,
-    "fastChargeKw": 175,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3558/BMW-i7-M70-xDrive"
-  },
-  {
-    "id": "3720",
-    "name": "Maserati GranCabrio Folgore",
-    "imageUrl": "https://ev-database.org/img/auto/Maserati_GranCabrio_Folgore_2027/Maserati_GranCabrio_Folgore_2027-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 440,
-    "oneStopRangeKm": 545,
-    "cargoLiters": 151,
-    "fastChargeKw": 190,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3720/Maserati-GranCabrio-Folgore"
-  },
-  {
-    "id": "2106",
-    "name": "Porsche Taycan 4S Sport Turismo",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Sport_Turismo_2024/Porsche_Taycan_Sport_Turismo_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 440,
-    "oneStopRangeKm": 546,
-    "cargoLiters": 530,
-    "fastChargeKw": 195,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2106/Porsche-Taycan-4S-Sport-Turismo"
-  },
-  {
-    "id": "2110",
-    "name": "Porsche Taycan 4 Cross Turismo",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Cross_Turismo_2024/Porsche_Taycan_Cross_Turismo_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 510,
-    "oneStopRangeKm": 655,
-    "cargoLiters": 530,
-    "fastChargeKw": 267,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2110/Porsche-Taycan-4-Cross-Turismo"
-  },
-  {
-    "id": "3706",
-    "name": "Porsche Macan GTS Electric",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Macan_GTS_2026/Porsche_Macan_GTS_2026-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 465,
-    "oneStopRangeKm": 546,
-    "cargoLiters": 560,
-    "fastChargeKw": 186,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3706/Porsche-Macan-GTS-Electric"
+    "sourceUrl": "https://ev-database.org/nl/auto/3486/Porsche-Cayenne-S-Electric"
   },
   {
     "id": "2111",
     "name": "Porsche Taycan 4S Cross Turismo",
     "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Cross_Turismo_2024/Porsche_Taycan_Cross_Turismo_2024-01-thumb.jpg",
-    "priceEur": 100000,
+    "priceEur": 132600,
     "rangeKm": 510,
     "oneStopRangeKm": 655,
     "cargoLiters": 530,
@@ -6691,178 +6571,58 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/2111/Porsche-Taycan-4S-Cross-Turismo"
   },
   {
-    "id": "2144",
-    "name": "Porsche Taycan Turbo GT",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Turbo_GT_2024/Porsche_Taycan_Turbo_GT_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 475,
-    "oneStopRangeKm": 610,
-    "cargoLiters": 410,
-    "fastChargeKw": 267,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2144/Porsche-Taycan-Turbo-GT"
-  },
-  {
-    "id": "3063",
-    "name": "Porsche Taycan GTS Sport Turismo",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_GTS_Sport_Turismo_2024/Porsche_Taycan_GTS_Sport_Turismo_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 505,
-    "oneStopRangeKm": 655,
-    "cargoLiters": 489,
-    "fastChargeKw": 267,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3063/Porsche-Taycan-GTS-Sport-Turismo"
-  },
-  {
-    "id": "3215",
-    "name": "Lotus Emeya 900",
-    "imageUrl": "https://ev-database.org/img/auto/Lotus_Emeya/Lotus_Emeya-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 465,
-    "oneStopRangeKm": 611,
-    "cargoLiters": 543,
-    "fastChargeKw": 328,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3215/Lotus-Emeya-900"
-  },
-  {
-    "id": "3717",
-    "name": "Land Rover Range Rover EV550",
-    "imageUrl": "https://ev-database.org/img/auto/Land_Rover_Range_Rover_2027/Land_Rover_Range_Rover_2027-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 480,
-    "oneStopRangeKm": 553,
-    "cargoLiters": 733,
-    "fastChargeKw": 230,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3717/Land-Rover-Range-Rover-EV550"
-  },
-  {
-    "id": "3060",
-    "name": "Porsche Taycan 4",
+    "id": "2101",
+    "name": "Porsche Taycan 4S Plus",
     "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 490,
-    "oneStopRangeKm": 611,
-    "cargoLiters": 491,
-    "fastChargeKw": 195,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3060/Porsche-Taycan-4"
-  },
-  {
-    "id": "3061",
-    "name": "Porsche Taycan 4 Plus",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
-    "priceEur": 100000,
+    "priceEur": 132631,
     "rangeKm": 565,
     "oneStopRangeKm": 738,
     "cargoLiters": 491,
     "fastChargeKw": 267,
     "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3061/Porsche-Taycan-4-Plus"
+    "sourceUrl": "https://ev-database.org/nl/auto/2101/Porsche-Taycan-4S-Plus"
   },
   {
-    "id": "3707",
-    "name": "Porsche Macan Turbo Electric",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Macan_Turbo_2024/Porsche_Macan_Turbo_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 465,
-    "oneStopRangeKm": 550,
-    "cargoLiters": 564,
-    "fastChargeKw": 186,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3707/Porsche-Macan-Turbo-Electric"
-  },
-  {
-    "id": "2088",
-    "name": "Mercedes-Benz EQS SUV 450 4MATIC",
-    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_SUV_2022/Mercedes_EQS_SUV_2022-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 530,
-    "oneStopRangeKm": 543,
-    "cargoLiters": 645,
-    "fastChargeKw": 160,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2088/Mercedes-Benz-EQS-SUV-450-4MATIC"
-  },
-  {
-    "id": "3562",
-    "name": "Porsche Cayenne Turbo Coupe Electric",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Cayenne_Coupe_2026/Porsche_Cayenne_Coupe_2026-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 520,
-    "oneStopRangeKm": 665,
-    "cargoLiters": 624,
-    "fastChargeKw": 290,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3562/Porsche-Cayenne-Turbo-Coupe-Electric"
-  },
-  {
-    "id": "3062",
-    "name": "Porsche Taycan GTS",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_GTS_2024/Porsche_Taycan_GTS_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 535,
-    "oneStopRangeKm": 693,
-    "cargoLiters": 450,
-    "fastChargeKw": 267,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3062/Porsche-Taycan-GTS"
-  },
-  {
-    "id": "2105",
-    "name": "Porsche Taycan Plus Sport Turismo",
+    "id": "2107",
+    "name": "Porsche Taycan 4S Plus Sport Turismo",
     "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Sport_Turismo_2024/Porsche_Taycan_Sport_Turismo_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 530,
-    "oneStopRangeKm": 685,
+    "priceEur": 133631,
+    "rangeKm": 510,
+    "oneStopRangeKm": 655,
     "cargoLiters": 530,
     "fastChargeKw": 267,
-    "driveType": "RWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2105/Porsche-Taycan-Plus-Sport-Turismo"
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2107/Porsche-Taycan-4S-Plus-Sport-Turismo"
   },
   {
-    "id": "2112",
-    "name": "Porsche Taycan Turbo Cross Turismo",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Cross_Turismo_2024/Porsche_Taycan_Cross_Turismo_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 495,
-    "oneStopRangeKm": 636,
-    "cargoLiters": 489,
-    "fastChargeKw": 267,
+    "id": "3273",
+    "name": "Lucid Air Grand Touring",
+    "imageUrl": "https://ev-database.org/img/auto/Lucid_Air/Lucid_Air-01-thumb.jpg",
+    "priceEur": 133900,
+    "rangeKm": 720,
+    "oneStopRangeKm": 836,
+    "cargoLiters": 910,
+    "fastChargeKw": 190,
     "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2112/Porsche-Taycan-Turbo-Cross-Turismo"
+    "sourceUrl": "https://ev-database.org/nl/auto/3273/Lucid-Air-Grand-Touring"
   },
   {
-    "id": "2145",
-    "name": "Porsche Taycan Turbo GT Weissach",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Turbo_GT_Weissach_2024/Porsche_Taycan_Turbo_GT_Weissach_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 475,
-    "oneStopRangeKm": 610,
-    "cargoLiters": 451,
-    "fastChargeKw": 267,
+    "id": "3580",
+    "name": "Mercedes-Benz EQS 580 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_2026/Mercedes_EQS_2026-01-thumb.jpg",
+    "priceEur": 135792,
+    "rangeKm": 670,
+    "oneStopRangeKm": 782,
+    "cargoLiters": 610,
+    "fastChargeKw": 190,
     "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2145/Porsche-Taycan-Turbo-GT-Weissach"
-  },
-  {
-    "id": "2221",
-    "name": "Audi RS e-tron GT performance",
-    "imageUrl": "https://ev-database.org/img/auto/Audi_e-tron_GT_RS_Performance_2025/Audi_e-tron_GT_RS_Performance_2025-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 525,
-    "oneStopRangeKm": 682,
-    "cargoLiters": 427,
-    "fastChargeKw": 267,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2221/Audi-RS-e-tron-GT-performance"
+    "sourceUrl": "https://ev-database.org/nl/auto/3580/Mercedes-Benz-EQS-580-4MATIC"
   },
   {
     "id": "3561",
     "name": "Porsche Cayenne S Coupe Electric",
     "imageUrl": "https://ev-database.org/img/auto/Porsche_Cayenne_Coupe_2026/Porsche_Cayenne_Coupe_2026-01-thumb.jpg",
-    "priceEur": 100000,
+    "priceEur": 135844,
     "rangeKm": 545,
     "oneStopRangeKm": 695,
     "cargoLiters": 624,
@@ -6871,10 +6631,238 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/3561/Porsche-Cayenne-S-Coupe-Electric"
   },
   {
+    "id": "3816",
+    "name": "Land Rover Range Rover Sport EV550",
+    "imageUrl": "https://ev-database.org/img/auto/Land_Rover_Range_Rover_Sport_2027/Land_Rover_Range_Rover_Sport_2027-01-thumb.jpg",
+    "priceEur": 143367,
+    "rangeKm": 490,
+    "oneStopRangeKm": 563,
+    "cargoLiters": 627,
+    "fastChargeKw": 230,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3816/Land-Rover-Range-Rover-Sport-EV550"
+  },
+  {
+    "id": "3299",
+    "name": "Polestar 5 Performance",
+    "imageUrl": "https://ev-database.org/img/auto/Polestar_5/Polestar_5-01-thumb.jpg",
+    "priceEur": 145300,
+    "rangeKm": 530,
+    "oneStopRangeKm": 637,
+    "cargoLiters": 427,
+    "fastChargeKw": 210,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3299/Polestar-5-Performance"
+  },
+  {
+    "id": "2089",
+    "name": "Mercedes-Benz EQS SUV 500 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_SUV_2022/Mercedes_EQS_SUV_2022-01-thumb.jpg",
+    "priceEur": 148173,
+    "rangeKm": 530,
+    "oneStopRangeKm": 543,
+    "cargoLiters": 645,
+    "fastChargeKw": 160,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2089/Mercedes-Benz-EQS-SUV-500-4MATIC"
+  },
+  {
+    "id": "3287",
+    "name": "Mercedes-Benz EQE SUV AMG 53 4MATIC+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE_AMG_SUV/Mercedes_EQE_AMG_SUV-01-thumb.jpg",
+    "priceEur": 150555,
+    "rangeKm": 420,
+    "oneStopRangeKm": 453,
+    "cargoLiters": 520,
+    "fastChargeKw": 141,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3287/Mercedes-Benz-EQE-SUV-AMG-53-4MATICplus"
+  },
+  {
+    "id": "3217",
+    "name": "Lotus Eletre 900",
+    "imageUrl": "https://ev-database.org/img/auto/Lotus_Eletre/Lotus_Eletre-01-thumb.jpg",
+    "priceEur": 150595,
+    "rangeKm": 455,
+    "oneStopRangeKm": 553,
+    "cargoLiters": 657,
+    "fastChargeKw": 246,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3217/Lotus-Eletre-900"
+  },
+  {
+    "id": "3215",
+    "name": "Lotus Emeya 900",
+    "imageUrl": "https://ev-database.org/img/auto/Lotus_Emeya/Lotus_Emeya-01-thumb.jpg",
+    "priceEur": 150595,
+    "rangeKm": 465,
+    "oneStopRangeKm": 611,
+    "cargoLiters": 543,
+    "fastChargeKw": 328,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3215/Lotus-Emeya-900"
+  },
+  {
+    "id": "2220",
+    "name": "Audi RS e-tron GT",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_e-tron_GT_RS_2025/Audi_e-tron_GT_RS_2025-01-thumb.jpg",
+    "priceEur": 151990,
+    "rangeKm": 525,
+    "oneStopRangeKm": 682,
+    "cargoLiters": 427,
+    "fastChargeKw": 267,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2220/Audi-RS-e-tron-GT"
+  },
+  {
+    "id": "3557",
+    "name": "BMW i7 60 xDrive",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i7_2026/BMW_i7_2026-01-thumb.jpg",
+    "priceEur": 152050,
+    "rangeKm": 560,
+    "oneStopRangeKm": 628,
+    "cargoLiters": 500,
+    "fastChargeKw": 175,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3557/BMW-i7-60-xDrive"
+  },
+  {
+    "id": "3062",
+    "name": "Porsche Taycan GTS",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_GTS_2024/Porsche_Taycan_GTS_2024-01-thumb.jpg",
+    "priceEur": 154233,
+    "rangeKm": 535,
+    "oneStopRangeKm": 693,
+    "cargoLiters": 450,
+    "fastChargeKw": 267,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3062/Porsche-Taycan-GTS"
+  },
+  {
+    "id": "3627",
+    "name": "Mercedes-Benz AMG GT 4-Door Coupe 55 4MATIC+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes-Benz_AMG_GT_4-Door_Coupe_2026/Mercedes-Benz_AMG_GT_4-Door_Coupe_2026-01-thumb.jpg",
+    "priceEur": 154542,
+    "rangeKm": 600,
+    "oneStopRangeKm": 798,
+    "cargoLiters": 456,
+    "fastChargeKw": 400,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3627/Mercedes-Benz-AMG-GT-4-Door-Coupe-55-4MATICplus"
+  },
+  {
+    "id": "3063",
+    "name": "Porsche Taycan GTS Sport Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_GTS_Sport_Turismo_2024/Porsche_Taycan_GTS_Sport_Turismo_2024-01-thumb.jpg",
+    "priceEur": 155233,
+    "rangeKm": 505,
+    "oneStopRangeKm": 655,
+    "cargoLiters": 489,
+    "fastChargeKw": 267,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3063/Porsche-Taycan-GTS-Sport-Turismo"
+  },
+  {
+    "id": "3719",
+    "name": "Maserati GranTurismo Folgore",
+    "imageUrl": "https://ev-database.org/img/auto/Maserati_GranTurismo_Folgore_2027/Maserati_GranTurismo_Folgore_2027-01-thumb.jpg",
+    "priceEur": 159900,
+    "rangeKm": 465,
+    "oneStopRangeKm": 586,
+    "cargoLiters": 270,
+    "fastChargeKw": 217,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3719/Maserati-GranTurismo-Folgore"
+  },
+  {
+    "id": "2221",
+    "name": "Audi RS e-tron GT performance",
+    "imageUrl": "https://ev-database.org/img/auto/Audi_e-tron_GT_RS_Performance_2025/Audi_e-tron_GT_RS_Performance_2025-01-thumb.jpg",
+    "priceEur": 164990,
+    "rangeKm": 525,
+    "oneStopRangeKm": 682,
+    "cargoLiters": 427,
+    "fastChargeKw": 267,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2221/Audi-RS-e-tron-GT-performance"
+  },
+  {
+    "id": "3716",
+    "name": "Land Rover Range Rover EV450",
+    "imageUrl": "https://ev-database.org/img/auto/Land_Rover_Range_Rover_2027/Land_Rover_Range_Rover_2027-01-thumb.jpg",
+    "priceEur": 166027,
+    "rangeKm": 480,
+    "oneStopRangeKm": 553,
+    "cargoLiters": 733,
+    "fastChargeKw": 230,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3716/Land-Rover-Range-Rover-EV450"
+  },
+  {
+    "id": "3720",
+    "name": "Maserati GranCabrio Folgore",
+    "imageUrl": "https://ev-database.org/img/auto/Maserati_GranCabrio_Folgore_2027/Maserati_GranCabrio_Folgore_2027-01-thumb.jpg",
+    "priceEur": 170150,
+    "rangeKm": 440,
+    "oneStopRangeKm": 545,
+    "cargoLiters": 151,
+    "fastChargeKw": 190,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3720/Maserati-GranCabrio-Folgore"
+  },
+  {
+    "id": "3399",
+    "name": "Porsche Cayenne Turbo Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Cayenne_Turbo_2026/Porsche_Cayenne_Turbo_2026-01-thumb.jpg",
+    "priceEur": 171743,
+    "rangeKm": 500,
+    "oneStopRangeKm": 635,
+    "cargoLiters": 837,
+    "fastChargeKw": 290,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3399/Porsche-Cayenne-Turbo-Electric"
+  },
+  {
+    "id": "2090",
+    "name": "Mercedes-Benz EQS SUV 580 4MATIC",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQS_SUV_2022/Mercedes_EQS_SUV_2022-01-thumb.jpg",
+    "priceEur": 173825,
+    "rangeKm": 530,
+    "oneStopRangeKm": 543,
+    "cargoLiters": 645,
+    "fastChargeKw": 160,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2090/Mercedes-Benz-EQS-SUV-580-4MATIC"
+  },
+  {
+    "id": "3562",
+    "name": "Porsche Cayenne Turbo Coupe Electric",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Cayenne_Coupe_2026/Porsche_Cayenne_Coupe_2026-01-thumb.jpg",
+    "priceEur": 174644,
+    "rangeKm": 520,
+    "oneStopRangeKm": 665,
+    "cargoLiters": 624,
+    "fastChargeKw": 290,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3562/Porsche-Cayenne-Turbo-Coupe-Electric"
+  },
+  {
+    "id": "3717",
+    "name": "Land Rover Range Rover EV550",
+    "imageUrl": "https://ev-database.org/img/auto/Land_Rover_Range_Rover_2027/Land_Rover_Range_Rover_2027-01-thumb.jpg",
+    "priceEur": 182517,
+    "rangeKm": 480,
+    "oneStopRangeKm": 553,
+    "cargoLiters": 733,
+    "fastChargeKw": 230,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3717/Land-Rover-Range-Rover-EV550"
+  },
+  {
     "id": "2102",
     "name": "Porsche Taycan Turbo",
     "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
-    "priceEur": 100000,
+    "priceEur": 183000,
     "rangeKm": 535,
     "oneStopRangeKm": 693,
     "cargoLiters": 450,
@@ -6883,22 +6871,10 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/2102/Porsche-Taycan-Turbo"
   },
   {
-    "id": "2103",
-    "name": "Porsche Taycan Turbo S",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 525,
-    "oneStopRangeKm": 674,
-    "cargoLiters": 450,
-    "fastChargeKw": 267,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2103/Porsche-Taycan-Turbo-S"
-  },
-  {
     "id": "2108",
     "name": "Porsche Taycan Turbo Sport Turismo",
     "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Sport_Turismo_2024/Porsche_Taycan_Sport_Turismo_2024-01-thumb.jpg",
-    "priceEur": 100000,
+    "priceEur": 184000,
     "rangeKm": 505,
     "oneStopRangeKm": 655,
     "cargoLiters": 489,
@@ -6907,10 +6883,82 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/2108/Porsche-Taycan-Turbo-Sport-Turismo"
   },
   {
+    "id": "2112",
+    "name": "Porsche Taycan Turbo Cross Turismo",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Cross_Turismo_2024/Porsche_Taycan_Cross_Turismo_2024-01-thumb.jpg",
+    "priceEur": 184500,
+    "rangeKm": 495,
+    "oneStopRangeKm": 636,
+    "cargoLiters": 489,
+    "fastChargeKw": 267,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2112/Porsche-Taycan-Turbo-Cross-Turismo"
+  },
+  {
+    "id": "3626",
+    "name": "Mercedes-Benz AMG GT 4-Door Coupe 63 4MATIC+",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes-Benz_AMG_GT_4-Door_Coupe_2026/Mercedes-Benz_AMG_GT_4-Door_Coupe_2026-01-thumb.jpg",
+    "priceEur": 189632,
+    "rangeKm": 600,
+    "oneStopRangeKm": 798,
+    "cargoLiters": 456,
+    "fastChargeKw": 400,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3626/Mercedes-Benz-AMG-GT-4-Door-Coupe-63-4MATICplus"
+  },
+  {
+    "id": "3558",
+    "name": "BMW i7 M70 xDrive",
+    "imageUrl": "https://ev-database.org/img/auto/BMW_i7_2026/BMW_i7_2026-01-thumb.jpg",
+    "priceEur": 195740,
+    "rangeKm": 530,
+    "oneStopRangeKm": 595,
+    "cargoLiters": 500,
+    "fastChargeKw": 175,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3558/BMW-i7-M70-xDrive"
+  },
+  {
+    "id": "2192",
+    "name": "Mercedes-Benz G 580",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_G-Class/Mercedes_G-Class-01-thumb.jpg",
+    "priceEur": 200303,
+    "rangeKm": 395,
+    "oneStopRangeKm": 394,
+    "cargoLiters": 555,
+    "fastChargeKw": 150,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2192/Mercedes-Benz-G-580"
+  },
+  {
+    "id": "2086",
+    "name": "Mercedes-Benz EQS SUV Maybach 680",
+    "imageUrl": "https://ev-database.org/img/auto/Mercedes_Maybach_EQS_SUV_2024/Mercedes_Maybach_EQS_SUV_2024-01-thumb.jpg",
+    "priceEur": 216780,
+    "rangeKm": 490,
+    "oneStopRangeKm": 507,
+    "cargoLiters": 440,
+    "fastChargeKw": 160,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2086/Mercedes-Benz-EQS-SUV-Maybach-680"
+  },
+  {
+    "id": "2103",
+    "name": "Porsche Taycan Turbo S",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_2024/Porsche_Taycan_2024-01-thumb.jpg",
+    "priceEur": 218900,
+    "rangeKm": 525,
+    "oneStopRangeKm": 674,
+    "cargoLiters": 450,
+    "fastChargeKw": 267,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/2103/Porsche-Taycan-Turbo-S"
+  },
+  {
     "id": "2109",
     "name": "Porsche Taycan Turbo S Sport Turismo",
     "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Sport_Turismo_2024/Porsche_Taycan_Sport_Turismo_2024-01-thumb.jpg",
-    "priceEur": 100000,
+    "priceEur": 219900,
     "rangeKm": 505,
     "oneStopRangeKm": 655,
     "cargoLiters": 489,
@@ -6922,7 +6970,7 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "id": "2113",
     "name": "Porsche Taycan Turbo S Cross Turismo",
     "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Cross_Turismo_2024/Porsche_Taycan_Cross_Turismo_2024-01-thumb.jpg",
-    "priceEur": 100000,
+    "priceEur": 220400,
     "rangeKm": 485,
     "oneStopRangeKm": 620,
     "cargoLiters": 489,
@@ -6931,51 +6979,75 @@ export const EV_DATABASE: ElectricVehicle[] = [
     "sourceUrl": "https://ev-database.org/nl/auto/2113/Porsche-Taycan-Turbo-S-Cross-Turismo"
   },
   {
-    "id": "3287",
-    "name": "Mercedes-Benz EQE SUV AMG 53 4MATIC+",
-    "imageUrl": "https://ev-database.org/img/auto/Mercedes_EQE_AMG_SUV/Mercedes_EQE_AMG_SUV-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 420,
-    "oneStopRangeKm": 453,
-    "cargoLiters": 520,
-    "fastChargeKw": 141,
-    "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3287/Mercedes-Benz-EQE-SUV-AMG-53-4MATICplus"
-  },
-  {
-    "id": "2107",
-    "name": "Porsche Taycan 4S Plus Sport Turismo",
-    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Sport_Turismo_2024/Porsche_Taycan_Sport_Turismo_2024-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 510,
-    "oneStopRangeKm": 655,
-    "cargoLiters": 530,
+    "id": "2144",
+    "name": "Porsche Taycan Turbo GT",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Turbo_GT_2024/Porsche_Taycan_Turbo_GT_2024-01-thumb.jpg",
+    "priceEur": 249900,
+    "rangeKm": 475,
+    "oneStopRangeKm": 610,
+    "cargoLiters": 410,
     "fastChargeKw": 267,
     "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/2107/Porsche-Taycan-4S-Plus-Sport-Turismo"
+    "sourceUrl": "https://ev-database.org/nl/auto/2144/Porsche-Taycan-Turbo-GT"
   },
   {
-    "id": "3815",
-    "name": "Land Rover Range Rover Sport EV450",
-    "imageUrl": "https://ev-database.org/img/auto/Land_Rover_Range_Rover_Sport_2027/Land_Rover_Range_Rover_Sport_2027-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 490,
-    "oneStopRangeKm": 563,
-    "cargoLiters": 627,
-    "fastChargeKw": 230,
+    "id": "2145",
+    "name": "Porsche Taycan Turbo GT Weissach",
+    "imageUrl": "https://ev-database.org/img/auto/Porsche_Taycan_Turbo_GT_Weissach_2024/Porsche_Taycan_Turbo_GT_Weissach_2024-01-thumb.jpg",
+    "priceEur": 249900,
+    "rangeKm": 475,
+    "oneStopRangeKm": 610,
+    "cargoLiters": 451,
+    "fastChargeKw": 267,
     "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3815/Land-Rover-Range-Rover-Sport-EV450"
+    "sourceUrl": "https://ev-database.org/nl/auto/2145/Porsche-Taycan-Turbo-GT-Weissach"
   },
   {
-    "id": "3816",
-    "name": "Land Rover Range Rover Sport EV550",
-    "imageUrl": "https://ev-database.org/img/auto/Land_Rover_Range_Rover_Sport_2027/Land_Rover_Range_Rover_Sport_2027-01-thumb.jpg",
-    "priceEur": 100000,
-    "rangeKm": 490,
-    "oneStopRangeKm": 563,
-    "cargoLiters": 627,
+    "id": "3274",
+    "name": "Lucid Air Sapphire",
+    "imageUrl": "https://ev-database.org/img/auto/Lucid_Air_Sapphire_2025/Lucid_Air_Sapphire_2025-01-thumb.jpg",
+    "priceEur": 255000,
+    "rangeKm": 610,
+    "oneStopRangeKm": 693,
+    "cargoLiters": 910,
+    "fastChargeKw": 190,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3274/Lucid-Air-Sapphire"
+  },
+  {
+    "id": "3718",
+    "name": "Land Rover Range Rover LWB EV550",
+    "imageUrl": "https://ev-database.org/img/auto/Land_Rover_Range_Rover_2027/Land_Rover_Range_Rover_2027-01-thumb.jpg",
+    "priceEur": 283357,
+    "rangeKm": 470,
+    "oneStopRangeKm": 542,
+    "cargoLiters": 571,
     "fastChargeKw": 230,
     "driveType": "AWD",
-    "sourceUrl": "https://ev-database.org/nl/auto/3816/Land-Rover-Range-Rover-Sport-EV550"
+    "sourceUrl": "https://ev-database.org/nl/auto/3718/Land-Rover-Range-Rover-LWB-EV550"
+  },
+  {
+    "id": "3650",
+    "name": "Rolls-Royce Spectre Series II",
+    "imageUrl": "https://ev-database.org/img/auto/Rolls-Royce-Spectre/Rolls-Royce-Spectre-01-thumb.jpg",
+    "priceEur": 400000,
+    "rangeKm": 515,
+    "oneStopRangeKm": 548,
+    "cargoLiters": 380,
+    "fastChargeKw": 170,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3650/Rolls-Royce-Spectre-Series-II"
+  },
+  {
+    "id": "3643",
+    "name": "Ferrari Luce",
+    "imageUrl": "https://ev-database.org/img/auto/Ferrari_Luce_2027/Ferrari_Luce_2027-01-thumb.jpg",
+    "priceEur": 550000,
+    "rangeKm": 580,
+    "oneStopRangeKm": 675,
+    "cargoLiters": 597,
+    "fastChargeKw": 220,
+    "driveType": "AWD",
+    "sourceUrl": "https://ev-database.org/nl/auto/3643/Ferrari-Luce"
   }
 ]
